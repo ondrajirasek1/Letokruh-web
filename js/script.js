@@ -30,6 +30,99 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Interactive Donation Widget Logic (Podpoř dobro)
+    const amountBtns = document.querySelectorAll('.donation_amounts_grid .amount_btn');
+    const btnDonateSubmit = document.getElementById('btn_donate_submit');
+    const freqTabs = document.querySelectorAll('.donation_freq_tabs .freq_tab');
+    const toggleCustomBtn = document.getElementById('toggle_custom_amount');
+    const customAmountBox = document.getElementById('custom_amount_box');
+    const customAmountInput = document.getElementById('custom_amount_input');
+    const showQrDetails = document.getElementById('show_qr_details');
+    const accountDrawer = document.getElementById('account_drawer');
+    const drawerQrImg = document.getElementById('drawer_qr_img');
+
+    let selectedAmount = 1000;
+
+    function formatAmountString(val) {
+        return Number(val).toLocaleString('cs-CZ');
+    }
+
+    function updateSubmitBtn() {
+        if (btnDonateSubmit) {
+            btnDonateSubmit.textContent = `Darovat ${formatAmountString(selectedAmount)} Kč`;
+        }
+        if (drawerQrImg && [100, 500, 1000].includes(Number(selectedAmount))) {
+            drawerQrImg.src = `../images/ostatni/qr_platba_${selectedAmount}.png`;
+        }
+    }
+
+    if (amountBtns.length > 0) {
+        amountBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                amountBtns.forEach(b => {
+                    b.classList.remove('active');
+                    const icon = b.querySelector('.icon_check');
+                    if (icon) icon.remove();
+                });
+                btn.classList.add('active');
+                if (!btn.querySelector('.icon_check')) {
+                    const check = document.createElement('i');
+                    check.className = 'fa-solid fa-circle-check icon_check';
+                    btn.prepend(check);
+                }
+                if (customAmountBox) customAmountBox.classList.add('is_hidden');
+                selectedAmount = btn.getAttribute('data-amount');
+                updateSubmitBtn();
+            });
+        });
+    }
+
+    if (freqTabs.length > 0) {
+        freqTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                freqTabs.forEach(t => {
+                    t.classList.remove('active');
+                    const icon = t.querySelector('.icon_check');
+                    if (icon) icon.remove();
+                });
+                tab.classList.add('active');
+                if (!tab.querySelector('.icon_check')) {
+                    const check = document.createElement('i');
+                    check.className = 'fa-solid fa-circle-check icon_check';
+                    tab.prepend(check);
+                }
+            });
+        });
+    }
+
+    if (toggleCustomBtn && customAmountBox && customAmountInput) {
+        toggleCustomBtn.addEventListener('click', () => {
+            customAmountBox.classList.toggle('is_hidden');
+            if (!customAmountBox.classList.contains('is_hidden')) {
+                customAmountInput.focus();
+                amountBtns.forEach(b => {
+                    b.classList.remove('active');
+                    const icon = b.querySelector('.icon_check');
+                    if (icon) icon.remove();
+                });
+            }
+        });
+
+        customAmountInput.addEventListener('input', () => {
+            if (customAmountInput.value && customAmountInput.value > 0) {
+                selectedAmount = customAmountInput.value;
+                updateSubmitBtn();
+            }
+        });
+    }
+
+    if (showQrDetails && accountDrawer) {
+        showQrDetails.addEventListener('click', (e) => {
+            e.preventDefault();
+            accountDrawer.classList.toggle('is_hidden');
+        });
+    }
+
     // Modal Logic
     const modal = document.getElementById('org_modal');
     const cards = document.querySelectorAll('.org_card');
