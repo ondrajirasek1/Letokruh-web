@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Příběhy dobrovolníků | Letokruh</title>
+    <link rel="stylesheet" href="../style.css?v=32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .story-block {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 0;
+        }
+
+        .story-text {
+            flex: 1;
+        }
+
+        .story-image-wrap {
+            flex: 1;
+            position: relative;
+            padding: 0 30px 30px 30px;
+        }
+
+        .story-quote-text {
+            margin-top: 0;
+            font-size: 1.9rem;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1.5;
+            color: #43382d;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .story-quote-text::before {
+            content: "\201E";
+            font-size: 5rem;
+            color: #e87a2e;
+            position: absolute;
+            top: -25px;
+            left: -35px;
+            font-style: normal;
+            line-height: 1;
+        }
+
+        .story-person-name {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #43382d;
+            margin-bottom: 5px;
+        }
+
+        .story-person-role {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 25px;
+        }
+
+        .story-btn {
+            display: inline-block;
+            padding: 14px 35px;
+            font-size: 1.1rem;
+            background: #cb2f1d;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .story-btn:hover {
+            background: #a92011;
+        }
+
+        .story-img-placeholder {
+            width: 100%;
+            aspect-ratio: 4/5;
+            background-color: #e0d0c0;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Decorations for right-side images */
+        .decor-right .story-decor-line {
+            position: absolute;
+            right: -50px;
+            bottom: -30px;
+            width: 400px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .decor-right .story-decor-dot {
+            position: absolute;
+            right: 40px;
+            bottom: -15px;
+            width: 60px;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        /* Decorations for left-side images */
+        .decor-left .story-decor-line {
+            position: absolute;
+            left: -50px;
+            top: -40px;
+            width: 400px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .decor-left .story-decor-dot {
+            position: absolute;
+            left: 40px;
+            top: -15px;
+            width: 80px;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .decor-left .story-decor-orange {
+            position: absolute;
+            left: -10px;
+            top: -5px;
+            width: 65px;
+            z-index: 2;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body style="background-color: #fcf4ef;">
+
+    <header class="top-header">
+        <div class="top-header-left">
+            <a href="../index.html"><img src="../images/logos/Letokruh_logo_horizontal.png" alt="Letokruh Logo"
+                    class="top-logo-img"></a>
+            <span class="top-logo-text">Letokruh</span>
+            <span class="top-slogan">dobrovolnictví zralého věku</span>
+        </div>
+        <div class="top-header-right">
+            <a href="../stranky/podpor-dobro.html" class="btn-support-top"><i class="fa-solid fa-heart"></i> Podpoř Letokruh</a>
+            <a href="#" class="font-resizer"><span class="icon-aa">AA</span> Zvětšit písmo</a>
+        </div>
+    </header>
+
+    <nav class="navbar_wrapper">
+        <div class="logo_desktop">
+            <a href="../index.html"></a>
+        </div>
+        <div class="navbar_desktop">
+            <a href="../stranky/onas.html" class="navbarItem">O nás</a>
+            <a href="../stranky/dobrovolnictvi.html" class="navbarItem" style="color: #cb2f1d;">Dobrovolnictví</a>
+            <a href="../stranky/program.html" class="navbarItem">Program</a>
+            <a href="../stranky/dobroklub.html" class="navbarItem">Dobroklub</a>
+            <a href="../stranky/kontakt.html" class="navbarItem">Kontakt</a>
+            <a href="../stranky/blog.html" class="navbarItem">Blog</a>
+            <a href="../stranky/stan-se-dobrovolnikem.html" class="navbarItem button_nav_cta">Staň se dobrovolníkem</a>
+        </div>
+    </nav>
+
+    <div class="breadcrumb-container">
+        <a href="../index.html" class="breadcrumb-link-home">Úvodní strana</a> <span
+            class="breadcrumb-separator">&gt;</span>
+        <a href="../stranky/dobrovolnictvi.html" class="breadcrumb-link">Dobrovolnictví</a> <span
+            class="breadcrumb-separator">&gt;</span>
+        <span class="breadcrumb-current">Příběhy dobrovolníků</span>
+    </div>
+
+    <!-- Stories -->
+    <section style="padding: 40px 50px 80px 50px;">
+
+        <!-- Story 1: Janka F. - text LEFT, image RIGHT -->
+        <div class="story-block">
+            <div class="story-text" style="padding-left: 30px;">
+                <p class="story-quote-text">
+                    Penzista se nesmí nudit. Měl by si najít činnost, která ho zaměstná, obohatí sebe i své okolí.
+                </p>
+                <p class="story-person-name">Janka F., 84 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh.html" class="story-btn">Přečíst příběh</a>
+            </div>
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/janka_f.webp" alt="Janka F." class="story-img-placeholder">
+            </div>
+        </div>
+
+        <!-- Story 2: Otto P. - image LEFT, text RIGHT -->
+        <div class="story-block">
+            <div class="story-image-wrap decor-left">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_ozanzovy.png" alt="" class="story-decor-orange">
+                <img src="../images/pribehy/otto_p.webp" alt="Otto P." class="story-img-placeholder">
+            </div>
+            <div class="story-text">
+                <p class="story-quote-text">
+                    Na otázku, co mi dobrovolnictví přináší, jednoznačně odpovídám, dobrý pocit a radost! Být
+                    dobrovolníkem jsem si předsevzal ještě před odchodem do důchodu, tak teď si to plním. Doučování a
+                    lektorství mi přináší radost z dosaženého pokroku doučovaných (nekladu si žádné velké cíle) a
+                    Společník seniora je jednoznačná dávka radosti, že senior měl z mé přítomnosti také radost a byl
+                    ochoten chodit i na procházky. Takže sečteno a podtrženo, mnoho radosti pro mne i ostatní.
+                </p>
+                <p class="story-person-name">Otto P., 71 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-otto.html" class="story-btn">Přečíst příběh</a>
+            </div>
+        </div>
+
+        <!-- Story 3: Ivan Š. - text LEFT, image RIGHT -->
+        <div class="story-block">
+            <div class="story-text" style="padding-left: 30px;">
+                <p class="story-quote-text">
+                    V rámci základní životní filosofie je důležité dělat občas i nějaké věci zadarmo. Většina problémů
+                    jsou maličkosti. Pomoci někomu mi přináší pozitivní náladu.
+                </p>
+                <p class="story-person-name">Ivan Š., 64 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-ivan.html" class="story-btn">Přečíst příběh</a>
+            </div>
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/ivan_s.webp" alt="Ivan Š." class="story-img-placeholder">
+            </div>
+        </div>
+
+        <!-- Story 4: Naděžda Š. - image LEFT, text RIGHT -->
+        <div class="story-block">
+            <div class="story-image-wrap decor-left">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_ozanzovy.png" alt="" class="story-decor-orange">
+                <img src="../images/pribehy/nadezda_s.webp" alt="Naděžda Š." class="story-img-placeholder">
+            </div>
+            <div class="story-text">
+                <p class="story-quote-text">
+                    Když vidím, že je druhý šťastný, cítím se dobře a šťastná. Nic víc není potřeba v tom hledat. Láska
+                    a úcta k člověku by měla být věčná….
+                </p>
+                <p class="story-person-name">Naděžda Š., 62 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-nada.html" class="story-btn">Přečíst příběh</a>
+            </div>
+        </div>
+
+        <!-- Story 5: Marta E. - text LEFT, image RIGHT -->
+        <div class="story-block">
+            <div class="story-text" style="padding-left: 30px;">
+                <p class="story-quote-text">
+                    Moc ráda chodím do Letokruhu, všechny jeho programy mě baví - procházky Prahou, lekce na děravou
+                    paměť, zajímavé přednášky, divadla - a hlavně také jen prosté povídání a setkávání se s lidmi..
+                </p>
+                <p class="story-person-name">Marta E., 82 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-marta.html" class="story-btn">Přečíst příběh</a>
+            </div>
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/marta.jpg" alt="Marta E." class="story-img-placeholder">
+            </div>
+        </div>
+
+        <!-- Story 6: Zdena P. - image LEFT, text RIGHT -->
+        <div class="story-block">
+            <div class="story-image-wrap decor-left">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_ozanzovy.png" alt="" class="story-decor-orange">
+                <img src="../images/pribehy/zdena_p.webp" alt="Zdena P." class="story-img-placeholder">
+            </div>
+            <div class="story-text">
+                <p class="story-quote-text">
+                    Díky Letokruhu mám nové přátele, stále se něco nového učím a poznávám. A to, co znám a co mě
+                    naplňuje, pak předávám dalším. Žiju naplno a doufám, že to bude pokračovat...
+                </p>
+                <p class="story-person-name">Zdena P., 86 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-zdena.html" class="story-btn">Přečíst příběh</a>
+            </div>
+        </div>
+
+        <!-- Story 7: Jirka G. - text LEFT, image RIGHT -->
+        <div class="story-block">
+            <div class="story-text" style="padding-left: 30px;">
+                <p class="story-quote-text">
+                    Chci být prospěšný ostatním, pokud to jde, ale hlavně sobě. Snažím se žít tak, abych nezakrněl.
+                </p>
+                <p class="story-person-name">Jirka G., 88 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-jirka.html" class="story-btn">Přečíst příběh</a>
+            </div>
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/jirka_g.jpg" alt="Jirka G." class="story-img-placeholder">
+            </div>
+        </div>
+
+        <!-- Story 8: Irena - image LEFT, text RIGHT -->
+        <div class="story-block">
+            <div class="story-image-wrap decor-left">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_ozanzovy.png" alt="" class="story-decor-orange">
+                <img src="../images/pribehy/irena.jpg" alt="Irena" class="story-img-placeholder">
+            </div>
+            <div class="story-text">
+                <p class="story-quote-text">
+                    Do Letokruhu jsem vstoupila proto, abych netrpěla samotou a byla ještě užitečná. Jsem šťastná, mohu
+                    tu uplatnit svou lásku k dětem i k seniorům.
+                </p>
+                <p class="story-person-name">Irena, 81 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-irenka.html" class="story-btn">Přečíst příběh</a>
+            </div>
+        </div>
+
+        <!-- Story 9: Jirka K. - text LEFT, image RIGHT -->
+        <div class="story-block">
+            <div class="story-text" style="padding-left: 30px;">
+                <p class="story-quote-text">
+                    Když vidím v očích dětí nadšení, nemohu o čtení ošidit ani je, ani sebe!
+                </p>
+                <p class="story-person-name">Jirka K., 69 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-jirka-k.html" class="story-btn">Přečíst příběh</a>
+            </div>
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/jirka_k.jpg" alt="Jirka K." class="story-img-placeholder">
+            </div>
+        </div>
+
+        <!-- Story 10: Eva - image LEFT, text RIGHT -->
+        <div class="story-block">
+            <div class="story-image-wrap decor-left">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_ozanzovy.png" alt="" class="story-decor-orange">
+                <img src="../images/pribehy/eva.jpg" alt="Eva" class="story-img-placeholder">
+            </div>
+            <div class="story-text">
+                <p class="story-quote-text">
+                    Dobrovolnictví v Letokruhu mi přináší dobrý pocit, že můžu v rámci svých možností někomu pomáhat. A
+                    myslím, že radost, kterou mám ze společných setkání s Marií, je vzájemná.
+                </p>
+                <p class="story-person-name">Eva, 69 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-eva.html" class="story-btn">Přečíst příběh</a>
+            </div>
+        </div>
+
+        <!-- Story 11: Jiřina - text LEFT, image RIGHT -->
+        <div class="story-block">
+            <div class="story-text" style="padding-left: 30px;">
+                <p class="story-quote-text">
+                    Vedení cvičení v domově seniorů a klubu důchodců mi přináší radost a pocit užitečnosti. Příprava na
+                    cvičení mne nutí přemýšlet, abych cvičení měnila a udělala ho zábavným. Samotné cvičení je pak
+                    radost z pohybu a ze společnosti.
+                </p>
+                <p class="story-person-name">Jiřina, 77 let</p>
+                <p class="story-person-role">Seniorský dobrovolník</p>
+                <a href="pribeh-jirina.html" class="story-btn">Přečíst příběh</a>
+            </div>
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/jirina.webp" alt="Jiřina" class="story-img-placeholder">
+            </div>
+        </div>
+
+        <!-- Story 12: Michaela B. - image LEFT, text RIGHT -->
+        <div class="story-block">
+            <div class="story-image-wrap decor-left">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_ozanzovy.png" alt="" class="story-decor-orange">
+                <img src="../images/pribehy/misa.webp" alt="Michaela B." class="story-img-placeholder">
+            </div>
+            <div class="story-text">
+                <p class="story-quote-text">
+                    Senioři mají za sebou bohaté životní zkušenosti, ze kterých můžeme čerpat, a rozhovory s nimi pro mě
+                    mají hloubku, kterou v běžném kontaktu s vrstevníky často nezažívám. Moje rodina bydlí na druhém
+                    konci republiky, takže je pro mě hezké mít s paní Zdeňkou podobný vztah, jako mám se svojí babičkou.
+                    Posedět spolu u kávy, popovídat si, pomoct, když je potřeba, ale hlavně vědět, že díky mně se někdo
+                    necítí sám. Naše setkávání mě naučilo zpomalit a být víc vnímavá k druhým. Díky této zkušenosti jsem
+                    získala nové dovednosti, poznatky i jistotu, že ani já v tom někdy nejsem sama a mám někoho, komu se
+                    můžu svěřit a požádat ho o radu. Jsem vděčná, že Letokruh vytváří prostor pro vznik takových vztahů
+                    - jsou cenné nejen pro seniory, ale i pro nás dobrovolníky.
+                </p>
+                <p class="story-person-name">Michaela B., 29 let</p>
+                <p class="story-person-role">Juniorský dobrovolník</p>
+                <a href="pribeh-misa.html" class="story-btn">Přečíst příběh</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta_section">
+        <div class="cta_wrapper">
+            <h2>Je dokázáno, že dobrovolníci žijí spokojenější a bohatší život</h2>
+            <div class="cta_buttons">
+                <a href="../stranky/stan-se-dobrovolnikem.html" class="button_cta_white">Staň se dobrovolníkem</a>
+                <a href="../stranky/podpor-dobro.html" class="button_cta_outline btn-support-top">Podpoř dobro</a>
+            </div>
+        </div>
+        <img src="../images/grafika/kruh_s_vyseci_oranzovy.png" alt="" class="cta_decor_circle">
+        <img src="../images/grafika/srdce_cara_oranzove.png" alt="" class="cta_decor_line">
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter_section">
+        <div class="newsletter_wrapper">
+            <div class="newsletter_text">
+                <h2>Přihlaste se k odběru novinek</h2>
+                <p>Každý měsíc vás provedeme tím nejzajímavějším z dění v Letokruhu</p>
+            </div>
+            <div class="newsletter_form_container">
+                <form id="newsletter_form">
+                    <div class="form_group">
+                        <input type="text" id="newsletter_name" placeholder="Jméno">
+                        <div class="error_msg_container"></div>
+                    </div>
+                    <div class="form_group">
+                        <input type="email" id="newsletter_email" placeholder="Váš e-mail">
+                        <div class="error_msg_container"></div>
+                    </div>
+                    <button type="submit" class="button_newsletter">Přihlásit se k odběru</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer_section">
+        <div class="footer_wrapper">
+            <div class="footer_nav_grid">
+                <!-- Col 1: Úvodní strana -->
+                <div class="footer_nav_col">
+                    <h4><a href="../index.html">Úvodní strana</a></h4>
+                    <ul>
+                        <li><a href="../index.html#partners">Partneři</a></li>
+                        <li><a href="../stranky/aktuality.html">Aktuality</a></li>
+                    </ul>
+                </div>
+                <!-- Col 2: O nás -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/onas.html">O nás</a></h4>
+                    <ul>
+                        <li><a href="../stranky/lide.html">Lidé</a></li>
+                        <li><a href="../stranky/onas.html#projekty">Projekty</a></li>
+                        <li><a href="../stranky/nase-hodnoty.html">Naše hodnoty</a></li>
+                        <li><a href="../stranky/michelska.html">Pobočka Michelská</a></li>
+                        <li><a href="../stranky/borislavka.html">Pobočka Bořislavka</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Dobrovolnictví -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/dobrovolnictvi.html">Dobrovolnictví</a></h4>
+                    <ul>
+                        <li><a href="../stranky/dobrovolnictvi.html#aktivity">Příklady aktivit</a></li>
+                        <li><a href="../stranky/dobrovolnictvi.html#kdo-a-jak-pomaha">Kdo a jak pomáhá</a></li>
+                        <li><a href="../stranky/dobrovolnictvi.html#kde-pomahame">Kde pomáháme</a></li>
+                        <li><a href="../pribehy/pribehy.html">Příběhy dobrovolníků</a></li>
+                        <li><a href="../stranky/stan-se-dobrovolnikem.html">Jak se zapojit</a></li>
+                        <li><a href="../stranky/aktualni-poptavky.html">Aktuální poptávky</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Program -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/program.html">Program</a></h4>
+                    <ul>
+                        <li><a href="../stranky/program-spolecnik-seniora.html">Společník seniora</a></li>
+                        <li><a href="../stranky/program.html#aktualni-akce">Aktuální akce</a></li>
+                        <li><a href="../stranky/program.html#archiv-akci">Archiv akcí</a></li>
+                    </ul>
+                </div>
+                <!-- Col 5: Dobroklub -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/dobroklub.html">Dobroklub</a></h4>
+                    <ul>
+                        <li><a href="../stranky/dobroklub.html">O Dobroklubu</a></li>
+                        <li><a href="../stranky/program.html">Aktivity Dobroklubu</a></li>
+                        <li><a href="#">Pravidla</a></li>
+                    </ul>
+                </div>
+                <!-- Col 6: Kontakt -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/kontakt.html">Kontakt</a></h4>
+                    <ul class="footer_contact_list">
+                        <li><a href="tel:+420603483487" class="highlight_contact">+420 603 483 487</a></li>
+                        <li><a href="mailto:info@letokruh.eu" class="highlight_contact">info@letokruh.eu</a></li>
+                        <li class="contact_address">
+                            Letokruh, z.ú.<br>
+                            Michelská 21/61<br>
+                            141 00 Praha 4<br>
+                            IČ: 07635966
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Feedback Section -->
+            <div class="footer_feedback">
+                <div class="feedback_text">Nenašli jste na webu, co jste hledali? Jste s něčím nespokojeni?</div>
+                <a href="#" class="button_feedback">Napsat zpětnou vazbu</a>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    &copy; Letokruh, z.ú. 2021
+                </div>
+                <div class="footer_bottom_center">
+                    <a href="https://letokruh.eu/wp-content/uploads/2021/06/GDPR-pro-web.pdf" target="_blank"
+                        class="footer_gdpr_link">Zásady ochrany osobních údajů (GDPR)</a>
+                </div>
+                <div class="footer_bottom_right">
+                    <a href="https://www.facebook.com/letokruh.eu" class="social_icon_circle"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/letokruh.eu/" class="social_icon_circle"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/stribrnakariera" class="social_icon_circle"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/channel/UCJr_dqASn4gSMsHiwpYyFxA" class="social_icon_circle"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

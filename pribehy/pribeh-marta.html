@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Příběh paní Marty | Letokruh</title>
+    <link rel="stylesheet" href="../style.css?v=32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .story-detail-section {
+            padding: 80px 50px;
+        }
+
+        .story-detail-grid {
+            display: flex;
+            gap: 60px;
+            max-width: 1100px;
+            margin: 0 auto;
+            align-items: center;
+        }
+
+        .story-detail-left {
+            flex: 1;
+        }
+
+        .story-detail-right {
+            flex: 1;
+        }
+
+        .story-detail-desc {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #43382d;
+        }
+
+        .story-image-wrap {
+            position: relative;
+            padding: 0 40px 40px 0;
+        }
+
+        .story-img-placeholder {
+            width: 100%;
+            aspect-ratio: 4/5;
+            background-color: #e0d0c0;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .decor-right .story-decor-line {
+            position: absolute;
+            right: -60px;
+            bottom: -30px;
+            width: 250px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .decor-right .story-decor-dot {
+            position: absolute;
+            right: -10px;
+            bottom: -15px;
+            width: 80px;
+            z-index: 3;
+            pointer-events: none;
+        }
+
+        .story-quote-large {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #43382d;
+            line-height: 1.4;
+            max-width: 900px;
+            margin: 60px auto 0 auto;
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .story-quote-large::before {
+            content: "\201C";
+            font-size: 6rem;
+            color: #f7a600;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            font-style: normal;
+            line-height: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="top-header">
+        <div class="top-header-left">
+            <a href="../index.html"><img src="../images/logos/Letokruh_logo_horizontal.png" alt="Letokruh Logo"
+                    class="top-logo-img"></a>
+            <span class="top-logo-text">Letokruh</span>
+            <span class="top-slogan">dobrovolnictví zralého věku</span>
+        </div>
+        <div class="top-header-right">
+            <a href="../stranky/podpor-dobro.html" class="btn-support-top"><i class="fa-solid fa-heart"></i> Podpoř Letokruh</a>
+            <a href="#" class="font-resizer"><span class="icon-aa">AA</span> Zvětšit písmo</a>
+        </div>
+    </header>
+
+    <nav class="navbar_wrapper">
+        <div class="logo_desktop">
+            <a href="../index.html"></a>
+        </div>
+        <div class="navbar_desktop">
+            <a href="../stranky/onas.html" class="navbarItem">O nás</a>
+            <a href="../stranky/dobrovolnictvi.html" class="navbarItem" style="color: #cb2f1d;">Dobrovolnictví</a>
+            <a href="../stranky/program.html" class="navbarItem">Program</a>
+            <a href="../stranky/dobroklub.html" class="navbarItem">Dobroklub</a>
+            <a href="../stranky/kontakt.html" class="navbarItem">Kontakt</a>
+            <a href="../stranky/blog.html" class="navbarItem">Blog</a>
+            <a href="../stranky/stan-se-dobrovolnikem.html" class="navbarItem button_nav_cta">Staň se dobrovolníkem</a>
+        </div>
+    </nav>
+
+    <div class="breadcrumb-container"
+        style="background-color: #fcf4ef; margin: 0; padding-top: 30px; padding-bottom: 30px;">
+        <a href="../index.html" class="breadcrumb-link-home">Úvodní strana</a> <span
+            class="breadcrumb-separator">&gt;</span>
+        <a href="../stranky/dobrovolnictvi.html" class="breadcrumb-link">Kdo a jak pomáhá</a> <span
+            class="breadcrumb-separator">&gt;</span>
+        <a href="pribehy.html" class="breadcrumb-link">Příběhy dobrovolníků</a> <span
+            class="breadcrumb-separator">&gt;</span>
+        <span class="breadcrumb-current">Příběh paní Marty</span>
+    </div>
+
+    <!-- Section 1 -->
+    <section class="story-detail-section" style="background-color: #fcf4ef;">
+        <div class="story-detail-grid">
+            <div class="story-detail-left">
+                <h1 style="color: #43382d; font-size: 3rem; margin: 0;">Příběh paní Marty</h1>
+            </div>
+            <div class="story-detail-right">
+                <p class="story-detail-desc">
+                    „Dobrovolnictví - anglicky voluntary work. Už dávno jsem si říkala, že bych chtěla být voluntary
+                    worker! Ale to jsem ještě pracovala a až teď, v penzi, jsem se našla v Letokruhu obklopena aktivními
+                    a zajímavými lidmi. A tak si říkám, že mám štěstí!“
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="story-detail-section" style="background-color: #ffffff;">
+        <div style="max-width: 1100px; margin: 0 auto;">
+            <div class="story-detail-grid">
+                <div class="story-detail-left">
+                    <p class="story-detail-desc">
+                        Skvělá a všemi oblíbená dobrovolnice Marta spolupracuje s Letokruhem již dva roky. Až do
+                        covidové pandemie žila velmi aktivně prací v cestovní agentuře. Zasloužený odpočinek sice
+                        uvítala, protože doháněla, na co dříve neměla čas. Její činorodá povaha nakonec stejně
+                        zvítězila, a když jí do života vstoupil Letokruh, stala se v něm ochotným dobrovolníkem a
+                        jakákoliv forma pomoci ostatním jí není cizí. Protože strávila část svého života v Anglii, mohla
+                        pro seniory v době pandemie vést online konverzaci v angličtině. Role tlumočnice se ujala i při
+                        nedávné návštěvě zástupců spřátelených organizací z různých koutů Evropy v rámci projektu
+                        Erasmus +. Kromě mnoha jednorázových aktivit také chodí pravidelně číst pohádky dětem do školky.
+                    </p>
+                </div>
+                <div class="story-detail-right">
+                    <div class="story-image-wrap decor-right">
+                        <img src="../images/grafika/srdce_cara_zelene.png" alt="" class="story-decor-line">
+                        <img src="../images/grafika/kruh_s_vyseci_zluty.png" alt="" class="story-decor-dot">
+                        <img src="../images/pribehy/marta.jpg" alt="Marta E." class="story-img-placeholder">
+                    </div>
+                </div>
+            </div>
+
+            <p class="story-quote-large">
+                Moc ráda chodím do Letokruhu, všechny jeho programy mě těší a naplňují, neváhám ho doporučit známé, když
+                vidím, že má chuť k jakékoliv nezištné pomoci a práci s lidmi.
+            </p>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta_section">
+        <div class="cta_wrapper">
+            <h2>Je dokázáno, že dobrovolníci žijí spokojenější a bohatší život</h2>
+            <div class="cta_buttons">
+                <a href="../stranky/stan-se-dobrovolnikem.html" class="button_cta_white">Staň se dobrovolníkem</a>
+                <a href="../stranky/podpor-dobro.html" class="button_cta_outline btn-support-top">Podpoř dobro</a>
+            </div>
+        </div>
+        <img src="../images/grafika/kruh_s_vyseci_oranzovy.png" alt="" class="cta_decor_circle">
+        <img src="../images/grafika/srdce_cara_oranzove.png" alt="" class="cta_decor_line">
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter_section">
+        <div class="newsletter_wrapper">
+            <div class="newsletter_text">
+                <h2>Přihlaste se k odběru novinek</h2>
+                <p>Každý měsíc vás provedeme tím nejzajímavějším z dění v Letokruhu</p>
+            </div>
+            <div class="newsletter_form_container">
+                <form id="newsletter_form">
+                    <div class="form_group">
+                        <input type="text" id="newsletter_name" placeholder="Jméno">
+                        <div class="error_msg_container"></div>
+                    </div>
+                    <div class="form_group">
+                        <input type="email" id="newsletter_email" placeholder="Váš e-mail">
+                        <div class="error_msg_container"></div>
+                    </div>
+                    <button type="submit" class="button_newsletter">Přihlásit se k odběru</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer_section">
+        <div class="footer_wrapper">
+            <div class="footer_nav_grid">
+                <!-- Col 1: Úvodní strana -->
+                <div class="footer_nav_col">
+                    <h4><a href="../index.html">Úvodní strana</a></h4>
+                    <ul>
+                        <li><a href="../index.html#partners">Partneři</a></li>
+                        <li><a href="../stranky/aktuality.html">Aktuality</a></li>
+                    </ul>
+                </div>
+                <!-- Col 2: O nás -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/onas.html">O nás</a></h4>
+                    <ul>
+                        <li><a href="../stranky/lide.html">Lidé</a></li>
+                        <li><a href="../stranky/onas.html#projekty">Projekty</a></li>
+                        <li><a href="../stranky/nase-hodnoty.html">Naše hodnoty</a></li>
+                        <li><a href="../stranky/michelska.html">Pobočka Michelská</a></li>
+                        <li><a href="../stranky/borislavka.html">Pobočka Bořislavka</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Dobrovolnictví -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/dobrovolnictvi.html">Dobrovolnictví</a></h4>
+                    <ul>
+                        <li><a href="../stranky/dobrovolnictvi.html#aktivity">Příklady aktivit</a></li>
+                        <li><a href="../stranky/dobrovolnictvi.html#kdo-a-jak-pomaha">Kdo a jak pomáhá</a></li>
+                        <li><a href="../stranky/dobrovolnictvi.html#kde-pomahame">Kde pomáháme</a></li>
+                        <li><a href="../pribehy/pribehy.html">Příběhy dobrovolníků</a></li>
+                        <li><a href="../stranky/stan-se-dobrovolnikem.html">Jak se zapojit</a></li>
+                        <li><a href="../stranky/aktualni-poptavky.html">Aktuální poptávky</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Program -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/program.html">Program</a></h4>
+                    <ul>
+                        <li><a href="../stranky/program-spolecnik-seniora.html">Společník seniora</a></li>
+                        <li><a href="../stranky/program.html#aktualni-akce">Aktuální akce</a></li>
+                        <li><a href="../stranky/program.html#archiv-akci">Archiv akcí</a></li>
+                    </ul>
+                </div>
+                <!-- Col 5: Dobroklub -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/dobroklub.html">Dobroklub</a></h4>
+                    <ul>
+                        <li><a href="../stranky/dobroklub.html">O Dobroklubu</a></li>
+                        <li><a href="../stranky/program.html">Aktivity Dobroklubu</a></li>
+                        <li><a href="#">Pravidla</a></li>
+                    </ul>
+                </div>
+                <!-- Col 6: Kontakt -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/kontakt.html">Kontakt</a></h4>
+                    <ul class="footer_contact_list">
+                        <li><a href="tel:+420603483487" class="highlight_contact">+420 603 483 487</a></li>
+                        <li><a href="mailto:info@letokruh.eu" class="highlight_contact">info@letokruh.eu</a></li>
+                        <li class="contact_address">
+                            Letokruh, z.ú.<br>
+                            Michelská 21/61<br>
+                            141 00 Praha 4<br>
+                            IČ: 07635966
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Feedback Section -->
+            <div class="footer_feedback">
+                <div class="feedback_text">Nenašli jste na webu, co jste hledali? Jste s něčím nespokojeni?</div>
+                <a href="#" class="button_feedback">Napsat zpětnou vazbu</a>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    &copy; Letokruh, z.ú. 2021
+                </div>
+                <div class="footer_bottom_center">
+                    <a href="https://letokruh.eu/wp-content/uploads/2021/06/GDPR-pro-web.pdf" target="_blank"
+                        class="footer_gdpr_link">Zásady ochrany osobních údajů (GDPR)</a>
+                </div>
+                <div class="footer_bottom_right">
+                    <a href="https://www.facebook.com/letokruh.eu" class="social_icon_circle"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/letokruh.eu/" class="social_icon_circle"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/stribrnakariera" class="social_icon_circle"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/channel/UCJr_dqASn4gSMsHiwpYyFxA" class="social_icon_circle"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dobrovolnictví | Letokruh</title>
+    <link rel="stylesheet" href="../style.css?v=32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="top-header">
+        <div class="top-header-left">
+            <!-- Logo added -->
+            <a href="../index.html"><img src="../images/logos/Letokruh_logo_horizontal.png" alt="Letokruh Logo"
+                    class="top-logo-img"></a>
+            <span class="top-logo-text">Letokruh</span>
+            <span class="top-slogan">dobrovolnictví zralého věku</span>
+        </div>
+        <div class="top-header-right">
+            <a href="podpor-dobro.html" class="btn-support-top"><i class="fa-solid fa-heart"></i> Podpoř Letokruh</a>
+            <a href="#" class="font-resizer"><span class="icon-aa">AA</span> Zvětšit písmo</a>
+        </div>
+    </header>
+
+    <nav class="navbar_wrapper">
+        <div class="logo_desktop">
+            <a href="../index.html"></a>
+        </div>
+        <div class="navbar_desktop">
+            <a href="../stranky/onas.html" class="navbarItem">O nás</a>
+            <a href="../stranky/dobrovolnictvi.html" class="navbarItem" style="color: #cb2f1d;">Dobrovolnictví</a>
+            <a href="../stranky/program.html" class="navbarItem">Program</a>
+            <a href="../stranky/dobroklub.html" class="navbarItem">Dobroklub</a>
+            <a href="../stranky/kontakt.html" class="navbarItem">Kontakt</a>
+            <a href="../stranky/blog.html" class="navbarItem">Blog</a>
+            <a href="../stranky/stan-se-dobrovolnikem.html" class="navbarItem button_nav_cta">Staň se dobrovolníkem</a>
+        </div>
+    </nav>
+
+    <div class="breadcrumb-container">
+        <a href="../index.html" class="breadcrumb-link-home">Úvodní strana</a> <span
+            class="breadcrumb-separator">&gt;</span> <span class="breadcrumb-current">Dobrovolnictví</span>
+    </div>
+
+    <!-- Dobrovolnictví Section -->
+    <header class="hero_section">
+        <div class="hero_wrapper">
+            <div class="hero_images hero_images_left">
+                <img src="../images/grafika/kruh_s_vyseci_zluty.png" alt="Decoration Yellow Circle"
+                    class="hero_decor_yellow" style="left: auto; right: 0; bottom: -30px;">
+                <img src="../images/grafika/srdce_cara_cervene.png" alt="Decoration Red Heart Line" class="hero_decor_red">
+                <div class="hero_main_img_wrapper">
+                    <img src="../images/ostatni/Dobroklub-photo.jpg" alt="Dobrovolnictví" class="hero_img_main">
+                </div>
+            </div>
+            <div class="hero_content">
+                <h1>Dobrovolnictví zralého věku</h1>
+                <p class="subtitle" style="margin-bottom: 40px;">
+                    Seniorské dobrovolnictví je pro každého, kdo chce být navzdory věku aktivní a má chuť pomoci ve svém
+                    okolí. V Letokruhu seniorům dodáváme odvahu a jsme prostředníky na cestě k smysluplnému a radostnému
+                    podzimu života.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. SEKCE: Aktuálně hledáme -->
+    <section id="aktualne-hledame" class="poptavky_section" style="padding: 70px 20px; background-color: #ffffff;">
+        <div class="poptavky_wrapper" style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="font-size: 2.8rem; color: #43382d; text-align: center; margin-bottom: 15px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Aktuálně hledáme</h2>
+            <p style="text-align: center; color: #666; max-width: 750px; margin: 0 auto 45px; font-size: 1.1rem; line-height: 1.6;">
+                Prohlédněte si aktuální poptávky po dobrovolnících.
+            </p>
+
+            <!-- Table -->
+            <div class="poptavky_table_wrapper">
+                <table class="poptavky_table">
+                    <thead>
+                        <tr>
+                            <th style="width: 28%;">Název aktivity</th>
+                            <th style="width: 32%;">Popis aktivity</th>
+                            <th style="width: 25%;">Lokalita</th>
+                            <th style="width: 15%;">Četnost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Row 1 -->
+                        <tr class="poptavky_row">
+                            <td class="poptavka_title_cell">
+                                <strong class="poptavka_title">Společnice / společník pro seniorku v Dejvicích</strong>
+                            </td>
+                            <td class="poptavka_desc_cell">
+                                <div class="poptavka_desc_short">
+                                    Pro velmi milou seniorku se zbytky zraku hledáme oporu při procházkách po okolí...
+                                    <a href="javascript:void(0)" class="poptavka_more_link" onclick="togglePoptavkaDetail(this)">...více ZDE <i class="fa-solid fa-angle-down"></i></a>
+                                </div>
+                                <div class="poptavka_desc_full" style="display: none;">
+                                    <p>Pro velmi milou seniorku se zbytky zraku hledáme milou společnici/společníka, kteří by jí byli oporou při společných procházkách po okolí Dejvic.</p>
+                                    <p style="margin-top: 8px;"><strong>Podmínky:</strong> Smlouva, trestní bezúhonnost, lékařské potvrzení.</p>
+                                    <p style="margin-top: 5px;"><strong>Kontakt:</strong> Lucie Jirásková (tel: 721 258 062, email: <a href="mailto:lucie@letokruh.eu" style="color: #cb2f1d;">lucie@letokruh.eu</a>)</p>
+                                </div>
+                            </td>
+                            <td class="poptavka_location_cell">
+                                <div class="poptavka_location_box">
+                                    <span><i class="fa-solid fa-location-dot" style="color: #cb2f1d;"></i> Praha 6 – Dejvice (Evropská)</span>
+                                    <div class="poptavka_location_actions">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Evropska+Praha+6" target="_blank" class="maps_link"><i class="fa-solid fa-map-location-dot"></i> Mapa</a>
+                                        <button type="button" class="distance_btn" onclick="calculateDistance('Evropská, Praha 6')"><i class="fa-solid fa-route"></i> Vzdálenost km</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="poptavka_frequency_cell">
+                                <span class="badge_frequency">1× týdně</span>
+                            </td>
+                        </tr>
+
+                        <!-- Row 2 -->
+                        <tr class="poptavky_row">
+                            <td class="poptavka_title_cell">
+                                <strong class="poptavka_title">Společník/společnice pro seniorský klub v Michelské</strong>
+                            </td>
+                            <td class="poptavka_desc_cell">
+                                <div class="poptavka_desc_short">
+                                    Hledáme přátelského dobrovolníka pro povídání a asistenci u klubových aktivit...
+                                    <a href="javascript:void(0)" class="poptavka_more_link" onclick="togglePoptavkaDetail(this)">...více ZDE <i class="fa-solid fa-angle-down"></i></a>
+                                </div>
+                                <div class="poptavka_desc_full" style="display: none;">
+                                    <p>Hledáme dobrovolníka, který by rád strávil čas se seniory při klubových odpoledních v Michelské. Náplní je povídání, deskové hry nebo příprava čaje.</p>
+                                    <p style="margin-top: 8px;"><strong>Podmínky:</strong> Spolehlivost, empatie a chuť si povídat.</p>
+                                    <p style="margin-top: 5px;"><strong>Kontakt:</strong> Tereza Studničná (tel: 777 179 609, email: <a href="mailto:tereza@letokruh.eu" style="color: #cb2f1d;">tereza@letokruh.eu</a>)</p>
+                                </div>
+                            </td>
+                            <td class="poptavka_location_cell">
+                                <div class="poptavka_location_box">
+                                    <span><i class="fa-solid fa-location-dot" style="color: #cb2f1d;"></i> Praha 4 – Michelská</span>
+                                    <div class="poptavka_location_actions">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Michelska+21+Praha+4" target="_blank" class="maps_link"><i class="fa-solid fa-map-location-dot"></i> Mapa</a>
+                                        <button type="button" class="distance_btn" onclick="calculateDistance('Michelská 21, Praha 4')"><i class="fa-solid fa-route"></i> Vzdálenost km</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="poptavka_frequency_cell">
+                                <span class="badge_frequency">1× týdně / 14 dní</span>
+                            </td>
+                        </tr>
+
+                        <!-- Row 3 -->
+                        <tr class="poptavky_row">
+                            <td class="poptavka_title_cell">
+                                <strong class="poptavka_title">Lektor/ka počítačů a smartphonů na Bořislavce</strong>
+                            </td>
+                            <td class="poptavka_desc_cell">
+                                <div class="poptavka_desc_short">
+                                    Pomoc seniorům s ovládáním dotykových telefonů a tabletů...
+                                    <a href="javascript:void(0)" class="poptavka_more_link" onclick="togglePoptavkaDetail(this)">...více ZDE <i class="fa-solid fa-angle-down"></i></a>
+                                </div>
+                                <div class="poptavka_desc_full" style="display: none;">
+                                    <p>Trpělivé vysvětlení základů ovládání chytrých telefonů, WhatsAppu nebo e-mailu pro seniory v naší nové pobočce Bořislavka.</p>
+                                    <p style="margin-top: 8px;"><strong>Podmínky:</strong> Trpělivost a běžná znalost práce na chytrém telefonu.</p>
+                                    <p style="margin-top: 5px;"><strong>Kontakt:</strong> Eliška Schönfeldová (tel: 731 209 756, email: <a href="mailto:eliska@letokruh.eu" style="color: #cb2f1d;">eliska@letokruh.eu</a>)</p>
+                                </div>
+                            </td>
+                            <td class="poptavka_location_cell">
+                                <div class="poptavka_location_box">
+                                    <span><i class="fa-solid fa-location-dot" style="color: #cb2f1d;"></i> Praha 6 – Bořislavka</span>
+                                    <div class="poptavka_location_actions">
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Evropska+134+Praha+6" target="_blank" class="maps_link"><i class="fa-solid fa-map-location-dot"></i> Mapa</a>
+                                        <button type="button" class="distance_btn" onclick="calculateDistance('Evropská 134, Praha 6')"><i class="fa-solid fa-route"></i> Vzdálenost km</button>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="poptavka_frequency_cell">
+                                <span class="badge_frequency">Dle možností</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. SEKCE: Nejčastější dobrovolnické aktivity -->
+    <section id="aktivity" class="activities_section" style="padding: 70px 20px; background-color: #fcf4ef;">
+        <div class="activities_wrapper" style="max-width: 1100px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 40px; font-size: 2.8rem; color: #43382d; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Nejčastější dobrovolnické aktivity</h2>
+
+            <div class="activities_simple_grid">
+                <!-- Card 1 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-spolecnost.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Společnost osamělým a nemohoucím seniorům</h3>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-cteni-pohadek.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Čtení pohádek dětem</h3>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-ekologicke.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Ekologické aktivity</h3>
+                </a>
+
+                <!-- Card 4 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-vychazky.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Vycházky Prahou, výlety s výkladem</h3>
+                </a>
+
+                <!-- Card 5 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-vzdelavani.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Vzdělávací akce a lektorství</h3>
+                </a>
+
+                <!-- Card 6 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-doucovani.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Doučování dětí</h3>
+                </a>
+
+                <!-- Card 7 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-knihovny.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Pomoc v knihovnách</h3>
+                </a>
+
+                <!-- Card 8 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-hudba.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Zpěv a hra na hudební nástroj</h3>
+                </a>
+
+                <!-- Card 9 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-utulek.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Pomoc v útulku</h3>
+                </a>
+
+                <!-- Card 10 -->
+                <a href="../aktivity/dobrovolnicke-aktivity-peceni.html" class="activity_simple_item">
+                    <h3 class="activity_simple_title">Pečení dobrot</h3>
+                </a>
+
+                <!-- Card 11 (Full Width) -->
+                <div class="activity_simple_item full_width">
+                    <h3 class="activity_simple_title" style="color: black; margin-bottom: 5px;">Další aktivity dle dohody</h3>
+                    <p style="color: black; font-size: 0.9rem; line-height: 1.4; margin: 0 0 5px 0;">Možnosti uplatnění pro dobrovolníky jsou pestré. Vždy záleží na zájmu a přání dobrovolníka, ve které oblasti by se rád realizoval. Snažíme se vždy najít aktivitu šitou na míru.</p>
+                    <a href="mailto:info@letokruh.eu" class="activity_simple_subtitle" style="color: #cb2f1d; text-decoration: underline; font-weight: 700; pointer-events: auto;">Kontaktujte nás</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+
+    <!-- Who and How Helps Section -->
+    <section id="kdo-a-jak-pomaha" class="who_helps_section" style="padding: 80px 50px; background-color: #fcf4ef;">
+        <div class="who_helps_wrapper" style="max-width: 1000px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 30px; font-size: 2.5rem; color: #43382d;">Kdo a jak pomáhá
+            </h2>
+            <p
+                style="text-align: center; max-width: 800px; margin: 0 auto 60px auto; font-size: 1.1rem; line-height: 1.6; color: #43382d;">
+                Dobrovolnictví je pro každého, kdo chce být navzdory věku aktivní a má chuť pomoci svému okolí. Proto u
+                nás
+                vítáme nejen seniory, ale i mladé dobrovolníky.
+            </p>
+
+            <div class="who_helps_grid" style="display: flex; gap: 50px; justify-content: space-between;">
+                <!-- Senior Volunteer -->
+                <div class="who_helps_card" style="flex: 1;">
+                    <div class="img_wrapper" style="width: 100%; aspect-ratio: 4/3; margin-bottom: 20px; border-radius: 12px; overflow: hidden;">
+                        <img src="../images/ostatni/stary_dobrovolnik.png" alt="Seniorský dobrovolník" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <h3 style="font-size: 1.8rem; color: #43382d; margin-bottom: 15px;">Seniorský dobrovolník</h3>
+                    <p style="font-size: 1rem; line-height: 1.6; color: #43382d;">
+                        V Letokruhu seniorům dodáváme odvahu a jsme prostředníky na cestě k smysluplnému a radostnému
+                        podzimu života. Věříme, že věk je jen číslo. Je lepší stáří aktivně prožít, než přežít.
+                    </p>
+                </div>
+
+                <!-- Young Volunteer -->
+                <div class="who_helps_card" style="flex: 1;">
+                    <div class="img_wrapper" style="width: 100%; aspect-ratio: 4/3; margin-bottom: 20px; border-radius: 12px; overflow: hidden;">
+                        <img src="../images/ostatni/mlady_dobrovolnik.webp" alt="Mladý dobrovolník" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <h3 style="font-size: 1.8rem; color: #43382d; margin-bottom: 15px;">Mladý dobrovolník</h3>
+                    <p style="font-size: 1rem; line-height: 1.6; color: #43382d;">
+                        Mladí dobrovolníci se zapojují nejčastěji v roli <a
+                            href="../stranky/program-spolecnik-seniora.html"
+                            style="color: #cb2f1d; font-weight: bold; text-decoration: none;">společníků starším
+                            lidem</a>.
+                        Doprovázejí je na nákupy či na procházky, čtou jim, povídají si s nimi. Pro Letokruh jsou
+                        vítaným
+                        zdrojem inspirace z trendů, kterých je mladá generace nositelem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Stories Section -->
+    <section class="stories_section">
+        <div class="stories_wrapper"
+            style="display: flex; gap: 40px; justify-content: space-between; align-items: flex-start; max-width: 1000px; margin: 0 auto;">
+            <div class="stories_intro" style="padding-left: 0;">
+                <h2>Příběhy<br>našich<br>dobrovolníků</h2>
+                <p>Každý z našich dobrovolníků má svůj příběh a motivaci, proč chce pomáhat. Nechte se inspirovat,
+                    přečtěte si ty nejzajímavější z nich.</p>
+                <a href="../pribehy/pribehy.html" class="button_stories btn-sjednoceny">Všechny příběhy</a>
+            </div>
+            <div class="stories_list">
+                <div class="story_item">
+                    <p class="story_quote">„Penzista se nesmí nudit. Měl by si najít činnost, která ho zaměstná, obohatí
+                        sebe i své okolí.“</p>
+                    <div class="story_profile">
+                        <img src="../images/pribehy/janka_f.webp" alt="Janka F." class="story_avatar">
+                        <div class="story_info">
+                            <a href="../pribehy/pribeh.html" class="story_name">Janka F., 84 let &gt;</a>
+                            <span class="story_role">Seniorský dobrovolník</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story_item">
+                    <p class="story_quote">„Na otázku, co mi dobrovolnictví přináší, jednoznačně odpovídám, dobrý pocit
+                        a radost! Být dobrovolníkem jsem si předsevzal ještě před odchodem do důchodu, tak teď si to
+                        plním. Doučování a lektorství mi přináší radost z dosaženého pokroku doučovaných (nekladu si
+                        žádné velké cíle) a Společník seniora je jednoznačná dávka radosti, že senior měl z mé
+                        přítomnosti také radost a byl ochoten chodit i na procházky. Takže sečteno a podtrženo, mnoho
+                        radosti pro mne i ostatní.“</p>
+                    <div class="story_profile">
+                        <img src="../images/pribehy/otto_p.webp" alt="Otto P." class="story_avatar">
+                        <div class="story_info">
+                            <a href="../pribehy/pribeh-otto.html" class="story_name">Otto P., 71 let &gt;</a>
+                            <span class="story_role">Seniorský dobrovolník</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story_item">
+                    <p class="story_quote">„V rámci základní životní filosofie je důležité dělat občas i nějaké věci
+                        zadarmo. Většina problémů jsou maličkosti. Pomocí někomu mi přináší pozitivní náladu.“</p>
+                    <div class="story_profile">
+                        <img src="../images/pribehy/ivan_s.webp" alt="Ivan Š." class="story_avatar">
+                        <div class="story_info">
+                            <a href="../pribehy/pribeh-ivan.html" class="story_name">Ivan Š., 63 let &gt;</a>
+                            <span class="story_role">Seniorský dobrovolník</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Kde pomáháme Section -->
+    <section id="kde-pomahame" class="where_helps_section" style="padding: 80px 50px 80px 50px; background-color: #ffffff;">
+        <div class="where_helps_wrapper" style="max-width: 1000px; margin: 0 auto;">
+            <h2 style="text-align: left; margin-bottom: 50px; font-size: 2.5rem; color: #43382d;">Kde pomáháme</h2>
+
+            <div class="where_helps_grid" style="display: flex; gap: 50px; justify-content: space-between;">
+                <!-- Card 1: Organizations -->
+                <div class="where_helps_card" style="flex: 1; display: flex; flex-direction: column;">
+                    <div class="img_wrapper" style="width: 100%; aspect-ratio: 4/3; margin-bottom: 25px; border-radius: 12px; overflow: hidden;">
+                        <img src="../images/ostatni/cand_leftPhoto.bb547552.png" alt="Přijímající organizace" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <h3 style="font-size: 1.6rem; color: #43382d; margin-bottom: 15px;">Přijímající organizace</h3>
+                    <p style="font-size: 1rem; line-height: 1.6; color: #43382d; margin-bottom: 30px; flex-grow: 1;">
+                        Partnerem pro nás a dobrovolníky jsou přijímající organizace, nejčastěji ze sociální oblasti.
+                        Spolu
+                        s nimi hledáme vhodné možnosti a příležitosti pro zapojení proškolených a motivovaných
+                        dobrovolníků.
+                    </p>
+                    <a href="../stranky/prijimaci-organizace.html" class="btn_outline_red btn-sjednoceny btn-svetle"
+                        style="align-self: flex-start; padding: 10px 25px; border: 1px solid #cb2f1d; border-radius: 30px; color: #cb2f1d; text-decoration: none; font-weight: 700; transition: 0.3s;">Více
+                        informací</a>
+                </div>
+
+                <!-- Card 2: Společník seniora -->
+                <div class="where_helps_card" style="flex: 1; display: flex; flex-direction: column;">
+                    <div class="img_wrapper" style="width: 100%; aspect-ratio: 4/3; margin-bottom: 25px; border-radius: 12px; overflow: hidden;">
+                        <img src="../images/ostatni/program_spolecnika_seniora.png" alt="Program Společník seniora" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <h3 style="font-size: 1.6rem; color: #43382d; margin-bottom: 15px;">Program Společník seniora</h3>
+                    <p style="font-size: 1rem; line-height: 1.6; color: #43382d; margin-bottom: 30px; flex-grow: 1;">
+                        Nabízíme společnost jednotlivcům, zejména starším osobám. Těm, které potěší návštěvy doma,
+                        povídání
+                        u kávy o počasí nebo u čaje o rybách, čtení z knih, hra Člověče nezlob se nebo karty, drobná
+                        výpomoc v domácnosti, přátelství po telefonu či videu, společné procházky.
+                    </p>
+                    <a href="../stranky/program-spolecnik-seniora.html" class=" btn-sjednoceny btn-svetle"
+                        style="align-self: flex-start; padding: 10px 25px; border: 1px solid #cb2f1d; border-radius: 30px; color: #cb2f1d; text-decoration: none; font-weight: 700; transition: 0.3s;">Více
+                        informací</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dobroklub Section -->
+    <section class="dobroklub_section" style="padding: 80px 50px 80px 50px; background-color: #fcf4ef;">
+        <div class="dobroklub_wrapper"
+            style="display: flex; gap: 60px; max-width: 1000px; margin: 0 auto; align-items: flex-start;">
+
+            <div class="dobroklub_left" style="flex: 1;">
+                <h2 style="font-size: 2.5rem; color: #43382d; margin-bottom: 30px;">Dobroklub</h2>
+                <p style="font-size: 1rem; line-height: 1.6; color: #43382d; margin-bottom: 40px;">
+                    Komunitní centrum slouží jako forma odměny za dobrovolnickou činnost.
+                </p>
+                <a href="../stranky/dobroklub.html" class="button_stories btn-sjednoceny" style="display: inline-block;">Více o Dobroklubu</a>
+            </div>
+
+            <div class="dobroklub_right" style="flex: 1;">
+                <p style="font-size: 1.25rem; line-height: 1.8; color: #43382d;">
+                    Dobroklub je klubovna Letokruhu. Svým posláním a zaměřením je určen primárně pro komunitu
+                    dobrovolníků Letokruhu, jeho zaměstnance, pověřené osoby a partnery. Je to místo pro
+                    setkávání, sdílení, inspiraci, vzdělávání.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta_section">
+        <div class="cta_wrapper">
+            <h2>Je dokázáno, že dobrovolníci žijí spokojenější a bohatší život</h2>
+            <div class="cta_buttons">
+                <!-- "Stač se dobrovolníkem" links to separate page -->
+                <a href="../stranky/stan-se-dobrovolnikem.html" class="button_cta_white">Staň se dobrovolníkem</a>
+                <!-- "Podpoř dobro" same function as Top Bar button -->
+                <a href="podpor-dobro.html" class="button_cta_outline btn-support-top">Podpoř dobro</a>
+            </div>
+        </div>
+        <!-- Decorations moved to section for full width positioning -->
+        <img src="../images/grafika/kruh_s_vyseci_oranzovy.png" alt="" class="cta_decor_circle">
+        <img src="../images/grafika/srdce_cara_oranzove.png" alt="" class="cta_decor_line">
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter_section">
+        <div class="newsletter_wrapper">
+            <div class="newsletter_text">
+                <h2>Přihlaste se k odběru novinek</h2>
+                <p>Každý měsíc vás provedeme tím nejzajímavějším z dění v Letokruhu</p>
+            </div>
+            <div class="newsletter_form_container">
+                <form id="newsletter_form">
+                    <div class="form_group">
+                        <input type="text" id="newsletter_name" placeholder="Jméno">
+                        <div class="error_msg_container"></div>
+                    </div>
+                    <div class="form_group">
+                        <input type="email" id="newsletter_email" placeholder="Váš e-mail">
+                        <div class="error_msg_container"></div>
+                    </div>
+                    <button type="submit" class="button_newsletter">Přihlásit se k odběru</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer_section">
+        <div class="footer_wrapper">
+            <div class="footer_nav_grid">
+                <!-- Col 1: Úvodní strana -->
+                <div class="footer_nav_col">
+                    <h4><a href="../index.html">Úvodní strana</a></h4>
+                    <ul>
+                        <li><a href="../index.html#partners">Partneři</a></li>
+                        <li><a href="../stranky/aktuality.html">Aktuality</a></li>
+                    </ul>
+                </div>
+                <!-- Col 2: O nás -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/onas.html">O nás</a></h4>
+                    <ul>
+                        <li><a href="../stranky/lide.html">Lidé</a></li>
+                        <li><a href="../stranky/onas.html#projekty">Projekty</a></li>
+                        <li><a href="../stranky/nase-hodnoty.html">Naše hodnoty</a></li>
+                        <li><a href="../stranky/michelska.html">Pobočka Michelská</a></li>
+                        <li><a href="../stranky/borislavka.html">Pobočka Bořislavka</a></li>
+                    </ul>
+                </div>
+                <!-- Col 3: Dobrovolnictví -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/dobrovolnictvi.html">Dobrovolnictví</a></h4>
+                    <ul>
+                        <li><a href="../stranky/dobrovolnictvi.html#aktivity">Příklady aktivit</a></li>
+                        <li><a href="../stranky/dobrovolnictvi.html#kdo-a-jak-pomaha">Kdo a jak pomáhá</a></li>
+                        <li><a href="../stranky/dobrovolnictvi.html#kde-pomahame">Kde pomáháme</a></li>
+                        <li><a href="../pribehy/pribehy.html">Příběhy dobrovolníků</a></li>
+                        <li><a href="../stranky/stan-se-dobrovolnikem.html">Jak se zapojit</a></li>
+                        <li><a href="../stranky/aktualni-poptavky.html">Aktuální poptávky</a></li>
+                    </ul>
+                </div>
+                <!-- Col 4: Program -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/program.html">Program</a></h4>
+                    <ul>
+                        <li><a href="../stranky/program-spolecnik-seniora.html">Společník seniora</a></li>
+                        <li><a href="../stranky/program.html#aktualni-akce">Aktuální akce</a></li>
+                        <li><a href="../stranky/program.html#archiv-akci">Archiv akcí</a></li>
+                    </ul>
+                </div>
+                <!-- Col 5: Dobroklub -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/dobroklub.html">Dobroklub</a></h4>
+                    <ul>
+                        <li><a href="../stranky/dobroklub.html">O Dobroklubu</a></li>
+                        <li><a href="../stranky/program.html">Aktivity Dobroklubu</a></li>
+                        <li><a href="#">Pravidla</a></li>
+                    </ul>
+                </div>
+                <!-- Col 6: Kontakt -->
+                <div class="footer_nav_col">
+                    <h4><a href="../stranky/kontakt.html">Kontakt</a></h4>
+                    <ul class="footer_contact_list">
+                        <li><a href="tel:+420603483487" class="highlight_contact">+420 603 483 487</a></li>
+                        <li><a href="mailto:info@letokruh.eu" class="highlight_contact">info@letokruh.eu</a></li>
+                        <li class="contact_address">
+                            Letokruh, z.ú.<br>
+                            Michelská 21/61<br>
+                            141 00 Praha 4<br>
+                            IČ: 07635966
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Feedback Section -->
+            <div class="footer_feedback">
+                <div class="feedback_text">Nenašli jste na webu, co jste hledali? Jste s něčím nespokojeni?</div>
+                <a href="#" class="button_feedback">Napsat zpětnou vazbu</a>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    &copy; Letokruh, z.ú. 2021
+                </div>
+                <div class="footer_bottom_center">
+                    <a href="https://letokruh.eu/wp-content/uploads/2021/06/GDPR-pro-web.pdf" target="_blank"
+                        class="footer_gdpr_link">Zásady ochrany osobních údajů (GDPR)</a>
+                </div>
+                <div class="footer_bottom_right">
+                    <a href="https://www.facebook.com/letokruh.eu" class="social_icon_circle"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/letokruh.eu/" class="social_icon_circle"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/stribrnakariera" class="social_icon_circle"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/channel/UCJr_dqASn4gSMsHiwpYyFxA" class="social_icon_circle"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
