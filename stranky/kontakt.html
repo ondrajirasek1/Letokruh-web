@@ -21,7 +21,6 @@
             <span class="top-slogan">dobrovolnictví zralého věku</span>
         </div>
         <div class="top-header-right">
-            <a href="podpor-dobro.html" class="btn-support-top"><i class="fa-solid fa-heart"></i> Podpoř Letokruh</a>
             <a href="#" class="font-resizer"><span class="icon-aa">AA</span> Zvětšit písmo</a>
         </div>
     </header>
@@ -35,9 +34,11 @@
             <a href="../stranky/dobrovolnictvi.html" class="navbarItem">Dobrovolnictví</a>
             <a href="../stranky/program.html" class="navbarItem">Program</a>
             <a href="../stranky/dobroklub.html" class="navbarItem">Dobroklub</a>
+            <a href="../stranky/firemni-partnerstvi.html" class="navbarItem">Firemní partnerství</a>
             <a href="../stranky/kontakt.html" class="navbarItem" style="color: #cb2f1d;">Kontakt</a>
             <a href="../stranky/blog.html" class="navbarItem">Blog</a>
             <a href="../stranky/stan-se-dobrovolnikem.html" class="navbarItem button_nav_cta">Staň se dobrovolníkem</a>
+            <a href="../stranky/podpor-dobro.html" class="navbarItem button_nav_support"><i class="fa-solid fa-heart"></i> Podpoř Letokruh</a>
         </div>
     </nav>
 
@@ -65,47 +66,63 @@
         </div>
     </section>
 
-    <!-- Sídlo organizace -->
+    <!-- Sídlo organizace & Pobočky -->
     <section class="kontakt_sidlo_section">
         <div class="kontakt_sidlo_wrapper">
             <h2>Sídlo organizace</h2>
-            <div class="kontakt_sidlo_grid">
-                <!-- Left: Address info -->
-                <div class="kontakt_sidlo_info">
-                    <h3>Letokruh, z.ú.</h3>
-                    <div class="kontakt_sidlo_details">
-                        <div class="kontakt_detail_col">
-                            <p>
-                                Michelská 21/61, 141 00<br>
-                                Praha 4
-                            </p>
-                            <a href="https://maps.app.goo.gl/cLZggfuKZNQ3MPHu9" target="_blank" class="kontakt_map_link">
-                                <i class="fa-solid fa-location-dot"></i> Mapa
-                            </a>
-                        </div>
-                        <div class="kontakt_detail_col">
-                            <p>
-                                IČ 07635966<br>
-                                č.ú. 2401539006/2010
-                            </p>
-                        </div>
+            <div class="kontakt_sidlo_info">
+                <h3>Letokruh, z.ú.</h3>
+                <div class="kontakt_sidlo_details">
+                    <div class="kontakt_detail_col">
+                        <p>
+                            Michelská 21/61, 141 00<br>
+                            Praha 4
+                        </p>
+                        <a href="https://maps.app.goo.gl/cLZggfuKZNQ3MPHu9" target="_blank" class="kontakt_map_link">
+                            <i class="fa-solid fa-location-dot"></i> Mapa
+                        </a>
                     </div>
-                    <!-- Embedded map under address only -->
-                    <div class="kontakt_map_embed">
-                        <iframe width="100%" height="300" frameborder="0"
-                            src="https://maps.google.com/maps?q=Michelsk%C3%A1%2021%2F61%2C%20141%2000%20Praha%204&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                            allowfullscreen
-                            title="Mapa sídla Letokruh - Michelská 21/61, Praha 4"></iframe>
+                    <div class="kontakt_detail_col">
+                        <p>
+                            IČ 07635966<br>
+                            č.ú. 2401539006/2010
+                        </p>
                     </div>
                 </div>
-                <!-- Right: Pobočky + program -->
-                <div class="kontakt_sidlo_pobocky">
-                    <h3>Pobočky:</h3>
-                    <ul>
-                        <li><a href="../stranky/michelska.html">Pobočka Michelská</a></li>
-                        <li><a href="../stranky/borislavka.html">Pobočka Bořislavka</a></li>
-                    </ul>
-                    <a href="../stranky/program.html" class="kontakt_program_link">Program akcí</a>
+                <!-- Embedded map under address -->
+                <div class="kontakt_map_embed" style="margin-top: 25px; max-width: 800px;">
+                    <iframe width="100%" height="320" frameborder="0" style="border-radius: 12px; border: 1px solid #e0d0c0; box-shadow: 0 4px 15px rgba(0,0,0,0.05);"
+                        src="https://maps.google.com/maps?q=Michelsk%C3%A1%2021%2F61%2C%20141%2000%20Praha%204&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        allowfullscreen
+                        title="Mapa sídla Letokruh - Michelská 21/61, Praha 4"></iframe>
+                </div>
+            </div>
+
+            <!-- Pobočky Section under Map -->
+            <div class="kontakt_pobocky_block" style="margin-top: 50px; padding-top: 40px; border-top: 1px solid #e0d0c0;">
+                <h2>Pobočky</h2>
+                <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 25px;">
+                    <!-- Card 1 -->
+                    <div class="branch_card_new" style="flex: 1; min-width: 300px;">
+                        <div class="branch_card_header">
+                            <h3>Pobočka Michelská, Praha 4</h3>
+                            <a href="../stranky/michelska.html" class="branch_link">Detail pobočky ></a>
+                        </div>
+                        <div class="branch_card_img_wrapper">
+                            <img src="../images/ostatni/michaelska_foto.png" alt="Pobočka Michelská, Praha 4" class="branch_card_img">
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="branch_card_new" style="flex: 1; min-width: 300px;">
+                        <div class="branch_card_header">
+                            <h3>Pobočka Bořislavka, Praha 6</h3>
+                            <a href="../stranky/borislavka.html" class="branch_link">Detail pobočky ></a>
+                        </div>
+                        <div class="branch_card_img_wrapper">
+                            <img src="../images/ostatni/borislavka_foto.png" alt="Pobočka Bořislavka, Praha 6" class="branch_card_img">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,7 +149,7 @@
     <!-- CTA Section -->
     <section class="cta_section">
         <div class="cta_wrapper">
-            <h2>Je dokázáno, že dobrovolníci žijí spokojenější a bohatší život</h2>
+            <h2>Neptej se, co může udělat společnost pro tebe. Ptej se, co můžeš udělat pro společnost.</h2>
             <div class="cta_buttons">
                 <a href="../stranky/dobrovolnictvi.html" class="button_cta_white">Stač se dobrovolníkem</a>
                 <a href="podpor-dobro.html" class="button_cta_outline btn-support-top">Podpoř dobro</a>

@@ -217,6 +217,31 @@ h6 {
     top: 0 !important;
 }
 
+.button_nav_support {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    background-color: #ffffff !important;
+    color: #cb2f1d !important;
+    border: 2px solid #cb2f1d !important;
+    padding: 10px 20px !important;
+    border-radius: 30px !important;
+    margin-left: 12px !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease !important;
+}
+
+.button_nav_support:hover {
+    background-color: #f0f0f0 !important;
+    color: #cb2f1d !important;
+    border-color: #cb2f1d !important;
+    cursor: pointer !important;
+}
+
+
 /* Include other sections from retrieved CSS */
 .team_section {
     background: #fcf4ef;
@@ -2576,46 +2601,60 @@ body.fonts-enlarged h6 {
 
 .branch_card_new {
     flex: 1;
-    min-width: 300px;
+    min-width: 320px;
     background: #ffffff;
     border: 1px solid #ebdace;
-    border-radius: 12px;
-    padding: 45px 35px;
-    text-align: left;
+    border-radius: 20px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    transition: box-shadow 0.3s;
     text-decoration: none;
-    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-.branch_card_new:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+.branch_card_header {
+    padding: 30px 35px 25px 35px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
 }
 
-.branch_card_new h3 {
+.branch_card_header h3 {
     font-size: 1.8rem;
     color: #43382d;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
     font-weight: 700;
 }
 
 .branch_link {
     color: #cb2f1d;
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 1.1rem;
-    transition: color 0.2s;
+    transition: color 0.2s ease, opacity 0.2s ease;
     display: inline-block;
-    /* Ensure span behaves well */
 }
 
-/* Trigger hover on inner element when card is hovered */
-.branch_card_new:hover .branch_link {
-    color: #a02517;
-    text-decoration: underline;
+.branch_link:hover {
+    color: #e54d3c;
+    text-decoration: none !important;
+    opacity: 0.85;
+}
+
+.branch_card_img_wrapper {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+}
+
+.branch_card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* Detail Page Styles */
