@@ -18,7 +18,7 @@
 /* Removed Semibold definitions as they were unused/conflicting or not prioritized by user request for Bold/Medium/Teimer */
 
 @font-face {
-    font-family: "Teimer";
+    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
     src: url("fonts/Teimer-Light.woff") format("woff");
 }
 
@@ -29,6 +29,26 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 94px;
+}
+
+
+/* Global Unified Font Enforcement */
+body, h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, select, textarea, blockquote, div, td, th, label {
+    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+}
+
+/* Preserve Font Awesome & Icon fonts */
+.fa, .fas, .far, .fal, .fab, .fa-solid, .fa-regular, .fa-brands, 
+i, i.fa-solid, i.fa-regular, i.fa-brands, i.fa-sharp, i.fa-light, i.fa-thin, i.fa-duotone,
+[class^="fa-"], [class*=" fa-"],
+[class^="fa-"]::before, [class*=" fa-"]::before,
+[class^="fa-"]::after, [class*=" fa-"]::after {
+    font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands", "FontAwesome" !important;
+}
+
+.fa-brands, [class^="fa-brands"], [class*=" fa-brands"], 
+[class^="fa-brands"]::before, [class*=" fa-brands"]::before {
+    font-family: "Font Awesome 6 Brands" !important;
 }
 
 body {
@@ -93,7 +113,7 @@ h6 {
 .subtitle {
     font-size: 1.375rem;
     line-height: 44px;
-    font-family: "Teimer";
+    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
     font-weight: 300;
     /* Assuming Light */
 }
@@ -617,7 +637,7 @@ h6 {
 }
 
 .story_quote {
-    font-family: "Teimer", serif;
+    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
     /* Assuming serif for quote */
     font-size: 1.25rem;
     font-weight: 700;
@@ -868,7 +888,7 @@ a.story_name:hover {
 }
 
 .top-slogan {
-    font-family: "Teimer", serif;
+    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
     color: #666;
     margin-left: 10px;
     font-size: 1rem;
@@ -1424,7 +1444,7 @@ body.fonts-enlarged h6 {
     line-height: 0.1;
     display: block;
     margin-bottom: 30px;
-    font-family: serif;
+    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
 }
 
 #modal_quote_text {
@@ -4415,7 +4435,7 @@ body.fonts-enlarged h6 {
 }
 
 .blog_card_title {
-    font-family: "Teimer", serif;
+    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.35;
@@ -4524,7 +4544,7 @@ body.fonts-enlarged h6 {
 }
 
 .aktuality_card_title {
-    font-family: "Teimer", serif;
+    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.35;
@@ -4607,7 +4627,7 @@ body.fonts-enlarged h6 {
 }
 
 .aktuality_detail_title {
-    font-family: "Teimer", serif;
+    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: #43382d;
