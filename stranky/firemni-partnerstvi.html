@@ -34,10 +34,10 @@
             <a href="../stranky/dobrovolnictvi.html" class="navbarItem">Dobrovolnictví</a>
             <a href="../stranky/program.html" class="navbarItem">Program</a>
             <div class="nav_dropdown">
-                <a href="../stranky/dobroklub.html" class="navbarItem">Dobroklub <i class="fa-solid fa-angle-down nav_dropdown_arrow"></i></a>
+                <a href="../stranky/dobroklub.html" class="navbarItem">Dobroklub <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>
                 <div class="nav_dropdown_menu">
-                    <a href="../stranky/dobroklub.html">O Dobroklubu</a>
-                    <a href="../stranky/blog.html">Blog komunity</a>
+                    <a href="../stranky/dobroklub.html" class="nav_dropdown_item">Dobroklub</a>
+                    <a href="../stranky/blog.html" class="nav_dropdown_item">Blog komunity</a>
                 </div>
             </div>
             <a href="../stranky/firemni-partnerstvi.html" class="navbarItem" style="color: #cb2f1d;">Firemní partnerství</a>
@@ -151,7 +151,7 @@
             <h2>Každý 5. člověk v Česku dobrovolničí, přidejte se i vy!</h2>
             <div class="cta_buttons">
                 <a href="../stranky/dobrovolnictvi.html" class="button_cta_white">Staň se dobrovolníkem</a>
-                <a href="podpor-dobro.html" class="button_cta_outline btn-sjednoceny">Podpoř dobro</a>
+                <a href="../stranky/podpor-dobro.html" class="button_cta_outline btn-sjednoceny">Podpoř dobro</a>
             </div>
         </div>
         <img src="../images/grafika/kruh_s_vyseci_oranzovy.png" alt="" class="cta_decor_circle">
@@ -173,6 +173,7 @@
                     <h4><a href="../stranky/onas.html">O nás</a></h4>
                     <ul>
                         <li><a href="../stranky/lide.html">Lidé</a></li>
+                        <li><a href="../stranky/onas.html#projekty">Projekty</a></li>
                         <li><a href="../stranky/nase-hodnoty.html">Naše hodnoty</a></li>
                         <li><a href="../stranky/michelska.html">Pobočka Michelská</a></li>
                         <li><a href="../stranky/borislavka.html">Pobočka Bořislavka</a></li>
@@ -181,28 +182,70 @@
                 <div class="footer_nav_col">
                     <h4><a href="../stranky/dobrovolnictvi.html">Dobrovolnictví</a></h4>
                     <ul>
+                        <li><a href="../stranky/dobrovolnictvi.html#aktivity">Příklady aktivit</a></li>
+                        <li><a href="../stranky/dobrovolnictvi.html#kdo-a-jak-pomaha">Kdo a jak pomáhá</a></li>
+                        <li><a href="../stranky/dobrovolnictvi.html#kde-pomahame">Kde pomáháme</a></li>
+                        <li><a href="../pribehy/pribehy.html">Příběhy dobrovolníků</a></li>
                         <li><a href="../stranky/stan-se-dobrovolnikem.html">Jak se zapojit</a></li>
+                        <li><a href="../stranky/aktualni-poptavky.html">Aktuální poptávky</a></li>
                     </ul>
                 </div>
                 <div class="footer_nav_col">
                     <h4><a href="../stranky/program.html">Program</a></h4>
+                    <ul>
+                        <li><a href="../stranky/program-spolecnik-seniora.html">Společník seniora</a></li>
+                        <li><a href="../stranky/program.html#aktualni-akce">Aktuální akce</a></li>
+                        <li><a href="../stranky/program.html#archiv-akci">Archiv akcí</a></li>
+                    </ul>
                 </div>
                 <div class="footer_nav_col">
                     <h4><a href="../stranky/dobroklub.html">Dobroklub</a></h4>
+                    <ul>
+                        <li><a href="../stranky/dobroklub.html">O Dobroklubu</a></li>
+                        <li><a href="../stranky/blog.html">Blog komunity</a></li>
+                    </ul>
                 </div>
                 <div class="footer_nav_col">
                     <h4><a href="../stranky/kontakt.html">Kontakt</a></h4>
                     <ul class="footer_contact_list">
                         <li><a href="tel:+420603483487" class="highlight_contact">+420 603 483 487</a></li>
-                        <li><a href="mailto:info@letokruh.eu">info@letokruh.eu</a></li>
+                        <li><a href="mailto:info@letokruh.eu" class="highlight_contact">info@letokruh.eu</a></li>
+                        <li class="contact_address">
+                            Letokruh, z.ú.<br>
+                            Michelská 21/61<br>
+                            141 00 Praha 4<br>
+                            IČ: 07635966
+                        </li>
                     </ul>
                 </div>
             </div>
+            <div class="footer_feedback">
+                <div class="feedback_text">Nenašli jste na webu, co jste hledali? Jste s něčím nespokojeni?</div>
+                <a href="#" class="button_feedback">Napsat zpětnou vazbu</a>
+            </div>
+
             <div class="footer_bottom">
-                <div class="footer_bottom_left">&copy; Letokruh, z.ú. 2026</div>
+                <div class="footer_bottom_left">
+                    &copy; Letokruh, z.ú. 2026
+                </div>
+                <div class="footer_bottom_center">
+                    <a href="https://letokruh.eu/wp-content/uploads/2021/06/GDPR-pro-web.pdf" target="_blank"
+                        class="footer_gdpr_link">Zásady ochrany osobních údajů (GDPR)</a>
+                </div>
+                <div class="footer_bottom_right">
+                    <a href="https://www.facebook.com/letokruh.eu" class="social_icon_circle"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/letokruh.eu/" class="social_icon_circle"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/stribrnakariera" class="social_icon_circle"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/channel/UCJr_dqASn4gSMsHiwpYyFxA" class="social_icon_circle"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="../js/script.js"></script>
 
 </body>
 </html>
