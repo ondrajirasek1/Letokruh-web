@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dobrovolnictví | Letokruh</title>
-    <link rel="stylesheet" href="../style.css?v=48">
+    <link rel="stylesheet" href="../style.css?v=49">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -47,7 +47,7 @@
             class="breadcrumb-separator">&gt;</span> <span class="breadcrumb-current">Dobrovolnictví</span>
     </div>
 
-    <!-- Dobrovolnictví Section -->
+    <!-- Dobrovolnictví Hero Section -->
     <header class="hero_section">
         <div class="hero_wrapper">
             <div class="hero_images hero_images_left">
@@ -59,11 +59,33 @@
                 </div>
             </div>
             <div class="hero_content">
-                <h1>Dobrovolnictví zralého věku</h1>
-                <p class="subtitle" style="margin-bottom: 40px;">
+                <h1 style="font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Dobrovolnictví zralého věku</h1>
+                <p style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.05rem; line-height: 1.65; color: #43382d; margin-bottom: 18px;">
                     Seniorské dobrovolnictví je pro každého, kdo chce být navzdory věku aktivní a má chuť pomoci ve svém
                     okolí. V Letokruhu seniorům dodáváme odvahu a jsme prostředníky na cestě k smysluplnému a radostnému
                     podzimu života.
+                </p>
+
+                <!-- Mladí dobrovolníci -->
+                <div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: center; margin-bottom: 18px;">
+                    <div style="flex: 1; min-width: 240px;">
+                        <p style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.05rem; line-height: 1.65; color: #43382d; margin: 0;">
+                            V Letokruhu vítáme i mladé dobrovolníky, kteří se nejčastěji zapojují do programu <a href="program-spolecnik-seniora.html" style="color: #cb2f1d; font-weight: 700; text-decoration: underline;">SPOLEČNÍK SENIORA</a>. Doprovázejí je na nákupy či na procházky, čtou jim, povídají si s nimi a pomáhají měnit chvíle samoty ve chvíle radosti. Pro Letokruh jsou vítaným zdrojem inspirace z trendů, kterých je mladá generace nositelem.
+                        </p>
+                    </div>
+                    <div style="flex: 0 0 110px; height: 110px; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 10px rgba(0,0,0,0.08);">
+                        <img src="../images/ostatni/mlady_dobrovolnik.webp" alt="Mladý dobrovolník" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+
+                <!-- Přijímající organizace -->
+                <p style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.05rem; line-height: 1.65; color: #43382d; margin-bottom: 18px;">
+                    Partnerem pro nás a dobrovolníky jsou tzv. <a href="prijimaci-organizace.html" style="color: #cb2f1d; font-weight: 700; text-decoration: underline;">přijímající organizace</a>, nejčastěji ze sociální oblasti nebo z oblasti školství. Spolu s nimi hledáme vhodné možnosti a příležitosti pro zapojení proškolených a motivovaných dobrovolníků.
+                </p>
+
+                <!-- Seniorští jednotlivci -->
+                <p style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.05rem; line-height: 1.65; color: #43382d; margin-bottom: 0;">
+                    Našimi partnery jsou i jednotlivci z řad seniorů, žijících osamoceně ve svém domácím prostředí. Proškolení dobrovolníci k nim dochází v rámci programu <a href="program-spolecnik-seniora.html" style="color: #cb2f1d; font-weight: 700; text-decoration: underline;">SPOLEČNÍK SENIORA</a>.
                 </p>
             </div>
         </div>
@@ -73,27 +95,38 @@
     <section class="why_volunteer_section" style="padding: 65px 20px; background-color: #fcf4ef;">
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="text-align: center; font-size: 2.5rem; color: #43382d; margin-bottom: 45px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Proč se stát dobrovolníkem?</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
-                <div style="background: #ffffff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <div style="width: 60px; height: 60px; background-color: #fcf4ef; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #cb2f1d; font-size: 1.6rem;">
-                        <i class="fa-solid fa-heart"></i>
+            <div class="why_volunteer_grid">
+                <!-- Card 1: SMYSL -->
+                <div class="why_volunteer_card" style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="../images/ostatni/cand_den_dobro.jpg" alt="Smysl dobrovolnictví" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
-                    <h3 style="font-size: 1.35rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Uděláte svět o trochu lepším</h3>
-                    <p style="color: #666; font-size: 1rem; line-height: 1.5; margin: 0;">A pomůžete těm, kteří to opravdu potřebují.</p>
+                    <div style="padding: 30px 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <h3 style="font-size: 1.8rem; color: #cb2f1d; margin-top: 0; margin-bottom: 15px; font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-weight: 800; letter-spacing: 0.5px;">SMYSL</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.6; color: #43382d; margin: 0;">Možnost předávat zkušenosti, čas a energii druhým, zažívat pocit užitečnosti a respektu, získávat nové přátele.</p>
+                    </div>
                 </div>
-                <div style="background: #ffffff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <div style="width: 60px; height: 60px; background-color: #fcf4ef; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #cb2f1d; font-size: 1.6rem;">
-                        <i class="fa-solid fa-users"></i>
+
+                <!-- Card 2: RADOST -->
+                <div class="why_volunteer_card" style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="../images/ostatni/Babicky.jpg" alt="Radost z dobrovolnictví" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
-                    <h3 style="font-size: 1.35rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Získáte nové zážitky i přátele</h3>
-                    <p style="color: #666; font-size: 1rem; line-height: 1.5; margin: 0;">Potkáte inspirativní lidi a stanete se součástí naší komunity.</p>
+                    <div style="padding: 30px 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <h3 style="font-size: 1.8rem; color: #cb2f1d; margin-top: 0; margin-bottom: 15px; font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-weight: 800; letter-spacing: 0.5px;">RADOST</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.6; color: #43382d; margin: 0;">Dobrovolnictví je pro každého, kdo chce být navzdory věku aktivní a má chuť pomoci ve svém okolí.</p>
+                    </div>
                 </div>
-                <div style="background: #ffffff; padding: 35px 25px; border-radius: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.04); text-align: center; display: flex; flex-direction: column; align-items: center;">
-                    <div style="width: 60px; height: 60px; background-color: #fcf4ef; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #cb2f1d; font-size: 1.6rem;">
-                        <i class="fa-solid fa-seedling"></i>
+
+                <!-- Card 3: KOMUNITA -->
+                <div class="why_volunteer_card" style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                    <div style="width: 100%; height: 220px; overflow: hidden;">
+                        <img src="../images/ostatni/Studenti-seniorum.jpg" alt="Zapojení do komunity" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
-                    <h3 style="font-size: 1.35rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Vyrostete lidsky i profesně</h3>
-                    <p style="color: #666; font-size: 1rem; line-height: 1.5; margin: 0;">Dobrovolnictví vám otevře nové obzory a rozvine vaše dovednosti.</p>
+                    <div style="padding: 30px 25px; flex-grow: 1; display: flex; flex-direction: column;">
+                        <h3 style="font-size: 1.8rem; color: #cb2f1d; margin-top: 0; margin-bottom: 15px; font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-weight: 800; letter-spacing: 0.5px;">KOMUNITA</h3>
+                        <p style="font-size: 1.05rem; line-height: 1.6; color: #43382d; margin: 0;">Pomoc druhým a zapojení do života komunity jsou skvělou prevencí proti osamění, pocitu marnosti a nemocem.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -199,13 +232,13 @@
                                 <div class="poptavka_location_box">
                                     <span><i class="fa-solid fa-location-dot" style="color: #cb2f1d;"></i> Praha 6 – Bořislavka</span>
                                     <div class="poptavka_location_actions">
-                                        <a href="https://www.google.com/maps/search/?api=1&query=Evropska+134+Praha+6" target="_blank" class="maps_link"><i class="fa-solid fa-map-location-dot"></i> Mapa</a>
-                                        <button type="button" class="distance_btn" onclick="calculateDistance('Evropská 134, Praha 6')"><i class="fa-solid fa-route"></i> Vzdálenost km</button>
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Borislavka+Praha+6" target="_blank" class="maps_link"><i class="fa-solid fa-map-location-dot"></i> Mapa</a>
+                                        <button type="button" class="distance_btn" onclick="calculateDistance('Bořislavka, Praha 6')"><i class="fa-solid fa-route"></i> Vzdálenost km</button>
                                     </div>
                                 </div>
                             </td>
                             <td class="poptavka_frequency_cell">
-                                <span class="badge_frequency">Dle možností</span>
+                                <span class="badge_frequency">Dle dohody</span>
                             </td>
                         </tr>
                     </tbody>
@@ -214,111 +247,181 @@
         </div>
     </section>
 
-    <!-- 3. SEKCE: V čem můžete pomáhat (9 dlaždic) -->
-    <section id="aktivity" class="activities_section" style="padding: 75px 20px; background-color: #fcf4ef;">
-        <div class="activities_wrapper" style="max-width: 1100px; margin: 0 auto;">
-            <h2 style="text-align: center; margin-bottom: 15px; font-size: 2.8rem; color: #43382d; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">V čem můžete pomáhat</h2>
-            <p style="text-align: center; color: #666; max-width: 750px; margin: 0 auto 45px; font-size: 1.1rem; line-height: 1.6;">
-                Vyberte si oblast, která je vám nejbližší. Ke všem aktivitám vám poskytneme úvodní zaškolení a podporu.
-            </p>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr)); gap: 28px;">
+    <!-- 3. SEKCE: Nejčastější dobrovolnické aktivity -->
+    <section id="aktivity" class="activities_section" style="padding: 70px 20px; background-color: #faf7f2;">
+        <div class="activities_wrapper" style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 2.5rem; color: #43382d; text-align: center; margin-bottom: 45px; font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-weight: 800;">Nejčastější dobrovolnické aktivity</h2>
+            
+            <div class="aktuality_grid" id="activities_grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+                
                 <!-- Card 1 -->
-                <div style="background: #ffffff; padding: 32px 28px; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                    <div>
-                        <div style="font-size: 2.2rem; color: #cb2f1d; margin-bottom: 15px;"><i class="fa-solid fa-hands-holding-child"></i></div>
-                        <h3 style="font-size: 1.4rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Společník seniora</h3>
-                        <p style="color: #555; font-size: 0.98rem; line-height: 1.6; margin-bottom: 25px;">Povídání, procházky, deskové hry nebo doprovod k lékaři pro osamělé seniory.</p>
+                <div class="aktuality_card" style="background: #ffffff; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #ebdace; display: flex; flex-direction: column; width: calc(33.333% - 20px); min-width: 300px; max-width: 370px; flex: 1 1 320px;">
+                    <div class="aktuality_card_image" style="width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; margin-bottom: 18px;">
+                        <img src="../images/ostatni/spolecnikSeniora.jpg" alt="Společnost osamělým a nemohoucím seniorům" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="align-self: flex-start; padding: 10px 22px; background-color: #cb2f1d; color: #fff; text-decoration: none; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">Chci pomáhat</a>
+                    <h3 class="aktuality_card_title" style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.25rem; font-weight: 800; color: #43382d; margin: 0 0 14px 0; text-transform: uppercase; line-height: 1.35;">Společnost osamělým a nemohoucím seniorům</h3>
+                    <a href="#" class="aktuality_more_link" style="margin-top: auto; padding-top: 15px; color: #cb2f1d; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Více informací <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="aktuality_card_description" style="display: none;">
+                        <p style="margin-bottom: 12px;">Do programu Společník seniora zapojujeme seniorské i mladé dobrovolníky, kteří přinášejí osamělým či hůře pohyblivým seniorům společnost, blízkost a pravidelný kontakt. Přicházejí si popovídat, naslouchat, vydat se společně na procházku, zahrát si hru nebo jednoduše strávit čas spolu. Často právě z těchto obyčejných setkání vzniká vztah, který má velkou hodnotu pro oba.</p>
+                        <p style="margin-bottom: 12px;">Kolik času dobrovolnictví věnujete, je na vás. Četnost setkávání si nastavíte podle svých možností a po dohodě se seniorem a koordinátorkou programu.</p>
+                        <p style="margin-bottom: 12px;">Dobrovolník nenahrazuje sociální ani zdravotní službu. Nabízí něco jiného, svůj čas, pozornost a lidskou přítomnost.</p>
+                        <p style="margin-bottom: 12px;"><strong>Co potřebujete, abyste se mohli do programu zapojit?</strong><br>Především empatii, laskavost, trpělivost a chuť být tu pro druhého. Před zapojením vás čeká vstupní pohovor s koordinátorkou dobrovolníků a krátké proškolení. Součástí podmínek je také trestní bezúhonnost a potvrzení lékaře o zdravotní způsobilosti.</p>
+                        <p style="margin-bottom: 12px; font-weight: 600; color: #cb2f1d;">Pomozte nám měnit chvíle samoty ve chvíle radosti!</p>
+                        <div style="margin-top: 25px;">
+                            <a href="stan-se-dobrovolnikem.html" class="button_cta_inline btn-sjednoceny" style="display: inline-block; background-color: #cb2f1d; color: #fff; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Staň se dobrovolníkem &gt;</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div style="background: #ffffff; padding: 32px 28px; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                    <div>
-                        <div style="font-size: 2.2rem; color: #cb2f1d; margin-bottom: 15px;"><i class="fa-solid fa-book-open-reader"></i></div>
-                        <h3 style="font-size: 1.4rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Čtení pohádek dětem</h3>
-                        <p style="color: #555; font-size: 0.98rem; line-height: 1.6; margin-bottom: 25px;">Předčítání pohádek a příběhů dětem v nemocnicích či školkách pro radost a rozvoj představivosti.</p>
+                <div class="aktuality_card" style="background: #ffffff; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #ebdace; display: flex; flex-direction: column; width: calc(33.333% - 20px); min-width: 300px; max-width: 370px; flex: 1 1 320px;">
+                    <div class="aktuality_card_image" style="width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; margin-bottom: 18px;">
+                        <img src="../images/ostatni/pohadky.jpg" alt="Čtení pohádek dětem" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="align-self: flex-start; padding: 10px 22px; background-color: #cb2f1d; color: #fff; text-decoration: none; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">Chci pomáhat</a>
+                    <h3 class="aktuality_card_title" style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.25rem; font-weight: 800; color: #43382d; margin: 0 0 14px 0; text-transform: uppercase; line-height: 1.35;">Čtení pohádek dětem</h3>
+                    <a href="#" class="aktuality_more_link" style="margin-top: auto; padding-top: 15px; color: #cb2f1d; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Více informací <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="aktuality_card_description" style="display: none;">
+                        <p style="margin-bottom: 12px;">Naši dobrovolníci zapojení do programu Pohádková babička a dědeček pravidelně docházejí do mateřských, ale i základních škol, knihoven i komunitních center, kde dětem čtou pohádky a příběhy a někde si s dětmi i hrají. Děti si k nim rychle vytvářejí vztah a na „svoji“ pohádkovou babičku nebo dědečka se těší.</p>
+                        <p style="margin-bottom: 12px;">Za obyčejným čtením se přitom skrývá mnohem víc. Dobrovolnictví v tomto programu propojuje generace, pomáhá bourat předsudky spojené se stářím a dává seniorům možnost zůstat aktivní, předávat něco dál a čerpat radost z dětské bezprostřednosti. Dětem zase přináší laskavý a přirozený kontakt se starší generací, který je dnes stále vzácnější.</p>
+                        <p style="margin-bottom: 12px;">Kolik času dobrovolnictví věnujete, je na vás. Četnost návštěv si nastavíte podle svých možností a po dohodě s organizací, do které budete docházet. Nejčastěji naši pohádkoví dobrovolníci čtou dětem jednou týdně přibližně 30 minut.</p>
+                        <p style="margin-bottom: 12px;"><strong>Co potřebujete, abyste se mohli zapojit?</strong><br>Především vřelý vztah k dětem, chuť předávat i čerpat radost a trochu svého času. Před zapojením vás čeká vstupní pohovor s koordinátorkou dobrovolníků a krátké proškolení. Součástí podmínek je také trestní bezúhonnost a potvrzení lékaře o zdravotní způsobilosti.</p>
+                        <p style="margin-bottom: 12px; font-weight: 600; color: #cb2f1d;">Chcete se i vy stát pohádkovou babičkou nebo dědečkem? Přidejte se k nám!</p>
+                        <div style="margin-top: 25px;">
+                            <a href="stan-se-dobrovolnikem.html" class="button_cta_inline btn-sjednoceny" style="display: inline-block; background-color: #cb2f1d; color: #fff; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Staň se dobrovolníkem &gt;</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div style="background: #ffffff; padding: 32px 28px; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                    <div>
-                        <div style="font-size: 2.2rem; color: #cb2f1d; margin-bottom: 15px;"><i class="fa-solid fa-leaf"></i></div>
-                        <h3 style="font-size: 1.4rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Pomoc přírodě a zvířatům</h3>
-                        <p style="color: #555; font-size: 0.98rem; line-height: 1.6; margin-bottom: 25px;">Výpomoc v útulcích pro zvířata, komunitních zahradách či při úklidových a ekologických akcích.</p>
+                <div class="aktuality_card" style="background: #ffffff; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #ebdace; display: flex; flex-direction: column; width: calc(33.333% - 20px); min-width: 300px; max-width: 370px; flex: 1 1 320px;">
+                    <div class="aktuality_card_image" style="width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; margin-bottom: 18px;">
+                        <img src="../images/ostatni/ekoligicke_aktivity.jpg" alt="Pomoc přírodě a zvířatům" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="align-self: flex-start; padding: 10px 22px; background-color: #cb2f1d; color: #fff; text-decoration: none; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">Chci pomáhat</a>
+                    <h3 class="aktuality_card_title" style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.25rem; font-weight: 800; color: #43382d; margin: 0 0 14px 0; text-transform: uppercase; line-height: 1.35;">Pomoc přírodě a zvířatům (dříve eko aktivity)</h3>
+                    <a href="#" class="aktuality_more_link" style="margin-top: auto; padding-top: 15px; color: #cb2f1d; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Více informací <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="aktuality_card_description" style="display: none;">
+                        <p style="margin-bottom: 12px;">Dobrovolnictví nemusí znamenat jen pomoc druhým lidem. Čas od času vyrážíme společně pomáhat také přírodě. Uklízíme lesy a veřejná prostranství, sázíme stromky nebo se zapojujeme do dalších jednorázových aktivit, které pomáhají pečovat o prostředí kolem nás.</p>
+                        <p style="margin-bottom: 12px;">A protože pomoc si zaslouží i naši čtyřnozí a další zvířecí kamarádi, rádi podporujeme také dobrovolnictví zaměřené na zvířata. Může jít například o pomoc útulkům a organizacím pečujícím o opuštěná či handicapovaná zvířata nebo výpomoc při jednorázových akcích.</p>
+                        <p style="margin-bottom: 12px;">Je to skvělá příležitost pro každého, kdo chce udělat něco dobrého, být venku, potkat nové lidi a přitom se nechce vázat k pravidelnému dobrovolnictví. Zapojit se mohou senioři, mladší dobrovolníci i celé rodiny a firmy, každý podle svých možností a fyzické kondice.</p>
+                        <p style="margin-bottom: 12px;">Naše vlastní aktivity pořádáme především příležitostně. Pokud vás ale láká pomáhat přírodě nebo zvířatům pravidelněji, rádi vás propojíme se spřátelenými organizacemi, které se těmto oblastem věnují dlouhodobě.</p>
+                        <p style="margin-bottom: 12px;"><strong>Co potřebujete, abyste se mohli zapojit?</strong><br>Především chuť přiložit ruku k dílu. Konkrétní podmínky se mohou lišit podle typu aktivity nebo partnerské organizace.</p>
+                        <p style="margin-bottom: 12px; font-weight: 600; color: #cb2f1d;">Chcete pomoci přírodě nebo zvířatům? Ozvěte se nám. Společně vymyslíme, kde může být vaše pomoc užitečná.</p>
+                        <div style="margin-top: 25px;">
+                            <a href="stan-se-dobrovolnikem.html" class="button_cta_inline btn-sjednoceny" style="display: inline-block; background-color: #cb2f1d; color: #fff; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Staň se dobrovolníkem &gt;</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div style="background: #ffffff; padding: 32px 28px; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                    <div>
-                        <div style="font-size: 2.2rem; color: #cb2f1d; margin-bottom: 15px;"><i class="fa-solid fa-lightbulb"></i></div>
-                        <h3 style="font-size: 1.4rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Sdílení zkušeností</h3>
-                        <p style="color: #555; font-size: 0.98rem; line-height: 1.6; margin-bottom: 25px;">Přednášky, mezigenerační workshopy a předávání životních a profesních znalostí.</p>
+                <div class="aktuality_card" style="background: #ffffff; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #ebdace; display: flex; flex-direction: column; width: calc(33.333% - 20px); min-width: 300px; max-width: 370px; flex: 1 1 320px;">
+                    <div class="aktuality_card_image" style="width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; margin-bottom: 18px;">
+                        <img src="../images/ostatni/lektorství.jpg" alt="Sdílení zkušeností a dovedností" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="align-self: flex-start; padding: 10px 22px; background-color: #cb2f1d; color: #fff; text-decoration: none; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">Chci pomáhat</a>
+                    <h3 class="aktuality_card_title" style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.25rem; font-weight: 800; color: #43382d; margin: 0 0 14px 0; text-transform: uppercase; line-height: 1.35;">Sdílení zkušeností a dovedností</h3>
+                    <a href="#" class="aktuality_more_link" style="margin-top: auto; padding-top: 15px; color: #cb2f1d; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Více informací <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="aktuality_card_description" style="display: none;">
+                        <p style="margin-bottom: 12px;">Každý má co nabídnout. Možná znáte zajímavá zákoutí Prahy, baví vás historie, příroda nebo cestování. Možná umíte fotografovat, tvořit, cvičit, zpívat, pracovat s moderními technologiemi nebo máte úplně jinou dovednost, zkušenost či zálibu, o kterou byste se rádi podělili s ostatními.</p>
+                        <p style="margin-bottom: 12px;">V Letokruhu dáváme prostor dobrovolníkům, kteří chtějí předávat dál to, co znají, umějí a co je baví. Můžete připravit vycházku Prahou či výlet s výkladem, uspořádat workshop, tvořivé setkání, přednášku nebo přijít s vlastním nápadem. Nemusíte být profesionál, mnohem důležitější je chuť sdílet své nadšení s ostatními.</p>
+                        <p style="margin-bottom: 12px;">Kolik času tomu věnujete, je na vás. Může jít o jednorázovou akci, několik setkání nebo pravidelnou aktivitu. Společně vymyslíme formu, která bude vyhovovat vám i účastníkům.</p>
+                        <p style="margin-bottom: 12px;"><strong>Co potřebujete, abyste se mohli zapojit?</strong><br>Chuť podělit se o to, co vás baví, a předat něco dál. Ozvěte se nám se svým nápadem a společně se podíváme, jak ho můžeme v Letokruhu uskutečnit a co všechno bude pro zapojení třeba.</p>
+                        <p style="margin-bottom: 12px; font-weight: 600; color: #cb2f1d;">Máte něco, co byste rádi předali ostatním? Dejte nám o sobě vědět. Možná právě na váš nápad někdo čeká.</p>
+                        <div style="margin-top: 25px;">
+                            <a href="stan-se-dobrovolnikem.html" class="button_cta_inline btn-sjednoceny" style="display: inline-block; background-color: #cb2f1d; color: #fff; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Staň se dobrovolníkem &gt;</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Card 5 -->
-                <div style="background: #ffffff; padding: 32px 28px; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                    <div>
-                        <div style="font-size: 2.2rem; color: #cb2f1d; margin-bottom: 15px;"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <h3 style="font-size: 1.4rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Doučování dětí</h3>
-                        <p style="color: #555; font-size: 0.98rem; line-height: 1.6; margin-bottom: 25px;">Pomoc školákům s učivem a předávání vědomostí dětem ze znevýhodněného prostředí.</p>
+                <div class="aktuality_card" style="background: #ffffff; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #ebdace; display: flex; flex-direction: column; width: calc(33.333% - 20px); min-width: 300px; max-width: 370px; flex: 1 1 320px;">
+                    <div class="aktuality_card_image" style="width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; margin-bottom: 18px;">
+                        <img src="../images/ostatni/doucovani.jpg" alt="Doučování dětí" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="align-self: flex-start; padding: 10px 22px; background-color: #cb2f1d; color: #fff; text-decoration: none; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">Chci pomáhat</a>
+                    <h3 class="aktuality_card_title" style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.25rem; font-weight: 800; color: #43382d; margin: 0 0 14px 0; text-transform: uppercase; line-height: 1.35;">Doučování dětí</h3>
+                    <a href="#" class="aktuality_more_link" style="margin-top: auto; padding-top: 15px; color: #cb2f1d; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Více informací <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="aktuality_card_description" style="display: none;">
+                        <p style="margin-bottom: 12px;">Někdy dítě nepotřebuje další hodinu ve škole, ale človeka, který má čas, trpělivost a chuť mu pomoci. Naši dobrovolníci pomáhají dětem s učením, přípravou do školy, domácími úkoly nebo s procvičováním toho, co jim zrovna nejde.</p>
+                        <p style="margin-bottom: 12px;">Může jít o češtinu, matematiku, cizí jazyk nebo jiný předmět, záleží na tom, co umíte a čemu se chcete věnovat. Nemusíte být učitel. Důležitá je především trpělivost, schopnost dítě povzbudit a chuť předat mu něco ze svých znalostí a zkušeností.</p>
+                        <p style="margin-bottom: 12px;">Doučování ale není jen o lepších známkách. Pravidelný zájem dospělého člověka může dítěti dodat sebedůvěru, motivaci a pocit, že na své školní starosti není samo. A dobrovolník zase může zažít radost z toho, že jeho čas a zkušenosti mají konkrétní smysl.</p>
+                        <p style="margin-bottom: 12px;">Kolik času dobrovolnictví věnujete, je na vás. Rozsah a četnost doučování nastavíme podle vašich možností a potřeb dítěte. Nejčastěji jde o pravidelné setkávání přibližně jednou týdně online nebo offline, za přítomnosti rodiče či jiného dospělého.</p>
+                        <p style="margin-bottom: 12px;"><strong>Co potřebujete, abyste se mohli zapojit?</strong><br>Především vřelý vztah k dětem, trpělivost a chuť předávat své znalosti dál. Před zapojením vás čeká vstupní pohovor s koordinátorkou dobrovolníků a proškolení. Součástí podmínek je také trestní bezúhonnost a potvrzení lékaře o zdravotní způsobilosti.</p>
+                        <p style="margin-bottom: 12px; font-weight: 600; color: #cb2f1d;">Chcete věnovat kousek svého času dítěti, kterému může vaše podpora opravdu pomoci? Přidejte se k nám.</p>
+                        <div style="margin-top: 25px;">
+                            <a href="stan-se-dobrovolnikem.html" class="button_cta_inline btn-sjednoceny" style="display: inline-block; background-color: #cb2f1d; color: #fff; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Staň se dobrovolníkem &gt;</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Card 6 -->
-                <div style="background: #ffffff; padding: 32px 28px; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                    <div>
-                        <div style="font-size: 2.2rem; color: #cb2f1d; margin-bottom: 15px;"><i class="fa-solid fa-music"></i></div>
-                        <h3 style="font-size: 1.4rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Zpěv a hra na hudební nástroj</h3>
-                        <p style="color: #555; font-size: 0.98rem; line-height: 1.6; margin-bottom: 25px;">Hudební vystoupení a zpívání pro radost seniorů v domovech a komunitních klubech.</p>
+                <div class="aktuality_card" style="background: #ffffff; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #ebdace; display: flex; flex-direction: column; width: calc(33.333% - 20px); min-width: 300px; max-width: 370px; flex: 1 1 320px;">
+                    <div class="aktuality_card_image" style="width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; margin-bottom: 18px;">
+                        <img src="../images/ostatni/hudba.webp" alt="Zpěv a hra na hudební nástroj" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="align-self: flex-start; padding: 10px 22px; background-color: #cb2f1d; color: #fff; text-decoration: none; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">Chci pomáhat</a>
+                    <h3 class="aktuality_card_title" style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.25rem; font-weight: 800; color: #43382d; margin: 0 0 14px 0; text-transform: uppercase; line-height: 1.35;">Zpěv a hra na hudební nástroj</h3>
+                    <a href="#" class="aktuality_more_link" style="margin-top: auto; padding-top: 15px; color: #cb2f1d; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Více informací <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="aktuality_card_description" style="display: none;">
+                        <p style="margin-bottom: 12px;">Hudba umí potěšit, spojovat lidi i probouzet vzpomínky. Pokud rádi zpíváte nebo hrajete na hudební nástroj, můžete svou radost z hudby sdílet s ostatními. Nemusíte být profesionální hudebník, důležitá je chuť udělat někomu radost.</p>
+                        <p style="margin-bottom: 12px;">Naši dobrovolníci mohou zpěvem nebo hrou zpříjemnit čas seniorům v domovech a dalších zařízeních, potěšit děti ve školách a školkách nebo vytvořit příjemnou atmosféru při komunitních setkáních a akcích Letokruhu.</p>
+                        <p style="margin-bottom: 12px;">Kolik času hudebnímu dobrovolnictví věnujete, je na vás. Můžete se zapojit jednorázově, příležitostně nebo pravidelně, podle toho, co vám vyhovuje.</p>
+                        <p style="margin-bottom: 12px;"><strong>Co potřebujete, abyste se mohli zapojit?</strong><br>Především chuť sdílet radost z hudby. Před zapojením vás čeká vstupní pohovor s koordinátorkou dobrovolníků a proškolení. Součástí podmínek je také trestní bezúhonnost a potvrzení lékaře o zdravotní způsobilosti.</p>
+                        <p style="margin-bottom: 12px; font-weight: 600; color: #cb2f1d;">Máte rádi hudbu? Zahrajte nebo zazpívejte pro radost, svoji i těch, kteří budou poslouchat.</p>
+                        <div style="margin-top: 25px;">
+                            <a href="stan-se-dobrovolnikem.html" class="button_cta_inline btn-sjednoceny" style="display: inline-block; background-color: #cb2f1d; color: #fff; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Staň se dobrovolníkem &gt;</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Card 7 -->
-                <div style="background: #ffffff; padding: 32px 28px; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                    <div>
-                        <div style="font-size: 2.2rem; color: #cb2f1d; margin-bottom: 15px;"><i class="fa-solid fa-book"></i></div>
-                        <h3 style="font-size: 1.4rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Pomoc v knihovnách</h3>
-                        <p style="color: #555; font-size: 0.98rem; line-height: 1.6; margin-bottom: 25px;">Pomoc s organizací knihovních fondů, zakládáním knih a přípravou besed či akcí.</p>
+                <div class="aktuality_card" style="background: #ffffff; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #ebdace; display: flex; flex-direction: column; width: calc(33.333% - 20px); min-width: 300px; max-width: 370px; flex: 1 1 320px;">
+                    <div class="aktuality_card_image" style="width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; margin-bottom: 18px;">
+                        <img src="../images/ostatni/knihovna.webp" alt="Pomoc v knihovnách" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="align-self: flex-start; padding: 10px 22px; background-color: #cb2f1d; color: #fff; text-decoration: none; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">Chci pomáhat</a>
+                    <h3 class="aktuality_card_title" style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.25rem; font-weight: 800; color: #43382d; margin: 0 0 14px 0; text-transform: uppercase; line-height: 1.35;">Pomoc v knihovnách</h3>
+                    <a href="#" class="aktuality_more_link" style="margin-top: auto; padding-top: 15px; color: #cb2f1d; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Více informací <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="aktuality_card_description" style="display: none;">
+                        <p style="margin-bottom: 12px;">Máte rádi knihy, lidi a prostředí knihoven? I tady můžete svůj čas, zkušenosti a zájmy proměnit v dobrovolnickou pomoc.</p>
+                        <p style="margin-bottom: 12px;">Dobrovolníci mohou pomáhat knihovníkům s běžnými činnostmi, zapojit se do přípravy akcí pro veřejnost, vést čtenářské nebo diskuzní kluby, pomáhat při besedách, přednáškách a tvořivých dílnách nebo přijít s vlastním nápadem na aktivitu, kterou by chtěli nabídnout ostatním.</p>
+                        <p style="margin-bottom: 12px;">Knihovny jsou dnes mnohem víc než jen místem, kam si chodíme půjčovat knihy. Jsou také prostorem pro setkávání, sdílení a komunitní život a právě dobrovolníci mohou pomoci tento prostor ještě více oživit.</p>
+                        <p style="margin-bottom: 12px;">Kolik času dobrovolnictví věnujete, je na vás. Můžete se zapojit jednorázově, pomáhat při konkrétních akcích nebo si vybrá regularní aktivitu podle svých časových možností.</p>
+                        <p style="margin-bottom: 12px;"><strong>Co potřebujete, abyste se mohli zapojit?</strong><br>Především chuť pomáhat, spolehlivost a ideálně také vztah ke knihám, kultuře nebo práci s lidmi. Konkrétní možnosti zapojení vždy hledáme společně podle vašich zájmů, dovedností a nabídky spolupracujících knihoven.</p>
+                        <p style="margin-bottom: 12px; font-weight: 600; color: #cb2f1d;">Bavila by vás pomoc v knihovně? Přidejte se k nám a společně najdeme místo, kde můžete být užiteční.</p>
+                        <div style="margin-top: 25px;">
+                            <a href="stan-se-dobrovolnikem.html" class="button_cta_inline btn-sjednoceny" style="display: inline-block; background-color: #cb2f1d; color: #fff; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Staň se dobrovolníkem &gt;</a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Card 8 -->
-                <div style="background: #ffffff; padding: 32px 28px; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                    <div>
-                        <div style="font-size: 2.2rem; color: #cb2f1d; margin-bottom: 15px;"><i class="fa-solid fa-hands-clapping"></i></div>
-                        <h3 style="font-size: 1.4rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Pomoc při komunitních akcích</h3>
-                        <p style="color: #555; font-size: 0.98rem; line-height: 1.6; margin-bottom: 25px;">Organizace a asistentská výpomoc při běžeckých, kulturních či charitativních akcích.</p>
+                <div class="aktuality_card" style="background: #ffffff; border-radius: 16px; padding: 24px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); border: 1px solid #ebdace; display: flex; flex-direction: column; width: calc(33.333% - 20px); min-width: 300px; max-width: 370px; flex: 1 1 320px;">
+                    <div class="aktuality_card_image" style="width: 100%; aspect-ratio: 4 / 3; border-radius: 12px; overflow: hidden; margin-bottom: 18px;">
+                        <img src="../images/ostatni/cand_dny_dobro.jpg" alt="Pomoc při komunitních akcích a propagaci dobrovolnictví" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
-                    <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="align-self: flex-start; padding: 10px 22px; background-color: #cb2f1d; color: #fff; text-decoration: none; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">Chci pomáhat</a>
+                    <h3 class="aktuality_card_title" style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.25rem; font-weight: 800; color: #43382d; margin: 0 0 14px 0; text-transform: uppercase; line-height: 1.35;">Pomoc při komunitních akcích a propagaci dobrovolnictví</h3>
+                    <a href="#" class="aktuality_more_link" style="margin-top: auto; padding-top: 15px; color: #cb2f1d; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">Více informací <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="aktuality_card_description" style="display: none;">
+                        <p style="margin-bottom: 12px;">Ne každé dobrovolnictví musí znamenat pravidelný závazek. Pomoci můžete třeba jen pár hodin a přesto to pro nás může znamenat opravdu hodně.</p>
+                        <p style="margin-bottom: 12px;">Během roku se účastníme nejrůznějších komunitních, sousedských a veřejných akcí, na kterých představujeme Letokruh a ukazujeme, že dobrovolnictví nemá věkovou hranici. A právě při nich se nám každá pomocná ruka hodí.</p>
+                        <p style="margin-bottom: 12px;">Můžete napéct něco dobrého, pomoci s přípravou našeho stánku nebo s drobným benefičním prodejem na podporu Letokruhu, zapojit se do tvoření a dalších aktivit s dětmi, pomoci s organizací akce nebo si jednoduše povídat s návštěvníky o tom, co v Letokruhu děláme.</p>
+                        <p style="margin-bottom: 12px;">Důležitou součástí je také šíření myšlenky seniorského dobrovolnictví. Chceme ukazovat, že i ve vyšším věku máme druhým co nabídnout – svůj čas, zkušenosti, dovednosti, energii nebo prostě chuť být součástí dění. A kdo může tuto myšlenku předávat lépe než samotní dobrovolníci?</p>
+                        <p style="margin-bottom: 12px;">Kolik času tomu věnujete, je jen na vás. Můžete nám pomoci jednou za rok, několikrát za sezonu nebo se stát pravidelnou součástí našeho dobrovolnického týmu na akcích. Vyberete si zkrátka to, co vás baví a co se vám časově hodí.</p>
+                        <p style="margin-bottom: 12px;"><strong>Co potřebujete, abyste se mohli zapojit?</strong><br>Především chuť být mezi lidmi a přiložit ruku k dílu.</p>
+                        <p style="margin-bottom: 12px; font-weight: 600; color: #cb2f1d;">Baví vás péct, tvořit, povídat si s lidmi nebo prostě pomáhat tam, kde je zrovna potřeba? Přidejte se k nám.</p>
+                        <div style="margin-top: 25px;">
+                            <a href="stan-se-dobrovolnikem.html" class="button_cta_inline btn-sjednoceny" style="display: inline-block; background-color: #cb2f1d; color: #fff; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Staň se dobrovolníkem &gt;</a>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Card 9 -->
-                <div style="background: #ffffff; padding: 32px 28px; border-radius: 16px; display: flex; flex-direction: column; justify-content: space-between; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
-                    <div>
-                        <div style="font-size: 2.2rem; color: #cb2f1d; margin-bottom: 15px;"><i class="fa-solid fa-puzzle-piece"></i></div>
-                        <h3 style="font-size: 1.4rem; color: #43382d; margin-bottom: 12px; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Další aktivity</h3>
-                        <p style="color: #555; font-size: 0.98rem; line-height: 1.6; margin-bottom: 25px;">Dle vašich možností, zájmů a nápadů (příprava občerstvení, administrativa, IT pomoc aj.).</p>
-                    </div>
-                    <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="align-self: flex-start; padding: 10px 22px; background-color: #cb2f1d; color: #fff; text-decoration: none; border-radius: 25px; font-weight: 700; font-size: 0.9rem;">Chci pomáhat</a>
-                </div>
+            </div>
+
+            <!-- Activity Custom Offer Banner -->
+            <div class="activity_custom_offer" style="margin-top: 45px; background: #ffffff; border-radius: 16px; padding: 35px 30px; border: 1px solid #ebdace; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04); text-align: center;">
+                <p style="font-family: 'Dederon-Sans', 'Roboto', sans-serif; font-size: 1.1rem; line-height: 1.65; color: #43382d; margin: 0 auto 22px auto; max-width: 920px;">
+                    Nenašli jste mezi našimi aktivitami činnost, která by vás bavila, ale přesto chcete být součástí Letokruhu? Řekněte nám, co vás těší, co umíte nebo co byste rádi nabídli druhým. Třeba společně vymyslíme dobrovolnictví právě pro vás.
+                </p>
+                <a href="stan-se-dobrovolnikem.html" class="btn-sjednoceny" style="display: inline-block; background-color: #cb2f1d; color: #ffffff; padding: 12px 28px; border-radius: 25px; text-decoration: none; font-weight: 700; font-family: 'Dederon-Sans', 'Roboto', sans-serif;">Staň se dobrovolníkem &gt;</a>
             </div>
         </div>
     </section>
-
-    <!-- Footer / Contact -->
-
-
 
     <!-- Volunteer Stories Section -->
     <section class="stories_section">
@@ -375,20 +478,15 @@
         </div>
     </section>
 
-
-
     <!-- CTA Section -->
     <section class="cta_section">
         <div class="cta_wrapper">
             <h2>Dobrovolnická pomoc nemusí být velká, aby měla obrovský dopad.</h2>
             <div class="cta_buttons">
-                <!-- "Stač se dobrovolníkem" links to separate page -->
                 <a href="../stranky/stan-se-dobrovolnikem.html" class="button_cta_white">Staň se dobrovolníkem</a>
-                <!-- "Podpoř dobro" same function as Top Bar button -->
                 <a href="podpor-dobro.html" class="button_cta_outline btn-support-top">Podpoř dobro</a>
             </div>
         </div>
-        <!-- Decorations moved to section for full width positioning -->
         <img src="../images/grafika/kruh_s_vyseci_oranzovy.png" alt="" class="cta_decor_circle">
         <img src="../images/grafika/srdce_cara_oranzove.png" alt="" class="cta_decor_line">
     </section>

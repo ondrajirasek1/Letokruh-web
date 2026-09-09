@@ -508,6 +508,82 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Activities detail view (dobrovolnictvi.html #aktivity)
+    const activitiesGrid = document.getElementById('activities_grid');
+    if (activitiesGrid) {
+        const activitiesSection = activitiesGrid.closest('.activities_section') || activitiesGrid.parentElement;
+
+        // Create a reusable detail view container (hidden by default)
+        const detailView = document.createElement('div');
+        detailView.className = 'aktuality_detail_view';
+        detailView.style.display = 'none';
+        detailView.style.maxWidth = '1200px';
+        detailView.style.margin = '0 auto';
+
+        // Insert it after the grid inside the same section
+        activitiesGrid.after(detailView);
+
+        const customOffer = activitiesSection.querySelector('.activity_custom_offer');
+
+        const showDetail = (card) => {
+            const desc = card.querySelector('.aktuality_card_description');
+            const title = card.querySelector('.aktuality_card_title');
+            const date = card.querySelector('.aktuality_card_date');
+            const img = card.querySelector('.aktuality_card_image img');
+            if (!desc) return;
+
+            // Build the detail HTML
+            detailView.innerHTML = `
+                <a href="#" class="aktuality_back_link"><i class="fa-solid fa-arrow-left"></i> Zpět na aktivity</a>
+                <div class="aktuality_detail_hero">
+                    ${img ? `<img src="${img.src}" alt="${img.alt || ''}" class="aktuality_detail_hero_img">` : ''}
+                    <div class="aktuality_detail_hero_text">
+                        <h1 class="aktuality_detail_title">${title ? title.textContent : ''}</h1>
+                        ${date ? `<span class="aktuality_detail_date">${date.textContent}</span>` : ''}
+                    </div>
+                </div>
+                <div class="aktuality_detail_body">
+                    ${desc.innerHTML}
+                </div>
+            `;
+
+            // Back button handler
+            detailView.querySelector('.aktuality_back_link').addEventListener('click', (e) => {
+                e.preventDefault();
+                hideDetail();
+            });
+
+            // Hide grid and custom offer banner, show detail
+            activitiesGrid.style.display = 'none';
+            if (customOffer) customOffer.style.display = 'none';
+            detailView.style.display = 'block';
+
+            // Scroll to top of section
+            activitiesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+
+        const hideDetail = () => {
+            detailView.style.display = 'none';
+            activitiesGrid.style.display = '';
+            if (customOffer) customOffer.style.display = '';
+
+            // Scroll back to top of section
+            activitiesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+
+        // Delegate click on "Více informací" links
+        activitiesGrid.addEventListener('click', (e) => {
+            const moreLink = e.target.closest('.aktuality_more_link');
+            if (!moreLink) return;
+
+            e.preventDefault();
+            const card = moreLink.closest('.aktuality_card');
+            if (!card) return;
+
+            showDetail(card);
+        });
+    }
+
     // Sticky Support Banner ("Podpoř Letokruh" spodní lišta)
     const isClosedInSession = sessionStorage.getItem('letokruh_support_bar_closed');
     if (!isClosedInSession) {

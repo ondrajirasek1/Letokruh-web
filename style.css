@@ -632,8 +632,8 @@ h6 {
 }
 
 .story_avatar {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     background: #ebdace;
     flex-shrink: 0;
@@ -671,13 +671,14 @@ h6 {
 .story_info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 2px;
 }
 
 .story_name {
     color: #cb2f1d;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    line-height: 1.2;
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
@@ -689,6 +690,7 @@ a.story_name:hover {
 .story_role {
     color: #666;
     font-size: 0.9rem;
+    line-height: 1.2;
 }
 
 .footer_sectionAll {
