@@ -3784,9 +3784,30 @@ body.fonts-enlarged h6 {
    =========================== */
 
 /* Benefits Section */
+
+/* Dobroklub Hero & Section Gaps Tuning */
+.hero_section.dobroklub_hero {
+    padding: 0 50px 20px 50px;
+}
+
+.dobroklub_hero .hero_images {
+    height: 480px;
+}
+
+.dobroklub_hero .hero_decor_red {
+    bottom: 80px;
+    right: -5%;
+}
+
+.dobroklub_hero .hero_decor_yellow {
+    left: auto;
+    right: 15px;
+    bottom: 50px;
+}
+
 .dk_benefits_section {
     background: #ffffff;
-    padding: 80px 50px;
+    padding: 40px 50px 40px 50px;
 }
 
 .dk_benefits_wrapper {
@@ -3798,7 +3819,7 @@ body.fonts-enlarged h6 {
     text-align: center;
     font-size: 2.5rem;
     color: #43382d;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .dk_benefits_grid {
@@ -3845,7 +3866,7 @@ body.fonts-enlarged h6 {
 /* Membership Section */
 .dk_membership_section {
     background: #fcf4ef;
-    padding: 80px 50px;
+    padding: 40px 50px;
 }
 
 .dk_membership_wrapper {
@@ -3857,7 +3878,7 @@ body.fonts-enlarged h6 {
     text-align: center;
     font-size: 2.5rem;
     color: #43382d;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .dk_membership_grid {
@@ -3895,7 +3916,7 @@ body.fonts-enlarged h6 {
 }
 
 .dk_membership_nonvolunteer .dk_membership_card_icon {
-    background: #f39200;
+    background: #cb2f1d;
     color: white;
 }
 
@@ -3943,33 +3964,25 @@ body.fonts-enlarged h6 {
 }
 
 
-/* 2. ŽLUTÉ OBRYSOVÉ TLAČÍTKO V DOBROKLUBU */
+/* 2. ČERVENÉ OBRYSOVÉ TLAČÍTKO V DOBROKLUBU */
 .dk_membership_btn_outline {
     display: inline-block;
     padding: 12px 30px;
-    background: rgba(0, 0, 0, 0) !important; /* Elegantní průhledné pozadí */
-    color: #f39200 !important;               /* Tvá žlutá barva textu */
-    border: 2px solid #f39200 !important;    /* Žlutý obrys */
-    border-radius: 30px !important;          /* Sjednocené zaoblení */
+    background: transparent !important;
+    color: #cb2f1d !important;               /* Červená barva textu */
+    border: 2px solid #cb2f1d !important;    /* Červený obrys */
+    border-radius: 30px !important;
     text-decoration: none;
     font-weight: 700;
     box-shadow: none !important;
-    
-    /* VYPNE ANIMACI POHYBU */
     transform: none !important;
     top: 0 !important;
-    transition: filter 0.3s ease, background 0.3s ease !important;
+    transition: background 0.3s ease, color 0.3s ease !important;
 }
 
-/* Hover pro žluté tlačítko: plynule ztmaví žlutou a lehce zatáhne pozadí */
 .dk_membership_btn_outline:hover {
-    filter: brightness(0.85) !important; /* Ztmaví žlutý text i žlutý obrys o 15 % */
-    
-    /* Způsobí, že pozadí pod žlutým tlačítkem jemně „kouřově“ ztmavne, 
-       ale nezbarví se celé na žluto, takže zůstane průhledné, přesně jak se ti to líbilo! */
-    background: rgba(0, 0, 0, 0.05) !important; 
-    
-    color: #f39200 !important; /* Žlutý text zůstane žlutým */
+    background: #cb2f1d !important;
+    color: white !important;
     cursor: pointer !important;
     transform: none !important;
     top: 0 !important;
@@ -3978,7 +3991,7 @@ body.fonts-enlarged h6 {
 /* FAQ Section */
 .dk_faq_section {
     background: #ffffff;
-    padding: 80px 50px;
+    padding: 40px 50px;
 }
 
 .dk_faq_wrapper {
@@ -3990,7 +4003,7 @@ body.fonts-enlarged h6 {
     text-align: center;
     font-size: 2.5rem;
     color: #43382d;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .dk_faq_list {
@@ -6633,4 +6646,112 @@ body.has-sticky-support-bar {
         grid-template-columns: 1fr;
         gap: 25px;
     }
+}
+
+/* Navigation Dropdown (Dobroklub -> Blog) */
+.nav_dropdown {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_dropdown > .navbarItem {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.nav_dropdown_icon {
+    font-size: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.nav_dropdown:hover .nav_dropdown_icon {
+    transform: rotate(180deg);
+}
+
+.nav_dropdown_menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(5px);
+    background: #ffffff;
+    min-width: 190px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    padding: 8px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    z-index: 2000;
+    border: 1px solid #f2e6de;
+}
+
+.nav_dropdown:hover .nav_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.nav_dropdown_item {
+    display: block;
+    padding: 10px 20px;
+    color: #43382d;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: left;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav_dropdown_item:hover {
+    background: #fcf4ef;
+    color: #cb2f1d;
+}
+
+/* Dobroklub Blog Banner */
+.dk_blog_section {
+    background: #ffffff;
+    padding: 40px 50px;
+}
+
+.dk_blog_wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.dk_blog_card {
+    background: #fcf4ef;
+    border-radius: 16px;
+    padding: 40px;
+    border-left: 6px solid #cb2f1d;
+}
+
+.dk_blog_badge {
+    background: #cb2f1d;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.dk_blog_card h2 {
+    font-size: 1.8rem;
+    color: #43382d;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.dk_blog_card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
 }

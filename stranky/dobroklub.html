@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dobroklub - Komunita dobrovolníků a přátel Letokruhu</title>
     <meta name="description" content="Dobroklub je komunita dobrovolníků a přátel Letokruhu. Členství nabízí volný vstup na aktivity, zvýhodněné kurzy a přístup ke komunitě.">
-    <link rel="stylesheet" href="../style.css?v=48">
+    <link rel="stylesheet" href="../style.css?v=49">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -34,10 +34,15 @@
             <a href="../stranky/onas.html" class="navbarItem">O nás</a>
             <a href="../stranky/dobrovolnictvi.html" class="navbarItem">Dobrovolnictví</a>
             <a href="../stranky/program.html" class="navbarItem">Program</a>
-            <a href="../stranky/dobroklub.html" class="navbarItem" style="color: #cb2f1d;">Dobroklub</a>
+            <div class="nav_dropdown">
+            <a href="../stranky/dobroklub.html" class="navbarItem" style="color: #cb2f1d;">Dobroklub <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>
+            <div class="nav_dropdown_menu">
+                <a href="../stranky/dobroklub.html" class="nav_dropdown_item">Dobroklub</a>
+                <a href="../stranky/blog.html" class="nav_dropdown_item">Blog komunity</a>
+            </div>
+        </div>
             <a href="../stranky/firemni-partnerstvi.html" class="navbarItem">Firemní partnerství</a>
             <a href="../stranky/kontakt.html" class="navbarItem">Kontakt</a>
-            <a href="../stranky/blog.html" class="navbarItem">Blog</a>
             <a href="../stranky/stan-se-dobrovolnikem.html" class="navbarItem button_nav_cta">Staň se dobrovolníkem</a>
             <a href="../stranky/podpor-dobro.html" class="navbarItem button_nav_support"><i class="fa-solid fa-heart"></i> Podpoř Letokruh</a>
         </div>
@@ -51,11 +56,11 @@
     </div>
 
     <!-- Hero Section -->
-    <header class="hero_section">
+    <header class="hero_section dobroklub_hero">
         <div class="hero_wrapper">
             <div class="hero_images hero_images_left">
                 <img src="../images/grafika/kruh_s_vyseci_zluty.png" alt="Decoration Yellow Circle"
-                    class="hero_decor_yellow" style="left: auto; right: 0; bottom: -30px;">
+                    class="hero_decor_yellow" >
                 <img src="../images/grafika/srdce_cara_cervene.png" alt="Decoration Red Heart Line" class="hero_decor_red">
                 <div class="hero_main_img_wrapper">
                     <img src="../images/ostatni/Dobroklub-photo.jpg" alt="Dobroklub - komunita Letokruhu" class="hero_img_main">
@@ -66,7 +71,7 @@
                 <p class="subtitle" style="margin-bottom: 20px;">
                     <strong>Komunita dobrovolníků a přátel Letokruhu</strong>
                 </p>
-                <p class="subtitle" style="margin-bottom: 40px;">
+                <p class="subtitle" style="margin-bottom: 25px;">
                     Členství v Dobroklubu nabízí specifické výhody pro všechny, kteří se chtějí zapojit
                     do komunity Letokruhu.
                 </p>
@@ -105,6 +110,7 @@
     </section>
 
     <!-- Membership Section -->
+
     <section class="dk_membership_section" id="clenstvi">
         <div class="dk_membership_wrapper">
             <h2>Jak se mohu stát členem</h2>
@@ -115,7 +121,6 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
                     <h3>Jsem dobrovolník Letokruhu</h3>
-                    <div style="background: #fcf4ef; color: #cb2f1d; font-weight: 700; display: inline-block; padding: 4px 14px; border-radius: 20px; margin-bottom: 15px; font-size: 0.95rem;">ZDARMA (v rámci dobrovolnictví)</div>
                     <p>Pro aktivní dobrovolníky Letokruhu je členství v Dobroklubu plně zdarma jako poděkování za vaši pomoc, energii a věnovaný čas.</p>
                     <a href="../stranky/stan-se-dobrovolnikem.html" class="dk_membership_btn">Registrace dobrovolníka</a>
                 </div>
@@ -125,7 +130,6 @@
                         <i class="fa-solid fa-user-plus"></i>
                     </div>
                     <h3>Nejsem dobrovolník</h3>
-                    <div style="background: #fcf4ef; color: #43382d; font-weight: 700; display: inline-block; padding: 4px 14px; border-radius: 20px; margin-bottom: 15px; font-size: 0.95rem; border: 1px solid #ebdace;">Členský příspěvek 500 Kč / rok</div>
                     <p>I bez dobrovolnické činnosti se můžete stát členem Dobroklubu! Podpořte činnost Letokruhu ročním příspěvkem a získejte přístup ke komunitě a všem výhodám.</p>
                     <a href="../stranky/stan-se-dobrovolnikem.html" class="dk_membership_btn dk_membership_btn_outline">Registrace člena</a>
                 </div>
@@ -134,11 +138,24 @@
     </section>
 
     <!-- FAQ Section -->
+    
+    <!-- Community Blog Section -->
+    <section class="dk_blog_section" id="blog-komunity">
+        <div class="dk_blog_wrapper">
+            <div class="dk_blog_card">
+                <span class="dk_blog_badge"><i class="fa-solid fa-newspaper"></i> Blog komunity</span>
+                <h2>Příběhy, inspirace a novinky ze života komunity Letokruhu</h2>
+                <p>Náš blog je místem pro zážitky našich dobrovolníků, příběhy seniorů a inspiraci pro všechny přátele Letokruhu.</p>
+                <a href="../stranky/blog.html" class="dk_membership_btn">Přejít na Blog komunity &rarr;</a>
+            </div>
+        </div>
+    </section>
+
     <section class="dk_faq_section" id="faq">
         <div class="dk_faq_wrapper">
             <h2>Nejčastější dotazy</h2>
 
-            <div class="dk_faq_list">
+                        <div class="dk_faq_list">
                 <!-- FAQ 1 -->
                 <div class="dk_faq_item">
                     <button class="dk_faq_question" aria-expanded="false">
@@ -146,7 +163,7 @@
                         <i class="fa-solid fa-chevron-down dk_faq_icon"></i>
                     </button>
                     <div class="dk_faq_answer">
-                        <p>Účast na většině kurzů je možná i bez členství. Kurzy a workshopy se hradí jednotlivě, buď jednorázově nebo jako kurzovné za dané období. Členové Dobroklubu mají vybrané akce ZDARMA a vzdělávací semináře a kurzy za ZVÝHODNĚNOU CENU.</p>
+                        <p>Ano, abych mohl čerpat výhody členství Letokruhu musím být registrovaným členem Dobroklubu – být dobrovolníkem nebo přítelem Letokruhu (zaplatit členský poplatek 500,- ročně).</p>
                     </div>
                 </div>
 
@@ -157,7 +174,7 @@
                         <i class="fa-solid fa-chevron-down dk_faq_icon"></i>
                     </button>
                     <div class="dk_faq_answer">
-                        <p>Ano. Díky registraci vás můžeme přihlašovat na všechny aktivity v Letokruhu. Získáte také přístup do portálu <strong>MŮJ LETOKRUH</strong>, ve kterém si snadno můžete své rezervace spravovat online.</p>
+                        <p>Ano. Díky registraci vás můžeme přihlašovat na všechny aktivity v LETOKRUHU. Získáte také přístup do portálu <strong>MŮJ LETOKRUH</strong>, ve kterém si snadno můžete svoje rezervace spravovat online.</p>
                     </div>
                 </div>
 
@@ -175,33 +192,11 @@
                 <!-- FAQ 4 -->
                 <div class="dk_faq_item">
                     <button class="dk_faq_question" aria-expanded="false">
-                        <span>Jak mohu kurz uhradit?</span>
+                        <span>Jak mohu členský poplatek uhradit?</span>
                         <i class="fa-solid fa-chevron-down dk_faq_icon"></i>
                     </button>
                     <div class="dk_faq_answer">
                         <p>V hotovosti nebo QR kódem na pobočce nebo online v portálu <strong>MŮJ LETOKRUH</strong>. Na email vám poté přijde potvrzení s fakturou.</p>
-                    </div>
-                </div>
-
-                <!-- FAQ 5 -->
-                <div class="dk_faq_item">
-                    <button class="dk_faq_question" aria-expanded="false">
-                        <span>Co když se nemohu dostavit?</span>
-                        <i class="fa-solid fa-chevron-down dk_faq_icon"></i>
-                    </button>
-                    <div class="dk_faq_answer">
-                        <p>Při odhlášení do 24 hodin před začátkem lekce vám vrátíme částku v podobě kreditu na vaše konto <strong>MŮJ LETOKRUH</strong>.</p>
-                    </div>
-                </div>
-
-                <!-- FAQ 6 -->
-                <div class="dk_faq_item">
-                    <button class="dk_faq_question" aria-expanded="false">
-                        <span>Co když zjistím, že mi kurz nebo lektor nevyhovuje?</span>
-                        <i class="fa-solid fa-chevron-down dk_faq_icon"></i>
-                    </button>
-                    <div class="dk_faq_answer">
-                        <p>U dlouhodobých kurzů má každý klient nárok na ukázkovou lekci zdarma, teprve potom se může rozhodnout, zda si zaplatí celý kurz. U celoročních jazykových kurzů je po dohodě s lektorem možné přeřazení do skupiny s vyšší nebo nižší úrovní. U ostatních celoročních kurzů existuje možnost refundace (zrušení zaplacené lekce/kurzu) pro případ, že z nějakého důvodu na kurz dál chodit nemůžete nebo nechcete.</p>
                     </div>
                 </div>
             </div>
