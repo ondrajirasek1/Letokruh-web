@@ -6700,7 +6700,8 @@ body.has-sticky-support-bar {
     left: 50%;
     transform: translateX(-50%) translateY(5px);
     background: #ffffff;
-    min-width: 190px;
+    min-width: 210px;
+    white-space: nowrap;
     border-radius: 12px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
     padding: 8px 0;

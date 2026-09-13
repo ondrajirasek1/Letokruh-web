@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="cs">
 
 <head>
@@ -30,18 +30,46 @@
             <a href="../index.html"></a>
         </div>
         <div class="navbar_desktop">
-            <a href="../stranky/onas.html" class="navbarItem">O nás</a>
-            <a href="../stranky/dobrovolnictvi.html" class="navbarItem">Dobrovolnictví</a>
+            <div class="nav_dropdown">
+                <a href="../stranky/onas.html" class="navbarItem">O nás <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>
+                <div class="nav_dropdown_menu">
+                    <a href="../stranky/onas.html#nase-mise" class="nav_dropdown_item">Naše mise</a>
+                    <a href="../stranky/onas.html#pobocky" class="nav_dropdown_item">Pobočky</a>
+                    <a href="../stranky/onas.html#nas-tym" class="nav_dropdown_item">Náš tým</a>
+                    <a href="../stranky/onas.html#co-se-deje" class="nav_dropdown_item">Co se děje v Letokruhu</a>
+                    <a href="../stranky/onas.html#projekty" class="nav_dropdown_item">Naše projekty</a>
+                </div>
+            </div>
+            <div class="nav_dropdown">
+                <a href="../stranky/dobrovolnictvi.html" class="navbarItem">Dobrovolnictví <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>
+                <div class="nav_dropdown_menu">
+                    <a href="../stranky/dobrovolnictvi.html#stan-se-dobrovolnikem" class="nav_dropdown_item">Staň se dobrovolníkem</a>
+                    <a href="../stranky/dobrovolnictvi.html#aktualne-hledame" class="nav_dropdown_item">Aktuálně hledáme</a>
+                    <a href="../stranky/dobrovolnictvi.html#aktivity" class="nav_dropdown_item">Nejčastější dobrovolnické aktivity</a>
+                    <a href="../stranky/dobrovolnictvi.html#pribehy" class="nav_dropdown_item">Příběhy dobrovolníků</a>
+                </div>
+            </div>
             <a href="../stranky/program.html" class="navbarItem">Program</a>
             <div class="nav_dropdown">
                 <a href="../stranky/dobroklub.html" class="navbarItem">Dobroklub <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>
                 <div class="nav_dropdown_menu">
-                    <a href="../stranky/dobroklub.html" class="nav_dropdown_item">Dobroklub</a>
+                    <a href="../stranky/dobroklub.html#clenstvi" class="nav_dropdown_item">Jak se mohu stát členem</a>
                     <a href="../stranky/blog.html" class="nav_dropdown_item">Blog komunity</a>
                 </div>
             </div>
-            <a href="../stranky/firemni-partnerstvi.html" class="navbarItem" style="color: #cb2f1d;">Firemní partnerství</a>
-            <a href="../stranky/kontakt.html" class="navbarItem">Kontakt</a>
+            <div class="nav_dropdown">
+                <a href="../stranky/firemni-partnerstvi.html" class="navbarItem" style="color: #cb2f1d;">Firemní partnerství <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>
+                <div class="nav_dropdown_menu">
+                    <a href="../stranky/firemni-partnerstvi.html#moznosti-spoluprace" class="nav_dropdown_item">Možnosti spolupráce</a>
+                    <a href="../stranky/firemni-partnerstvi.html#kdo-vam-pomuze" class="nav_dropdown_item">Kdo vám pomůže pomáhat</a>
+                </div>
+            </div>
+            <div class="nav_dropdown">
+                <a href="../stranky/kontakt.html" class="navbarItem">Kontakt <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>
+                <div class="nav_dropdown_menu">
+                    <a href="../stranky/kontakt.html#pobocky" class="nav_dropdown_item">Pobočky</a>
+                </div>
+            </div>
             <a href="../stranky/stan-se-dobrovolnikem.html" class="navbarItem button_nav_cta btn-sjednoceny">Staň se dobrovolníkem</a>
             <a href="../stranky/podpor-dobro.html" class="navbarItem button_nav_support"><i class="fa-solid fa-heart"></i> Podpoř Letokruh</a>
             </div>
@@ -71,7 +99,7 @@
     </section>
 
     <!-- Options Grid Section -->
-    <section style="padding: 60px 20px; background: #ffffff;">
+    <section id="moznosti-spoluprace" style="padding: 60px 20px; background: #ffffff;">
         <div style="max-width: 1100px; margin: 0 auto;">
             <h2 style="font-size: 2.2rem; color: #43382d; text-align: center; margin-bottom: 40px; font-weight: 700;">Možnosti spolupráce</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 30px;">
@@ -126,7 +154,7 @@
     </section>
 
     <!-- Director Contact Section -->
-    <section style="padding: 60px 20px; background: #ffffff;">
+    <section id="kdo-vam-pomuze" style="padding: 60px 20px; background: #ffffff;">
         <div style="max-width: 800px; margin: 0 auto; text-align: center;">
             <h2 style="font-size: 2.2rem; color: #43382d; margin-bottom: 15px; font-weight: 700;">Kdo vám pomůže pomáhat?</h2>
             <p style="font-size: 1.1rem; line-height: 1.7; color: #43382d; margin-bottom: 35px;">
