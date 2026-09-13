@@ -2477,7 +2477,7 @@ body.fonts-enlarged h6 {
     width: 500px;
     height: 360px;
     background-color: #d1d1d1;
-    background-image: url("images/lide/Tým.jpg"); /* Re-added background image for 'o nas' page */
+    background-image: url("images/lide/spolecna.png"); /* Updated image for 'o nas' page */
     background-size: cover;
     background-position: center;
     mask-image: url("images/grafika/hero_mask.png");
