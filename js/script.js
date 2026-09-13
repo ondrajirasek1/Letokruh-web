@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const hideDetail = () => {
             detailView.style.display = 'none';
-            homepageNewsGrid.style.display = '';
+            homepageNewsGrid.style.display = 'flex';
 
             // Scroll back to top of section
             newsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -564,22 +564,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const hideDetail = () => {
             detailView.style.display = 'none';
-            activitiesGrid.style.display = '';
-            if (customOffer) customOffer.style.display = '';
+            activitiesGrid.style.display = 'flex';
+            if (customOffer) customOffer.style.display = 'block';
 
             // Scroll back to top of section
             activitiesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         };
 
-        // Delegate click on "Více informací" links
+        // Delegate click on activity cards
         activitiesGrid.addEventListener('click', (e) => {
-            const moreLink = e.target.closest('.aktuality_more_link');
-            if (!moreLink) return;
-
-            e.preventDefault();
-            const card = moreLink.closest('.aktuality_card');
+            const card = e.target.closest('.aktuality_card');
             if (!card) return;
 
+            e.preventDefault();
             showDetail(card);
         });
     }

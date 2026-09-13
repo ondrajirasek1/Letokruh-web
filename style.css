@@ -271,8 +271,8 @@ h6 {
 
 .hero_section {
     background: #fcf4ef;
-    padding: 0 50px 80px 50px;
-    /* Reduced top padding to 0 */
+    padding: 0 50px 20px 50px;
+    /* Reduced top padding to 0, bottom padding to 20px */
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -364,8 +364,8 @@ h6 {
 
 .hero_decor_yellow {
     position: absolute;
-    bottom: 40px;
-    /* Adjusted */
+    bottom: 110px;
+    /* Moved up */
     left: 15%;
     /* Adjusted */
     width: 70px;
@@ -375,8 +375,8 @@ h6 {
 
 .hero_decor_green {
     position: absolute;
-    top: 70%;
-    /* Moved down */
+    top: 50%;
+    /* Moved up */
     left: 50%;
     transform: translate(-50%, -50%) scale(1.0);
     /* Reduced scale */
@@ -1068,7 +1068,7 @@ body.fonts-enlarged h6 {
 .about_section {
     background: #ffffff;
     /* Distinct background */
-    padding: 80px 50px;
+    padding: 20px 50px 30px 50px;
     display: flex;
     justify-content: center;
 }
@@ -1081,7 +1081,7 @@ body.fonts-enlarged h6 {
     justify-content: center;
     gap: 0;
     position: relative;
-    min-height: 500px;
+    min-height: 340px;
 }
 
 .about_visual {
@@ -1095,8 +1095,8 @@ body.fonts-enlarged h6 {
 }
 
 .heart_line {
-    width: 400px;
-    /* Reduced from 600px */
+    width: 340px;
+    /* Slightly reduced */
     position: absolute;
     left: -50px;
     /* Adjusted left position */
@@ -1106,12 +1106,12 @@ body.fonts-enlarged h6 {
 }
 
 .heart_red {
-    width: 60px;
-    /* Reduced from 80px */
+    width: 50px;
+    /* Slightly reduced */
     position: absolute;
-    left: 280px;
-    /* Fixed position relative to left instead of right */
-    bottom: 120px;
+    left: 240px;
+    /* Fixed position relative to left */
+    bottom: 90px;
     z-index: 2;
 }
 
@@ -1201,6 +1201,7 @@ body.fonts-enlarged h6 {
     margin-bottom: 2rem;
 }
 
+.vol_col_left p,
 .vol_col_right p {
     font-size: 0.9em;
     line-height: 1.6;
@@ -6776,3 +6777,16 @@ body.has-sticky-support-bar {
     margin-bottom: 20px;
     line-height: 1.6;
 }
+
+/* Nejčastější dobrovolnické aktivity - Klikatelné karty */
+#activities_grid .aktuality_card {
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+#activities_grid .aktuality_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09) !important;
+    border-color: #cb2f1d !important;
+}
+
