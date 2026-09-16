@@ -174,12 +174,49 @@ h6 {
 }
 
 .logo_desktop {
-    display: none;
-    /* Hide empty logo container */
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    position: relative;
 }
 
-.logo_desktop img {
-    width: 100%;
+.logo_desktop.nav_dropdown {
+    padding: 10px 0;
+}
+
+.logo_desktop.nav_dropdown .nav_dropdown_menu {
+    left: 0;
+    transform: translateY(5px);
+}
+
+.logo_desktop.nav_dropdown:hover .nav_dropdown_menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.logo_desktop a,
+.nav_logo_link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.logo_desktop a:hover,
+.nav_logo_link:hover {
+    opacity: 0.85;
+    transform: scale(1.03);
+}
+
+.logo_desktop img,
+.nav_logo_img {
+    height: 40px;
+    max-height: 40px;
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .navbar_desktop {
@@ -6788,5 +6825,82 @@ body.has-sticky-support-bar {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09) !important;
     border-color: #cb2f1d !important;
+}
+
+/* Vertically Stacked Header Action Buttons */
+.nav_buttons_stacked {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    align-items: stretch;
+    margin-left: 20px;
+    flex-shrink: 0;
+    padding: 6px 0;
+}
+
+.nav_buttons_stacked .button_nav_cta,
+.navbar_wrapper .button_nav_cta {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #cb2f1d !important; 
+    color: white !important;             
+    padding: 7px 22px !important;
+    border-radius: 20px !important;      
+    margin-left: 0 !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    box-shadow: 0 2px 6px rgba(203, 47, 29, 0.25) !important; 
+    transform: none !important;
+    top: 0 !important;
+    transition: filter 0.2s ease, transform 0.2s ease !important;
+    white-space: nowrap !important;
+    flex: none !important;
+    min-width: 185px !important;
+}
+
+.nav_buttons_stacked .button_nav_cta:hover,
+.navbar_wrapper .button_nav_cta:hover {
+    filter: brightness(0.88) !important; 
+    background-color: #cb2f1d !important; 
+    color: white !important;              
+    cursor: pointer !important;
+    transform: translateY(-1px) !important;
+}
+
+.nav_buttons_stacked .button_nav_support,
+.navbar_wrapper .button_nav_support {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    background-color: #ffffff !important;
+    color: #cb2f1d !important;
+    border: 1.5px solid #cb2f1d !important;
+    padding: 6px 20px !important;
+    border-radius: 20px !important;
+    margin-left: 0 !important;
+    font-weight: 700 !important;
+    font-size: 0.88rem !important;
+    line-height: 1.2 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease !important;
+    white-space: nowrap !important;
+    flex: none !important;
+    min-width: 185px !important;
+}
+
+.nav_buttons_stacked .button_nav_support:hover,
+.navbar_wrapper .button_nav_support:hover {
+    background-color: #fcf4ef !important;
+    color: #cb2f1d !important;
+    border-color: #cb2f1d !important;
+    cursor: pointer !important;
+    transform: translateY(-1px) !important;
 }
 

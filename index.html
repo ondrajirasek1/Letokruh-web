@@ -27,8 +27,18 @@
     </header>
 
     <nav class="navbar_wrapper">
-        <div class="logo_desktop">
-            <!-- Logo moved to top header as requested -->
+                        <div class="logo_desktop nav_dropdown">
+            <a href="index.html" class="nav_logo_link" title="Letokruh - Hlavní stránka">
+                <img src="images/logos/Letokruh_logo_horizontal.png" alt="Letokruh Logo" class="nav_logo_img">
+            </a>
+            <div class="nav_dropdown_menu">
+                <a href="#o-letokruhu" class="nav_dropdown_item">Kdo jsme a co děláme</a>
+                <a href="#co-se-deje" class="nav_dropdown_item">Co se děje v Letokruhu</a>
+                <a href="#s-kym-pracujeme" class="nav_dropdown_item">S kým pracujeme</a>
+                <a href="#pribehy-dobrovolniku" class="nav_dropdown_item">Příběhy dobrovolníků</a>
+                <a href="#partners" class="nav_dropdown_item">Partneři</a>
+            </div>
+        </div>
         </div>
         <div class="navbar_desktop">
             <div class="nav_dropdown">
@@ -71,10 +81,10 @@
                     <a href="stranky/kontakt.html#pobocky" class="nav_dropdown_item">Pobočky</a>
                 </div>
             </div>
-            <a href="stranky/stan-se-dobrovolnikem.html" class="navbarItem button_nav_cta btn-sjednoceny">Staň se
-                dobrovolníkem</a>
-            <a href="stranky/podpor-dobro.html" class="navbarItem button_nav_support"><i class="fa-solid fa-heart"></i> Podpoř Letokruh</a>
-        </div>
+            <div class="nav_buttons_stacked">
+                <a href="stranky/stan-se-dobrovolnikem.html" class="button_nav_cta btn-sjednoceny">Staň se dobrovolníkem</a>
+                <a href="stranky/podpor-dobro.html" class="button_nav_support"><i class="fa-solid fa-heart"></i> Podpoř Letokruh</a>
+            </div></div>
     </nav>
 
     <header class="hero_section">
@@ -101,7 +111,7 @@
     </header>
 
     <!-- About Section -->
-    <section class="about_section">
+    <section id="o-letokruhu" class="about_section">
         <div class="about_wrapper">
             <div class="about_visual">
                 <img src="images/grafika/heart_line_yellow.png" alt="Srdce čára žlutá" class="heart_line">
@@ -119,7 +129,7 @@
         </div>
     </section>
 
-    <section class="news_section">
+    <section id="co-se-deje" class="news_section">
         <div class="news_wrapper">
             <div class="news_header">
                 <h2>Co se děje v Letokruhu</h2>
@@ -222,7 +232,7 @@
     </section>
 
     <!-- Volunteers Section -->
-    <section class="volunteers_section">
+    <section id="s-kym-pracujeme" class="volunteers_section">
         <div class="volunteers_wrapper">
             <!-- Row 1: Who we work with -->
             <div class="volunteers_row" style="margin-bottom: 0;">
@@ -252,7 +262,7 @@
 
 
 
-<section class="stories_section">
+<section id="pribehy-dobrovolniku" class="stories_section">
         <div class="stories_wrapper"
             style="display: flex; gap: 40px; justify-content: space-between; align-items: flex-start; width: 100%; max-width: none; margin: 0 auto;">
             <div class="stories_intro" style="padding-left: 5%;">
