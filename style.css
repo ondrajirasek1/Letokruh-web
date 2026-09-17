@@ -657,6 +657,35 @@ h6 {
     box-shadow: 0 6px 15px rgba(203, 47, 29, 0.4);
 }
 
+.stories_decor_wrap {
+    position: relative;
+    margin-top: 135px;
+    width: 100%;
+    max-width: 290px;
+    height: 220px;
+    pointer-events: none;
+}
+
+.stories_decor_line {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 280px;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.stories_decor_circle {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    width: 60px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
 /* End restored styles */
 
 .stories_list {
@@ -2400,6 +2429,23 @@ body.fonts-enlarged h6 {
 
     .stories_intro p {
         margin: 0 auto 30px auto;
+    }
+
+    .stories_decor_wrap {
+        margin: 40px auto 0 auto;
+        max-width: 250px;
+        height: 190px;
+    }
+
+    .stories_decor_line {
+        width: 240px;
+        left: 0;
+    }
+
+    .stories_decor_circle {
+        width: 50px;
+        top: 8px;
+        right: 35px;
     }
 
     .stories_list {
