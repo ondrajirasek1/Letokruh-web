@@ -1766,23 +1766,34 @@ body.fonts-enlarged h6 {
 /* Footer Navigation Grid */
 .footer_nav_grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 24px;
     margin-bottom: 40px;
     text-align: left;
+    align-items: start;
+}
+
+.footer_nav_col {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
 }
 
 .footer_nav_col h4 {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ebdace;
+    padding-bottom: 10px;
 }
 
 .footer_nav_col h4 a {
     color: #cb2f1d;
-    /* Red heading links */
     text-decoration: none;
-    font-size: 1.3rem;
-    /* Increased from 1.1rem */
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 800;
     transition: color 0.2s;
 }
 
@@ -1797,16 +1808,14 @@ body.fonts-enlarged h6 {
 }
 
 .footer_nav_col ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .footer_nav_col ul li a {
     color: #cb2f1d;
-    /* Red links as per image? Or text color? Image shows red text for links too, or maybe #cb2f1d for headers and #d35400 for links? Let's stick to red/orange theme. Image text looks reddish-brown. */
-    color: #cb2f1d;
     text-decoration: none;
-    font-size: 1.1rem;
-    /* Increased from 0.95rem */
+    font-size: 0.95rem;
+    line-height: 1.4;
     transition: opacity 0.2s;
     font-weight: 500;
 }
