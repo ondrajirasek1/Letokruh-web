@@ -66,9 +66,9 @@ body {
 }
 
 h1 {
-    font-size: 3.25rem;
-    line-height: 64px;
-    letter-spacing: -2px
+    font-size: 3rem;
+    line-height: 1.15;
+    letter-spacing: -1px
 }
 
 h1,
@@ -285,7 +285,7 @@ h6 {
     border-radius: 30px !important;
     margin-left: 12px !important;
     font-weight: 700 !important;
-    font-size: 1.1rem !important;
+    font-size: 1rem !important;
     text-decoration: none !important;
     box-shadow: none !important;
     transition: all 0.3s ease !important;
@@ -1651,7 +1651,7 @@ body.fonts-enlarged h6 {
     border-radius: 30px !important;
     text-decoration: none;
     font-weight: 700 !important;
-    font-size: 1.1rem;
+    font-size: 1rem !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
     transform: none !important;
     top: 0 !important;
@@ -1676,7 +1676,7 @@ body.fonts-enlarged h6 {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem !important;
     transition: background 0.2s, border 0.2s;
     display: inline-block;
 }
@@ -1897,6 +1897,7 @@ body.fonts-enlarged h6 {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1rem !important;
     transition: all 0.3s;
 }
 
@@ -2601,7 +2602,7 @@ body.fonts-enlarged h6 {
 }
 
 .hero_section_about .hero_content h1 {
-    font-size: 3.5rem !important;
+    font-size: 3rem !important;
     margin-bottom: 15px !important;
 }
 
@@ -2782,7 +2783,7 @@ body.fonts-enlarged h6 {
 }
 
 .detail_section h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #000;
     margin-bottom: 40px;
     text-align: center;
@@ -4841,6 +4842,7 @@ body.fonts-enlarged h6 {
 .btn-sjednoceny {
     display: inline-block;
     text-decoration: none;
+    font-size: 1rem !important;
     font-weight: 700 !important;
     border-radius: 30px !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
@@ -4904,7 +4906,7 @@ body.fonts-enlarged h6 {
 
 .support_hero_title {
     font-family: "Dederon-Sans", "Roboto", sans-serif;
-    font-size: 3.25rem !important;
+    font-size: 3rem !important;
     font-weight: 700;
     color: white;
     margin: 0;
