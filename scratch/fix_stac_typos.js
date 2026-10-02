@@ -17,21 +17,22 @@ function getAllHtmlFiles(dirPath, arrayOfFiles = []) {
 }
 
 const root = path.resolve(__dirname, '..');
-const files = getAllHtmlFiles(root);
+const htmlFiles = getAllHtmlFiles(root);
 
 let count = 0;
-files.forEach(filePath => {
+
+htmlFiles.forEach(filePath => {
   let content = fs.readFileSync(filePath, 'utf8');
-  // Replace href="style.css..." or href="../style.css..." with ?v=29
+
+  // Replace Stač se dobrovolníkem with Staň se dobrovolníkem
   const updated = content
-    .replace(/href="(\.\.\/)?style\.css(\?v=\d+)?"/g, (match, prefix) => {
-      const p = prefix || '';
-      return `href="${p}style.css?v=59"`;
-    });
+    .replace(/Stač se dobrovolníkem/g, 'Staň se dobrovolníkem')
+    .replace(/Stač se dobrovolnikem/g, 'Staň se dobrovolníkem');
 
   if (updated !== content) {
     fs.writeFileSync(filePath, updated, 'utf8');
     count++;
   }
 });
-console.log('Updated CSS version query param in files:', count);
+
+console.log(`Fixed Stač typo in ${count} HTML files.`);
