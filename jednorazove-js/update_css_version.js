@@ -26,7 +26,7 @@ files.forEach(filePath => {
   const updated = content
     .replace(/href="(\.\.\/)?style\.css(\?v=\d+)?"/g, (match, prefix) => {
       const p = prefix || '';
-      return `href="${p}style.css?v=59"`;
+      return `href="${p}style.css?v=60"`;
     });
 
   if (updated !== content) {

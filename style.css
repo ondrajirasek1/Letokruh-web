@@ -1,25 +1,171 @@
+/* ===== Dederon Sans Typography ===== */
 @font-face {
     font-family: "Dederon-Sans";
     src: url("fonts/Dederon-Sans-Medium.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon-Sans";
+    src: url("fonts/Dederon-Sans-Medium.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon-Sans";
+    src: url("fonts/Dederon-Sans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Dederon-Sans";
     src: url("fonts/Dederon-Sans-Medium-Italic.woff") format("woff");
     font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon-Sans";
+    src: url("fonts/Dederon-Sans-Medium-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon-Sans";
+    src: url("fonts/Dederon-Sans-Medium-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon-Sans";
+    src: url("fonts/Dederon-Sans-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Dederon-Sans";
     src: url("fonts/Dederon-Sans-Bold.woff") format("woff");
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* Removed Semibold definitions as they were unused/conflicting or not prioritized by user request for Bold/Medium/Teimer */
+@font-face {
+    font-family: "Dederon-Sans";
+    src: url("fonts/Dederon-Sans-Bold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
 
 @font-face {
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: "Dederon-Sans";
+    src: url("fonts/Dederon-Sans-Bold.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Alias for 'Dederon Sans' (space instead of hyphen) */
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Medium.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Medium.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Medium-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Medium-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Medium-Italic.woff") format("woff");
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Bold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Bold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Dederon Sans";
+    src: url("fonts/Dederon-Sans-Bold.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Teimer";
     src: url("fonts/Teimer-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -34,7 +180,51 @@ html {
 
 /* Global Unified Font Enforcement */
 body, h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, select, textarea, blockquote, div, td, th, label {
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
+}
+
+/* Explicit Unified Headings to Dederon Sans */
+h1, h2, h3, h4, h5, h6,
+.blog_card_title,
+.aktuality_card_title,
+.aktuality_detail_title,
+.support_hero_title,
+.detail_section h1,
+.hero_section_about .hero_content h1,
+.hero_content h1,
+.team_header h2,
+.news_header h2,
+.vol_col_left h2,
+.stories_intro h2,
+.about_content h2,
+.newsletter_text h2,
+.cta_wrapper h2,
+.story_quote {
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+}
+
+/* Explicit Unified Buttons & Red Ovals to Dederon Sans */
+.btn-sjednoceny,
+.button_nav_cta,
+.button_primary,
+.button_hero,
+.button_news,
+.button_stories,
+.button_about,
+.button_cta_white,
+.button_cta_outline,
+.button_cta_inline,
+.button_white_outline,
+.button_feedback,
+.button_newsletter,
+.button_workshop,
+.button_nav_support,
+.nav_buttons_stacked a,
+.btn_reservation_action,
+.btn_substitute_action,
+.btn_modal_confirm,
+.button_top_register {
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
 }
 
 /* Preserve Font Awesome & Icon fonts */
@@ -54,7 +244,7 @@ i, i.fa-solid, i.fa-regular, i.fa-brands, i.fa-sharp, i.fa-light, i.fa-thin, i.f
 body {
     margin: 0 auto;
     padding: 0;
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.25rem;
     line-height: 32px;
     -webkit-font-smoothing: antialiased;
@@ -113,7 +303,7 @@ h6 {
 .subtitle {
     font-size: 1.375rem;
     line-height: 44px;
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-weight: 300;
     /* Assuming Light */
 }
@@ -254,6 +444,7 @@ h6 {
 
 .button_nav_cta {
     display: inline-block;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
     background-color: #cb2f1d !important; 
     color: white !important;             
     padding: 12px 24px;
@@ -276,6 +467,7 @@ h6 {
 
 .button_nav_support {
     display: inline-flex !important;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
     align-items: center !important;
     gap: 6px !important;
     background-color: #ffffff !important;
@@ -703,7 +895,7 @@ h6 {
 }
 
 .story_quote {
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     /* Assuming serif for quote */
     font-size: 1.25rem;
     font-weight: 700;
@@ -938,7 +1130,7 @@ a.story_name:hover {
 }
 
 .top-logo-text {
-    font-family: "Dederon-Sans", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1.8rem;
     color: #43382d;
@@ -954,7 +1146,7 @@ a.story_name:hover {
 }
 
 .top-slogan {
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     color: #666;
     margin-left: 10px;
     font-size: 1rem;
@@ -1511,7 +1703,7 @@ body.fonts-enlarged h6 {
     line-height: 0.1;
     display: block;
     margin-bottom: 30px;
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
 }
 
 #modal_quote_text {
@@ -2872,7 +3064,7 @@ body.fonts-enlarged h6 {
 }
 
 .team_role {
-    font-family: 'Dederon-Sans', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 0.9rem;
     /* Reduced from 1rem */
@@ -4560,7 +4752,7 @@ body.fonts-enlarged h6 {
 }
 
 .blog_card_title {
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.35;
@@ -4669,7 +4861,7 @@ body.fonts-enlarged h6 {
 }
 
 .aktuality_card_title {
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1.35;
@@ -4752,7 +4944,7 @@ body.fonts-enlarged h6 {
 }
 
 .aktuality_detail_title {
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: #43382d;
@@ -4844,6 +5036,7 @@ body.fonts-enlarged h6 {
 .btn-sjednoceny {
     display: inline-block;
     text-decoration: none;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
     font-size: 1rem !important;
     font-weight: 700 !important;
     border-radius: 30px !important;
@@ -4907,7 +5100,7 @@ body.fonts-enlarged h6 {
 }
 
 .support_hero_title {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 3rem !important;
     font-weight: 700;
     color: white;
@@ -4982,7 +5175,7 @@ body.fonts-enlarged h6 {
 }
 
 .support_reason_block h2 {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 2.3rem;
     line-height: 1.25;
     color: #43382d;
@@ -4999,7 +5192,7 @@ body.fonts-enlarged h6 {
 }
 
 .support_section_main_title {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 2.5rem;
     line-height: 1.2;
     color: #cb2f1d;
@@ -5016,7 +5209,7 @@ body.fonts-enlarged h6 {
 }
 
 .support_sub_heading {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.7rem;
     line-height: 1.3;
     color: #43382d;
@@ -5052,7 +5245,7 @@ body.fonts-enlarged h6 {
 }
 
 .stat_number {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 2.8rem;
     font-weight: 700;
     color: #cb2f1d;
@@ -5158,7 +5351,7 @@ body.fonts-enlarged h6 {
 }
 
 .donation_widget_title {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.6rem;
     font-weight: 700;
     color: #43382d;
@@ -5556,7 +5749,7 @@ body.fonts-enlarged h6 {
 }
 
 .support_options_intro {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.5rem;
     line-height: 1.6;
     color: #43382d;
@@ -5582,7 +5775,7 @@ body.fonts-enlarged h6 {
 }
 
 .support_option_col h3 {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.6rem;
     line-height: 1.3;
     color: #43382d;
@@ -5626,7 +5819,7 @@ body.fonts-enlarged h6 {
 
 /* Col 2 - Bank Account and QR Payment styling */
 .support_account_number {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 2.2rem;
     font-weight: 700;
     color: #cb2f1d;
@@ -5764,7 +5957,7 @@ body.fonts-enlarged h6 {
 }
 
 .support_alternative_section h2 {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 2.5rem;
     color: #43382d;
     text-align: center;
@@ -5798,7 +5991,7 @@ body.fonts-enlarged h6 {
 }
 
 .alternative_heading {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.8rem;
     color: #43382d;
     font-weight: 700;
@@ -5915,7 +6108,7 @@ body.fonts-enlarged h6 {
 }
 
 .cookie_text_col h2 {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 2.5rem;
     color: #43382d;
     margin-top: 0;
@@ -6055,7 +6248,7 @@ body.fonts-enlarged h6 {
 }
 
 .sweets_text_col h2 {
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 2.5rem;
     color: #43382d;
     margin-top: 0;
@@ -6161,7 +6354,7 @@ body.fonts-enlarged h6 {
     box-sizing: border-box;
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.35s ease;
     transform: translateY(0);
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
 }
 
 .sticky_support_bar.is-hidden {
@@ -6218,7 +6411,7 @@ body.has-sticky-support-bar {
     font-weight: 800;
     font-size: 1.4rem;
     letter-spacing: 0.5px;
-    font-family: "Dederon-Sans", "Roboto", sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
 }
 
 .sticky_support_title_sub {
@@ -6386,7 +6579,7 @@ body.has-sticky-support-bar {
 }
 
 .project_list_title {
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
     color: #43382d;
@@ -6427,7 +6620,7 @@ body.has-sticky-support-bar {
     background-color: #fcf4ef;
     color: #43382d;
     padding: 16px 20px;
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
     border-bottom: 2px solid #ebdace;
@@ -6455,7 +6648,7 @@ body.has-sticky-support-bar {
 .poptavka_title {
     font-size: 1.15rem;
     color: #cb2f1d;
-    font-family: 'Dederon-Sans', 'Roboto', sans-serif;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
     display: block;
     line-height: 1.4;
 }
@@ -6930,6 +7123,7 @@ body.has-sticky-support-bar {
 .nav_buttons_stacked .button_nav_cta,
 .navbar_wrapper .button_nav_cta {
     display: inline-flex !important;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
     align-items: center !important;
     justify-content: center !important;
     background-color: #cb2f1d !important; 
@@ -6963,6 +7157,7 @@ body.has-sticky-support-bar {
 .nav_buttons_stacked .button_nav_support,
 .navbar_wrapper .button_nav_support {
     display: inline-flex !important;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
     align-items: center !important;
     justify-content: center !important;
     gap: 6px !important;
