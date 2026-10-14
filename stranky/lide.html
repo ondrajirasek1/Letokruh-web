@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="cs">
 
 <head>
@@ -109,7 +109,7 @@
         </div>
         <div class="team_grid">
             <!-- 1. Kateřina Karbanová -->
-            <div class="team_card">
+            <div class="team_card" data-quote="Každý den mě dojímá nadšení, odhodlání a kreativita lidí, kteří věří ve smysluplnou myšlenku. Atmosféra v Letokruhu je díky všem, kdo sem přicházejí, pomáhají, dobrovolničí nebo nám jen fandí, naprosto výjimečná. Stejně tak jako je výjimečná celá naše mise. Je lidská, opravdová a dává hluboký smysl a mně je ctí být toho všeho součástí." data-author="Kateřina Karbanová" data-role="ředitelka,<br>koordinátorka dobrovolníků">
                 <img class="team_img_placeholder" src="../images/lide/L3.png" alt="Kateřina Karbanová">
                 <div class="team_name">Kateřina Karbanová</div>
                 <div class="team_role">ředitelka, koordinátorka dobrovolníků</div>
@@ -122,7 +122,7 @@
             </div>
 
             <!-- 2. Eliška Schönfeldová -->
-            <div class="team_card">
+            <div class="team_card" data-quote="Letokruh je pro mne místo, kde pomáhat neznamená být starší, ale být nablízku. A smích se postará o zbytek, včetně vrásek." data-author="Eliška Schönfeldová" data-role="koordinátorka dobrovolníků a vzdělávacích akcí">
                 <img class="team_img_placeholder" src="../images/lide/L2.png" alt="Eliška Schönfeldová">
                 <div class="team_name">Eliška Schönfeldová</div>
                 <div class="team_role">koordinátorka dobrovolníků a vzdělávacích akcí</div>
@@ -135,7 +135,7 @@
             </div>
 
             <!-- 3. Jana Drozdová -->
-            <div class="team_card">
+            <div class="team_card" data-quote="Vždycky jsem snila o práci, která mě bude bavit a zároveň bude někomu pomáhat. Díky Letokruhu přesně takovou práci mám." data-author="Jana Drozdová" data-role="koordinátorka dobrovolníků">
                 <img class="team_img_placeholder" src="../images/lide/L4.png" alt="Jana Drozdová">
                 <div class="team_name">Jana Drozdová</div>
                 <div class="team_role">koordinátorka dobrovolníků</div>
@@ -148,7 +148,7 @@
             </div>
 
             <!-- 4. Tereza Studničná -->
-            <div class="team_card">
+            <div class="team_card" data-quote="Babička mi jednou řekla: &quot;Čiň vždy své bližní šťastnými, z jejich štěstí sama budeš šťastná.&quot; A měla pravdu..." data-author="Tereza Studničná" data-role="koordinátorka dobrovolníků,<br>manažerka Dobroklubu">
                 <img class="team_img_placeholder" src="../images/lide/L6.png" alt="Tereza Studničná">
                 <div class="team_name">Tereza Studničná</div>
                 <div class="team_role">koordinátorka dobrovolníků, manažerka Dobroklubu</div>
@@ -161,7 +161,7 @@
             </div>
 
             <!-- 5. Vlaďka Dvořáková -->
-            <div class="team_card">
+            <div class="team_card" data-quote="Senioři, co žijí s radostí a chutí do života. Té myšlence fandím." data-author="Vlaďka Dvořáková" data-role="koordinátorka aktivit,<br>fundraising, marketing,<br>projekt Erasmus+">
                 <img class="team_img_placeholder" src="../images/lide/L1.png" alt="Vlaďka Dvořáková">
                 <div class="team_name">Vlaďka Dvořáková</div>
                 <div class="team_role">koordinátorka aktivit, fundraising, marketing, projekt Erasmus+</div>
@@ -174,7 +174,7 @@
             </div>
 
             <!-- 6. Lucie Jirásková -->
-            <div class="team_card">
+            <div class="team_card" data-quote="Po pár minutách kontaktu se seniorskými dobrovolníky z LETOKRUHU se díky jejich věčnému nadhledu a entusiasmu všechny problémy světa zdají najednou menší. LETOKRUH je pro mě symbolem propojování lidí, radost z fungujících spojení a vděk za to, že jsem jim mohla pomoci vzniknout, je tou nejlepší odměnou." data-author="Lucie Jirásková" data-role="koordinátorka dobrovolníků, manažerka pobočky">
                 <img class="team_img_placeholder" src="../images/lide/L5.png" alt="Lucie Jirásková">
                 <div class="team_name">Lucie Jirásková</div>
                 <div class="team_role">koordinátorka dobrovolníků, manažerka pobočky</div>
@@ -198,6 +198,20 @@
             </div>
         </div>
     </section>
+    <!-- Modal for Team Member Quotes -->
+    <div id="org_modal" class="modal">
+        <div class="modal_content">
+            <span class="close_modal">&times;</span>
+            <div class="modal_body">
+                <p id="modal_quote_text">Quote text goes here...</p>
+                <div class="modal_author_info">
+                    <p id="modal_author_name">Author Name</p>
+                    <p id="modal_org_name">Organization Name</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- CTA Section -->
     <section class="cta_section">

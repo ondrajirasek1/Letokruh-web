@@ -3052,6 +3052,16 @@ body.fonts-enlarged h6 {
     border-radius: 12px;
     margin-bottom: 25px;
     object-fit: cover;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team_card[data-quote] {
+    cursor: pointer;
+}
+
+.team_card[data-quote]:hover .team_img_placeholder {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .team_name {

@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Modal Logic
     const modal = document.getElementById('org_modal');
-    const cards = document.querySelectorAll('.org_card');
+    const cards = document.querySelectorAll('.org_card, .team_card[data-quote]');
     const closeBtn = document.querySelector('.close_modal');
     const modalQuote = document.getElementById('modal_quote_text');
     const modalAuthor = document.getElementById('modal_author_name');
@@ -134,17 +134,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (modal && cards.length > 0) {
         // Open Modal
         cards.forEach(card => {
-            card.addEventListener('click', () => {
+            card.addEventListener('click', (e) => {
+                if (e.target.closest('a')) return;
                 const quoteText = card.getAttribute('data-quote');
+                if (!quoteText) return;
                 const authorText = card.getAttribute('data-author');
-                const orgText = card.getAttribute('data-org');
+                const orgText = card.getAttribute('data-role') || card.getAttribute('data-org');
 
-                modalQuote.textContent = quoteText || "Text not available.";
-                modalAuthor.textContent = authorText || "";
-                modalOrg.textContent = orgText || "";
+                if (modalQuote) {
+                    modalQuote.innerHTML = '<span style="color: #e67e22; margin-right: 6px; font-family: inherit;">“</span>' + quoteText;
+                }
+                if (modalAuthor) modalAuthor.textContent = authorText || "";
+                if (modalOrg) modalOrg.innerHTML = orgText || "";
 
                 modal.style.display = "flex";
             });
+        });
+
+        // Close on Escape key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.style.display === "flex") {
+                modal.style.display = "none";
+            }
         });
 
         // Close Modal
