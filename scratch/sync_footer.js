@@ -53,9 +53,9 @@ const rootFooterGrid = `<div class="footer_nav_grid">
                         <li><a href="stranky/blog.html">Blog komunity</a></li>
                     </ul>
                 </div>
-                <!-- Col 6: Firemní partnerství -->
+                <!-- Col 6: Pro firmy -->
                 <div class="footer_nav_col">
-                    <h4><a href="stranky/firemni-partnerstvi.html">Firemní partnerství</a></h4>
+                    <h4><a href="stranky/firemni-partnerstvi.html">Pro firmy</a></h4>
                     <ul>
                         <li><a href="stranky/firemni-partnerstvi.html#moznosti-spoluprace">Možnosti spolupráce</a></li>
                         <li><a href="stranky/firemni-partnerstvi.html#vyrocni-zpravy">Výroční zprávy a hospodaření</a></li>
@@ -128,9 +128,9 @@ const subFooterGrid = `<div class="footer_nav_grid">
                         <li><a href="../stranky/blog.html">Blog komunity</a></li>
                     </ul>
                 </div>
-                <!-- Col 6: Firemní partnerství -->
+                <!-- Col 6: Pro firmy -->
                 <div class="footer_nav_col">
-                    <h4><a href="../stranky/firemni-partnerstvi.html">Firemní partnerství</a></h4>
+                    <h4><a href="../stranky/firemni-partnerstvi.html">Pro firmy</a></h4>
                     <ul>
                         <li><a href="../stranky/firemni-partnerstvi.html#moznosti-spoluprace">Možnosti spolupráce</a></li>
                         <li><a href="../stranky/firemni-partnerstvi.html#vyrocni-zpravy">Výroční zprávy a hospodaření</a></li>
