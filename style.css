@@ -546,20 +546,21 @@ h6 {
 .button_hero {
     display: inline-block;
     padding: 10px 25px;
-    /* Matched btn-support-top */
-    background: transparent;
-    border: 1px solid #cb2f1d;
-    border-radius: 30px;
-    /* Matched btn-support-top */
-    color: #cb2f1d;
+    background: transparent !important;
+    border: 2px solid #cb2f1d !important;
+    border-radius: 30px !important;
+    color: #cb2f1d !important;
     text-decoration: none;
     font-weight: 700;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: none !important;
 }
 
 .button_hero:hover {
-    background: #cb2f1d;
-    color: white;
+    background: rgba(203, 47, 29, 0.08) !important;
+    border-color: #cb2f1d !important;
+    color: #cb2f1d !important;
+    cursor: pointer;
 }
 
 .hero_images {
@@ -833,20 +834,23 @@ h6 {
 .button_stories {
     display: inline-block;
     padding: 12px 30px;
-    background: #cb2f1d;
-    color: white;
-    /* Filled button as per image */
-    border-radius: 30px;
+    background: transparent !important;
+    color: #cb2f1d !important;
+    border: 2px solid #cb2f1d !important;
+    border-radius: 30px !important;
     text-decoration: none;
     font-weight: 700;
-    transition: 0.3s;
-    box-shadow: 0 4px 10px rgba(203, 47, 29, 0.3);
+    transition: all 0.3s ease;
+    box-shadow: none !important;
 }
 
 .button_stories:hover {
-    background: #a92011;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(203, 47, 29, 0.4);
+    background: rgba(203, 47, 29, 0.08) !important;
+    border-color: #cb2f1d !important;
+    color: #cb2f1d !important;
+    cursor: pointer;
+    transform: none !important;
+    box-shadow: none !important;
 }
 
 .stories_decor_wrap {
@@ -1398,17 +1402,21 @@ body.fonts-enlarged h6 {
 .button_about {
     display: inline-block;
     padding: 12px 40px;
-    background: #cb2f1d;
-    color: white;
+    background: transparent !important;
+    color: #cb2f1d !important;
+    border: 2px solid #cb2f1d !important;
     text-decoration: none;
     font-weight: 700;
-    border-radius: 30px;
-    transition: background 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 30px !important;
+    transition: all 0.3s ease;
+    box-shadow: none !important;
 }
 
 .button_about:hover {
-    background: #a02517;
+    background: rgba(203, 47, 29, 0.08) !important;
+    border-color: #cb2f1d !important;
+    color: #cb2f1d !important;
+    cursor: pointer;
 }
 
 
@@ -3808,17 +3816,21 @@ body.fonts-enlarged h6 {
 .button_workshop {
     display: inline-block;
     padding: 12px 30px;
-    background: #cb2f1d;
-    color: white;
-    border-radius: 30px;
+    background: transparent !important;
+    color: #cb2f1d !important;
+    border: 2px solid #cb2f1d !important;
+    border-radius: 30px !important;
     text-decoration: none;
     font-weight: 700;
-    transition: 0.3s;
-    border: none;
+    transition: all 0.3s ease;
+    box-shadow: none !important;
 }
 
 .button_workshop:hover {
-    background: #a92011;
+    background: rgba(203, 47, 29, 0.08) !important;
+    border-color: #cb2f1d !important;
+    color: #cb2f1d !important;
+    cursor: pointer;
 }
 
 .workshop_image_col {
@@ -5042,49 +5054,80 @@ body.fonts-enlarged h6 {
     }
 }
 
-/* 1. Globální styl pro VŠECHNA tlačítka (Výchozí nastavení pro PLNÁ červená tlačítka) */
-.btn-sjednoceny {
+/* ==========================================================================
+   1. GLOBÁLNÍ STYL PRO DŮLEŽITÁ TLAČÍTKA (Dokumenty, Dotazníky, Akce)
+   Plná červená tlačítka s bílým textem
+   ========================================================================== */
+.btn-sjednoceny,
+.btn-dulezite {
     display: inline-block;
     text-decoration: none;
     font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
     font-size: 1rem !important;
     font-weight: 700 !important;
     border-radius: 30px !important;
+    background-color: #cb2f1d !important;
+    color: #ffffff !important;
+    border: 2px solid #cb2f1d !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
-    
-    /* ZÁKLADNÍ BARVA PRO PLNÁ TLAČÍTKA */
-    color: white !important; 
-    
-    /* VYPNE ANIMACI POHYBU */
-    transform: none !important; 
+    transform: none !important;
     top: 0 !important;
     margin-top: initial !important;
-    transition: filter 0.3s ease !important;
+    transition: all 0.3s ease !important;
 }
 
 /* Hover pro plná tlačítka (text zůstane BÍLÝ, pozadí ztmavne) */
-.btn-sjednoceny:hover {
-    filter: brightness(0.85) !important;
-    color: white !important; 
+.btn-sjednoceny:hover,
+.btn-dulezite:hover {
+    filter: brightness(0.9) !important;
+    background-color: #a92011 !important;
+    border-color: #a92011 !important;
+    color: #ffffff !important;
     cursor: pointer !important;
-    transform: none !important; 
+    transform: none !important;
     top: 0 !important;
 }
 
-/* 2. ULTRA SILNÝ ZÁPIS PRO SVĚTLÁ TLAČÍTKA */
-.btn-sjednoceny.btn-svetle {
-    color: #cb2f1d !important; /* Natvrdo ČERVENÝ text v základu */
-    background: rgba(0, 0, 0, 0) !important; /* Vynutí průhledné pozadí v základu (případně změň na white, pokud má být bílé) */
-}
-
-/* Hover pro světlá tlačítka */
-.btn-sjednoceny.btn-svetle:hover {
+/* ==========================================================================
+   2. STYL PRO OSTATNÍ TLAČÍTKA (Informační, Navigační, Odkazy na podstránky)
+   Průhledná tlačítka s červeným textem a 2px červeným rámečkem
+   ========================================================================== */
+.btn-svetle,
+.btn-ostatni,
+.btn-sjednoceny.btn-svetle,
+.btn-sjednoceny.btn-ostatni {
+    background: transparent !important;
+    background-color: transparent !important;
     color: #cb2f1d !important;
-    background: rgba(0, 0, 0, 0.05) !important; 
+    border: 2px solid #cb2f1d !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+    filter: none !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    transition: all 0.3s ease !important;
 }
 
-/* Pojistka pro vnitřek světlého tlačítka */
-.btn-sjednoceny.btn-svetle:hover * {
+/* Hover pro ostatní průhledná tlačítka */
+.btn-svetle:hover,
+.btn-ostatni:hover,
+.btn-sjednoceny.btn-svetle:hover,
+.btn-sjednoceny.btn-ostatni:hover {
+    background: rgba(203, 47, 29, 0.08) !important;
+    background-color: rgba(203, 47, 29, 0.08) !important;
+    border-color: #cb2f1d !important;
+    color: #cb2f1d !important;
+    filter: none !important;
+    cursor: pointer !important;
+    transform: none !important;
+    top: 0 !important;
+}
+
+/* Pojistka pro text uvnitř průhledného tlačítka */
+.btn-svetle *,
+.btn-ostatni *,
+.btn-sjednoceny.btn-svetle *,
+.btn-sjednoceny.btn-ostatni * {
     color: #cb2f1d !important;
 }
 
@@ -6028,12 +6071,22 @@ body.fonts-enlarged h6 {
 
 .alternative_btn {
     padding: 12px 40px;
-    background-color: #cb2f1d;
+    background-color: transparent !important;
+    border: 2px solid #cb2f1d !important;
     font-size: 1.1rem;
-    border-radius: 30px;
-    color: white;
+    border-radius: 30px !important;
+    color: #cb2f1d !important;
     text-decoration: none;
     font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: none !important;
+}
+
+.alternative_btn:hover {
+    background-color: rgba(203, 47, 29, 0.08) !important;
+    border-color: #cb2f1d !important;
+    color: #cb2f1d !important;
+    cursor: pointer;
 }
 
 .alternative_image_col {
