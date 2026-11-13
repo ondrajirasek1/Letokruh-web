@@ -668,7 +668,7 @@ h6 {
 }
 
 .activities_section h2 {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: #43382d;
     margin-bottom: 50px;
     font-weight: 700;
@@ -817,7 +817,7 @@ h6 {
 
 /* Restored styles */
 .stories_intro h2 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     /* Force match hero h1 */
     line-height: 1.1;
     color: #43382d;
@@ -1238,7 +1238,7 @@ a.story_name:hover {
 }
 
 .news_header h2 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     line-height: 1.1;
     color: #43382d;
     margin: 0;
@@ -1401,7 +1401,7 @@ body.fonts-enlarged h6 {
 }
 
 .about_content h2 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     line-height: 1.1;
     color: #43382d;
     margin-bottom: 30px;
@@ -1476,7 +1476,7 @@ body.fonts-enlarged h6 {
 
 .vol_col_left h2,
 .vol_col_right h2 {
-    font-size: 3rem !important;
+    font-size: 2.5rem !important;
     line-height: 1.1;
     color: #43382d;
     margin-bottom: 2rem;
@@ -1763,7 +1763,7 @@ body.fonts-enlarged h6 {
 }
 
 .partners_wrapper h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #43382d;
     margin-bottom: 50px;
 }
@@ -2375,7 +2375,7 @@ body.fonts-enlarged h6 {
 }
 
 .projects_wrapper h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #43382d;
     margin-bottom: 50px;
     padding-left: 0;
@@ -2920,7 +2920,7 @@ body.fonts-enlarged h6 {
 }
 
 .branches_section h2 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     color: #43382d;
     margin-bottom: 20px;
 }
@@ -3716,7 +3716,7 @@ body.fonts-enlarged h6 {
 
 .education_wrapper h2 {
     color: #43382d;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-bottom: 40px;
     text-align: center;
     font-weight: 700;
@@ -3832,7 +3832,7 @@ body.fonts-enlarged h6 {
 
 .workshop_text_col h2 {
     color: #43382d;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: 700;
 }
@@ -4491,8 +4491,9 @@ body.fonts-enlarged h6 {
     gap: 40px;
 }
 
-.kontakt_header_wrapper h1 {
-    font-size: 3rem;
+.kontakt_header_wrapper h1,
+.kontakt_header_wrapper h2 {
+    font-size: 2.5rem;
     color: #43382d;
     margin: 0;
     white-space: nowrap;
@@ -4537,7 +4538,7 @@ body.fonts-enlarged h6 {
 }
 
 .kontakt_sidlo_wrapper h2 {
-    font-size: 1.6rem;
+    font-size: 2.5rem;
     color: #43382d;
     margin-bottom: 30px;
     font-weight: 700;
@@ -7391,7 +7392,7 @@ body.has-sticky-support-bar {
 
 .media_section_header h2 {
     color: #1D2A44;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
