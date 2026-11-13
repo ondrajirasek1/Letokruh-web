@@ -1,4 +1,4 @@
-/* ===== Dederon Sans Typography ===== */
+﻿/* ===== Dederon Sans Typography ===== */
 @font-face {
     font-family: "Dederon-Sans";
     src: url("fonts/Dederon-Sans-Medium.woff") format("woff");
@@ -773,7 +773,7 @@ h6 {
 .reason_list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .reason_list li {
@@ -1217,7 +1217,7 @@ a.story_name:hover {
 /* News Section */
 .news_section {
     background: #fcf4ef;
-    padding: 20px 50px 80px 50px;
+    padding: 20px 50px 20px 50px;
     display: flex;
     justify-content: center;
 }
@@ -1228,8 +1228,9 @@ a.story_name:hover {
 }
 
 .news_header {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 20px;
     padding-left: 5%;
@@ -1240,6 +1241,15 @@ a.story_name:hover {
     font-size: 3rem !important;
     line-height: 1.1;
     color: #43382d;
+    margin: 0;
+    text-align: center;
+}
+
+.news_header .button_news {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
     margin: 0;
 }
 
@@ -1260,10 +1270,15 @@ a.story_name:hover {
 }
 
 .news_subtitle {
+    text-align: center;
     padding-left: 5%;
+    padding-right: 5%;
     font-size: 0.9em;
     color: #43382d;
     margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .news_subtitle a {
@@ -1424,7 +1439,7 @@ body.fonts-enlarged h6 {
 /* Volunteers Section */
 .volunteers_section {
     background: #fcf4ef;
-    padding: 80px 50px;
+    padding: 20px 50px 80px 50px;
     display: flex;
     justify-content: center;
 }
@@ -2004,7 +2019,7 @@ body.fonts-enlarged h6 {
 .footer_nav_col ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .footer_nav_col ul li {
@@ -2774,7 +2789,7 @@ body.fonts-enlarged h6 {
     background-color: #d1d1d1;
     background-image: url("images/lide/spolecna.png"); /* Updated image for 'o nas' page */
     background-size: cover;
-    background-position: center;
+    background-position: right center;
     mask-image: url("images/grafika/hero_mask.png");
     -webkit-mask-image: url("images/grafika/hero_mask.png");
     -webkit-mask-size: 100% 100%;
@@ -3160,13 +3175,16 @@ body.fonts-enlarged h6 {
 }
 
 .news_header {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .news_header_text {
@@ -3174,14 +3192,23 @@ body.fonts-enlarged h6 {
 }
 
 .news_header h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0;
     color: #43382d;
+    text-align: center;
+}
+
+.news_header .button_news {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
 }
 
 .news_header p {
     font-size: 1rem;
     color: #43382d;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .news_header p a {
@@ -3243,14 +3270,18 @@ body.fonts-enlarged h6 {
         grid-template-columns: 1fr;
     }
 
-    .news_header {
+        .news_header {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
     }
 
+    .news_header .button_news,
     .news_header .button_primary {
-        width: 100%;
+        position: static;
+        transform: none;
+        width: auto;
     }
 }
 
@@ -3921,7 +3952,7 @@ body.fonts-enlarged h6 {
 .program_hero_text_col h1 {
     font-size: 4rem;
     color: #43382d;
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* Events Section */
@@ -4190,7 +4221,7 @@ body.fonts-enlarged h6 {
     font-size: 1rem;
     line-height: 1.6;
     color: #666;
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* Membership Section */
@@ -4403,7 +4434,7 @@ body.fonts-enlarged h6 {
     font-size: 1rem;
     line-height: 1.7;
     color: #666;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .dk_faq_answer strong {
@@ -4857,6 +4888,7 @@ body.fonts-enlarged h6 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px 30px;
+    align-items: stretch;
 }
 
 .aktuality_card {
@@ -4866,6 +4898,8 @@ body.fonts-enlarged h6 {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
     display: flex;
     flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .aktuality_card_image {
@@ -5241,7 +5275,7 @@ body.fonts-enlarged h6 {
     font-size: 1.15rem;
     line-height: 1.65;
     color: #43382d;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .support_section_main_title {
@@ -7171,6 +7205,28 @@ body.has-sticky-support-bar {
     border-color: #cb2f1d !important;
 }
 
+/* Homepage news grid a Dobroklub blog grid — celá karta klikatelná */
+#homepage_news_grid .aktuality_card,
+#dobroklub_blog_grid .aktuality_card {
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#homepage_news_grid .aktuality_card:hover,
+#dobroklub_blog_grid .aktuality_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+}
+
+#dobroklub_blog_grid .aktuality_card:hover .aktuality_card_title {
+    color: #cb2f1d;
+}
+
+/* Skrytí tlačítka "Více informací" na homepage — kliká se na celou kartu */
+#homepage_news_grid .aktuality_more_link {
+    display: none;
+}
+
 /* Vertically Stacked Header Action Buttons */
 .nav_buttons_stacked {
     display: flex;
@@ -7789,7 +7845,7 @@ body.has-sticky-support-bar {
 .video_card_body p {
     font-size: 0.95rem;
     color: #6C6259;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .youtube_banner_box {
@@ -7813,7 +7869,7 @@ body.has-sticky-support-bar {
 .youtube_banner_box h3 {
     font-size: 2rem;
     color: #FFFFFF;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .youtube_banner_box p {
@@ -7876,3 +7932,15 @@ body.has-sticky-support-bar {
 }
 
 
+
+/* Program page — Co se děje v Letokruhu (between Aktuální akce and Archiv akcí) */
+.events_section + .news_section {
+    padding-top: 20px;
+}
+
+.news_section_divider {
+    max-width: 1080px;
+    width: calc(100% - 10%);
+    margin: 0 auto 40px auto;
+    border-top: 1px solid #e0d0c0;
+}

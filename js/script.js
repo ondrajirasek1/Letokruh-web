@@ -500,21 +500,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const hideDetail = () => {
             detailView.style.display = 'none';
-            homepageNewsGrid.style.display = 'flex';
+            homepageNewsGrid.style.display = 'grid';
 
             // Scroll back to top of section
             newsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         };
 
-        // Delegate click on "Více informací" links
+        // Delegate click on entire card (whole tile is clickable)
         homepageNewsGrid.addEventListener('click', (e) => {
-            const moreLink = e.target.closest('.aktuality_more_link');
-            if (!moreLink) return;
-
-            e.preventDefault();
-            const card = moreLink.closest('.aktuality_card');
+            const card = e.target.closest('.aktuality_card');
             if (!card) return;
 
+            e.preventDefault();
             showDetail(card);
         });
     }
