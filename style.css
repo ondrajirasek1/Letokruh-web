@@ -1,4 +1,4 @@
-﻿/* ===== Dederon Sans Typography ===== */
+/* ===== Dederon Sans Typography ===== */
 @font-face {
     font-family: "Dederon-Sans";
     src: url("fonts/Dederon-Sans-Medium.woff") format("woff");
@@ -5282,8 +5282,8 @@ body.fonts-enlarged h6 {
 
 .support_reason_block h2 {
     font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
-    font-size: 2.3rem;
-    line-height: 1.25;
+    font-size: 1.7rem;
+    line-height: 1.3;
     color: #43382d;
     font-weight: 700;
     margin-top: 0;
@@ -5324,12 +5324,34 @@ body.fonts-enlarged h6 {
     margin-bottom: 12px;
 }
 
+.support_sub_heading a {
+    color: #cb2f1d;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: color 0.2s ease;
+}
+
+.support_sub_heading a:hover {
+    color: #a82516;
+}
+
 .support_sub_text {
     font-size: 1.15rem;
     line-height: 1.65;
     color: #43382d;
     margin-top: 0;
     margin-bottom: 15px;
+}
+
+.support_sub_text a {
+    color: #cb2f1d;
+    text-decoration: underline;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.support_sub_text a:hover {
+    color: #a82516;
 }
 
 /* Impact Stats Section in Support Page */
@@ -5397,36 +5419,42 @@ body.fonts-enlarged h6 {
     box-sizing: border-box;
 }
 
+.support_image_boxes_grid.grid_2_cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
 .support_image_box {
     width: 100%;
-    height: 260px;
     background: #ffffff;
-    border: 2px dashed #ebdace;
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     overflow: hidden;
     position: relative;
     box-sizing: border-box;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
 }
 
 .support_image_box img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
     border-radius: inherit;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .support_image_placeholder {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     color: #888;
     font-size: 0.9rem;
     font-weight: 700;
+    min-height: 220px;
+    border: 2px dashed #ebdace;
+    border-radius: 16px;
 }
 
 .support_image_placeholder i {
@@ -5771,7 +5799,7 @@ body.fonts-enlarged h6 {
     }
 
     .support_reason_block h2 {
-        font-size: 1.85rem !important;
+        font-size: 1.35rem !important;
     }
 
     .support_section_main_title {
@@ -5783,8 +5811,13 @@ body.fonts-enlarged h6 {
         font-size: 1.35rem !important;
     }
 
+    .support_image_boxes_grid.grid_2_cols {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+    }
+
     .support_image_box {
-        height: 220px !important;
+        height: auto !important;
         width: 100% !important;
     }
 
@@ -5805,7 +5838,7 @@ body.fonts-enlarged h6 {
     }
 
     .support_reason_block h2 {
-        font-size: 1.55rem !important;
+        font-size: 1.2rem !important;
     }
 
     .support_section_main_title {
@@ -5817,7 +5850,7 @@ body.fonts-enlarged h6 {
     }
 
     .support_image_box {
-        height: 180px !important;
+        height: auto !important;
     }
 
     .support_stats_grid {
