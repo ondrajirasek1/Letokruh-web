@@ -1162,6 +1162,23 @@ a.story_name:hover {
     gap: 20px;
 }
 
+.top-header-link {
+    color: #43382d;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.top-header-link:hover {
+    color: #cb2f1d;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 .font-resizer {
     color: #cb2f1d;
     text-decoration: none;
