@@ -1766,6 +1766,7 @@ body.fonts-enlarged h6 {
     font-size: 2.5rem;
     color: #43382d;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .partners_group {
@@ -7939,7 +7940,8 @@ body.has-sticky-support-bar {
     padding-top: 20px;
 }
 
-.news_section_divider {
+.news_section_divider,
+.section_divider {
     max-width: 1080px;
     width: calc(100% - 10%);
     margin: 0 auto 40px auto;
