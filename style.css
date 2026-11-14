@@ -7330,7 +7330,7 @@ body.has-sticky-support-bar {
    Media Center Page (stranky/media.html) Styles
    ========================================================================== */
 .media_hero {
-    background: linear-gradient(135deg, #FAF7F2 0%, #FFF3EB 100%);
+    background: #fcf4ef;
     padding: 60px 20px 40px;
     border-bottom: 1px solid #EFE4D8;
     position: relative;
@@ -7344,17 +7344,17 @@ body.has-sticky-support-bar {
 }
 
 .media_hero h1 {
-    color: #1D2A44;
+    color: #43382d;
     font-size: 3rem;
     margin-bottom: 16px;
 }
 
 .media_hero .subtitle {
-    color: #554A40;
-    max-width: 780px;
+    color: #43382d;
+    max-width: 800px;
     margin: 0 auto 30px;
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 1.25rem;
+    line-height: 1.7;
 }
 
 .media_nav_pills {
@@ -7395,7 +7395,7 @@ body.has-sticky-support-bar {
 }
 
 .media_section:nth-child(even) {
-    background-color: #FAF8F5;
+    background-color: #fcf4ef;
 }
 
 .media_container {
@@ -7409,14 +7409,17 @@ body.has-sticky-support-bar {
 }
 
 .media_section_header h2 {
-    color: #1D2A44;
+    color: #43382d;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
 .media_section_header p {
-    color: #665C54;
-    font-size: 1.1rem;
+    color: #43382d;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    max-width: 880px;
+    margin: 0 auto;
 }
 
 /* Notice box for Pro media */
@@ -7441,14 +7444,14 @@ body.has-sticky-support-bar {
 
 .media_notice_text h3 {
     margin: 0 0 6px;
-    color: #2B2D42;
+    color: #43382d;
     font-size: 1.35rem;
 }
 
 .media_notice_text p {
     margin: 0;
     font-size: 1.05rem;
-    color: #4A4A4A;
+    color: #43382d;
 }
 
 /* Contact Grid */
@@ -7491,7 +7494,7 @@ body.has-sticky-support-bar {
     display: flex;
     align-items: center;
     gap: 12px;
-    color: #4A403A;
+    color: #43382d;
 }
 
 .media_contact_info i {
@@ -7501,7 +7504,7 @@ body.has-sticky-support-bar {
 }
 
 .media_contact_info a {
-    color: #2B2D42;
+    color: #43382d;
     text-decoration: underline;
     transition: color 0.2s ease;
 }
@@ -7556,6 +7559,88 @@ body.has-sticky-support-bar {
     transform: translateY(-2px);
 }
 
+
+/* Press Kit & Logo Section */
+.press_kit_feature_box {
+    background: #FFFFFF;
+    border: 1px solid #ebdace;
+    border-radius: 16px;
+    padding: 35px 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 35px;
+}
+
+.press_kit_badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fcf4ef;
+    color: #cb2f1d;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.press_kit_feature_content h3 {
+    color: #43382d;
+    font-size: 1.5rem;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+}
+
+.press_kit_feature_content p {
+    color: #43382d;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0 0 15px 0;
+}
+
+.press_kit_bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 8px 16px;
+}
+
+.press_kit_bullets li {
+    font-size: 0.95rem;
+    color: #43382d;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.press_kit_feature_action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+    .press_kit_feature_box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 20px;
+        gap: 25px;
+    }
+    .press_kit_feature_action {
+        width: 100%;
+    }
+    .press_kit_feature_action a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /* Press Releases Grid */
 .press_releases_grid {
     display: grid;
@@ -7604,14 +7689,14 @@ body.has-sticky-support-bar {
 }
 
 .press_card h3 {
-    color: #1D2A44;
+    color: #43382d;
     font-size: 1.25rem;
     line-height: 1.4;
     margin: 0 0 12px 0;
 }
 
 .press_card p {
-    color: #594F47;
+    color: #43382d;
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -7668,12 +7753,12 @@ body.has-sticky-support-bar {
 .photo_card_body h3 {
     font-size: 1.15rem;
     margin: 0 0 8px;
-    color: #1D2A44;
+    color: #43382d;
 }
 
 .photo_card_body p {
     font-size: 0.95rem;
-    color: #6C6259;
+    color: #43382d;
     margin-bottom: 16px;
     line-height: 1.4;
 }
@@ -7716,13 +7801,13 @@ body.has-sticky-support-bar {
 }
 
 .logo_card h3 {
-    color: #1D2A44;
+    color: #43382d;
     font-size: 1.3rem;
     margin: 0 0 8px;
 }
 
 .logo_card p {
-    color: #6C6259;
+    color: #43382d;
     font-size: 0.95rem;
     margin-bottom: 20px;
 }
@@ -7784,7 +7869,7 @@ body.has-sticky-support-bar {
 }
 
 .media_mention_card h3 {
-    color: #1D2A44;
+    color: #43382d;
     font-size: 1.3rem;
     line-height: 1.4;
     margin: 0 0 12px 0;
@@ -7796,7 +7881,7 @@ body.has-sticky-support-bar {
     background: #FAF8F5;
     border-left: 4px solid #CB2F1D;
     border-radius: 0 8px 8px 0;
-    color: #4A403A;
+    color: #43382d;
     font-style: italic;
     font-size: 1rem;
     line-height: 1.5;
@@ -7857,18 +7942,18 @@ body.has-sticky-support-bar {
 
 .video_card_body h3 {
     font-size: 1.15rem;
-    color: #1D2A44;
+    color: #43382d;
     margin: 0 0 6px;
 }
 
 .video_card_body p {
     font-size: 0.95rem;
-    color: #6C6259;
+    color: #43382d;
     margin: 0 auto;
 }
 
 .youtube_banner_box {
-    background: linear-gradient(135deg, #1D2A44 0%, #2A3B5E 100%);
+    background: #43382d;
     border-radius: 20px;
     padding: 40px 30px;
     color: #FFFFFF;
@@ -7931,7 +8016,7 @@ body.has-sticky-support-bar {
     align-items: center;
     gap: 10px;
     background: #FFFFFF;
-    color: #1D2A44;
+    color: #43382d;
     border: 2px solid #E2E8F0;
     padding: 12px 24px;
     border-radius: 30px;
