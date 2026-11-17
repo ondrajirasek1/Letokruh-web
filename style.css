@@ -2042,6 +2042,8 @@ body.fonts-enlarged h6 {
 
 .footer_nav_col ul li {
     margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ebdace;
 }
 
 .footer_nav_col ul li a {
@@ -2051,6 +2053,7 @@ body.fonts-enlarged h6 {
     line-height: 1.4;
     transition: opacity 0.2s;
     font-weight: 500;
+    display: block;
 }
 
 .footer_nav_col ul li a:hover {
@@ -2059,7 +2062,9 @@ body.fonts-enlarged h6 {
 
 /* Specific styling for Contact column */
 .footer_contact_list li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ebdace;
     color: #43382d;
     /* Default text color for non-links if any */
 }
@@ -2075,6 +2080,8 @@ body.fonts-enlarged h6 {
     font-size: 0.9rem;
     line-height: 1.5;
     margin-top: 15px;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
 }
 
 
