@@ -7245,8 +7245,29 @@ body.has-sticky-support-bar {
     line-height: 1.6;
 }
 
-/* Nejčastější dobrovolnické aktivity - Klikatelné karty */
+/* Nejčastější dobrovolnické aktivity - Grid & stejná velikost karet */
+#activities_grid {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #activities_grid .aktuality_card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    border: 1px solid #ebdace;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: calc((100% - 60px) / 3) !important;
+    max-width: calc((100% - 60px) / 3) !important;
+    min-width: calc((100% - 60px) / 3) !important;
+    flex: 0 0 calc((100% - 60px) / 3) !important;
     cursor: pointer;
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
@@ -7255,6 +7276,77 @@ body.has-sticky-support-bar {
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09) !important;
     border-color: #cb2f1d !important;
+}
+
+#activities_grid .aktuality_card_image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 18px;
+    flex-shrink: 0;
+}
+
+#activities_grid .aktuality_card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#activities_grid .aktuality_card_title {
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #43382d;
+    margin: 0 0 14px 0;
+    text-transform: uppercase;
+    line-height: 1.35;
+    min-height: 82px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#activities_grid .aktuality_more_link {
+    margin-top: auto;
+    padding-top: 15px;
+    color: #cb2f1d;
+    font-weight: 700;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+@media (max-width: 992px) {
+    #activities_grid {
+        gap: 20px;
+    }
+
+    #activities_grid .aktuality_card {
+        width: calc((100% - 20px) / 2) !important;
+        max-width: calc((100% - 20px) / 2) !important;
+        min-width: calc((100% - 20px) / 2) !important;
+        flex: 0 0 calc((100% - 20px) / 2) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #activities_grid {
+        gap: 18px;
+    }
+
+    #activities_grid .aktuality_card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+
+    #activities_grid .aktuality_card_title {
+        min-height: auto;
+    }
 }
 
 /* Homepage news grid a Dobroklub blog grid — celá karta klikatelná */

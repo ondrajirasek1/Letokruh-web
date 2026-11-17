@@ -572,7 +572,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const hideDetail = () => {
             detailView.style.display = 'none';
-            activitiesGrid.style.display = 'flex';
+            activitiesGrid.style.display = '';
             if (customOffer) customOffer.style.display = 'block';
 
             // Scroll back to top of section
