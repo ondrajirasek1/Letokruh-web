@@ -239,132 +239,69 @@
                         Darovat 1 000 Kč
                     </a>
 
-                    <!-- Zabezpečení & Transparentní účet -->
+                    <!-- Zabezpečení platby -->
                     <div class="donation_security_note">
-                        <i class="fa-solid fa-lock"></i> Bezpečná platba &nbsp;|&nbsp; 
-                        <a href="#qr_account_details" id="show_qr_details">Transparentní účet / QR platba</a>
+                        <i class="fa-solid fa-lock"></i> Bezpečná platba přes Daruj správně
                     </div>
+                </div>
 
-                    <!-- Schovaná QR platba / účet s proklikem -->
-                    <div class="donation_account_drawer is_hidden" id="account_drawer">
-                        <div class="drawer_account_num">Účet: <strong>87600876/2010</strong></div>
-                        <div class="drawer_qr_box">
-                            <img src="../images/ostatni/qr_platba_500.png" id="drawer_qr_img" alt="QR platba">
+                <!-- Další možnosti podpory (rozklikávací akordeon) -->
+                <div class="support_extra_card">
+                    <h3 class="support_extra_title">Podpořit nás můžete i jinak</h3>
+
+                    <details class="support_dropdown_item">
+                        <summary class="support_dropdown_header">
+                            <span class="support_dropdown_label">
+                                <i class="fa-solid fa-hand-holding-heart" style="color: #cb2f1d;"></i>
+                                Veřejná sbírka
+                            </span>
+                            <i class="fa-solid fa-chevron-down support_dropdown_chevron"></i>
+                        </summary>
+                        <div class="support_dropdown_body">
+                            <p>Oficiální sbírka <em>„Stříbrná kariéra“</em> na ověřeném portálu Daruj správně.</p>
+                            <a href="https://www.darujspravne.cz/sbirka/stribrna-kariera-aneb-dobrovolnictvi-v-seniorskem-veku-2?_fid=slhm" target="_blank" rel="noopener noreferrer" class="support_dropdown_btn">
+                                <span>Přejít na Daruj správně</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
                         </div>
-                    </div>
+                    </details>
+
+                    <details class="support_dropdown_item">
+                        <summary class="support_dropdown_header">
+                            <span class="support_dropdown_label">
+                                <i class="fa-solid fa-bag-shopping" style="color: #cb2f1d;"></i>
+                                Nákupem na e-shopech
+                            </span>
+                            <i class="fa-solid fa-chevron-down support_dropdown_chevron"></i>
+                        </summary>
+                        <div class="support_dropdown_body">
+                            <p>Z vašich nákupů přes <strong>GIVT.cz</strong> jde část Letokruhu (pro vás zdarma).</p>
+                            <a href="https://givt.cz/letokruh-z-u" target="_blank" rel="noopener noreferrer" class="support_dropdown_btn">
+                                <span>Podpořit nákupem na GIVT.cz</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </details>
+
+                    <details class="support_dropdown_item">
+                        <summary class="support_dropdown_header">
+                            <span class="support_dropdown_label">
+                                <i class="fa-solid fa-hands-holding-circle" style="color: #cb2f1d;"></i>
+                                Expertní pomoc a materiál
+                            </span>
+                            <i class="fa-solid fa-chevron-down support_dropdown_chevron"></i>
+                        </summary>
+                        <div class="support_dropdown_body">
+                            <p>Pomozte nám <strong>expertně</strong> (web, texty), <strong>materiálně</strong> či <strong>sdílením</strong>.</p>
+                            <a href="mailto:info@letokruh.eu?subject=Podpora%20Letokruhu" class="support_dropdown_btn">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Napsat nám</span>
+                            </a>
+                        </div>
+                    </details>
                 </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- Support Options Grid Section -->
-    <section class="support_options_section">
-        <div class="support_options_intro">
-            Souzníte s naší činností? Tak podpořte a sdílejte naši misi. Děkujeme!
-        </div>
-
-        <div class="support_options_grid">
-            <!-- Column 1: Veřejná sbírka -->
-            <div class="support_option_col">
-                <h3>Veřejná sbírka</h3>
-                <a href="https://www.darujspravne.cz/sbirka/stribrna-kariera-aneb-dobrovolnictvi-v-seniorskem-veku-2?_fid=slhm" target="_blank" class="support_daruj_link">
-                    <img src="../images/ostatni/sbirka-default.svg" alt="Daruj Správně - Sbírka Letokruh">
-                </a>
-                <h4 class="support_sublabel">Účel sbírky</h4>
-                <p class="support_desc">podpora a rozvoj dobrovolnictví v seniorském věku</p>
-            </div>
-
-            <!-- Column 2: Převodem na transparentní sbírkový účet -->
-            <div class="support_option_col">
-                <h3>Převodem na transparentní<br>sbírkový účet</h3>
-                <div class="support_account_number">87600876/2010</div>
-                <div class="qr_payment_card">
-                    <h4>QR platba</h4>
-                    <div class="qr_code_box">
-                        <img src="../images/ostatni/qr_platba_500.png" id="qr_code_img" alt="QR Platba 500 Kč">
-                        <div class="qr_code_label">QR Platba</div>
-                    </div>
-                    <div class="qr_amount_tabs">
-                        <button class="qr_tab" data-amount="100">100 Kč</button>
-                        <button class="qr_tab active" data-amount="500">500 Kč</button>
-                        <button class="qr_tab" data-amount="1000">1000 Kč</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Column 3: Při nákupech na e-shopech -->
-            <div class="support_option_col">
-                <h3>Při nákupech na e-shopech</h3>
-                <p class="support_givt_text">
-                    Fandíte nám?<br>
-                    <strong>Podpořte nás na GIVT.cz!</strong>
-                </p>
-                <a href="https://givt.cz/letokruh-z-u" target="_blank" class="givt_image_container">
-                    <img src="../images/ostatni/GIVT.png" alt="Podpora přes GIVT">
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Alternative Support Section -->
-    <section class="support_alternative_section">
-        <h2>Pomoci nám můžete i jinak</h2>
-        <p class="alternative_intro">
-            Staňte se naším expertním dobrovolníkem a pomozte nám pomáhat, např. s grafikou, texty, webem, realizací projektů, organizací akcí, atd. Možností je celá řada.
-        </p>
-        <div class="alternative_grid">
-            <div class="alternative_text_col">
-                <h3 class="alternative_heading">Materiálem</h3>
-                <p class="alternative_desc">
-                    Potřebujeme papíry, tonery, kancelářské potřeby nebo pomůcky pro naše dobrovolníky, vybavení klubovny
-                </p>
-                <h3 class="alternative_heading">Sdílením</h3>
-                <p class="alternative_desc">
-                    Pomozte nám šířit myšlenku dobrovolnictví v seniorském věku
-                </p>
-                <p class="alternative_cta_note">Máte jiný nápad?</p>
-                <a href="mailto:info@letokruh.eu" class="btn-sjednoceny alternative_btn btn-svetle">Napište nám</a>
-            </div>
-            <div class="alternative_image_col">
-                <img src="../images/ostatni/podpor_dobro_obrazek.png" alt="Pomoc Letokruhu - seniorská dobrovolnice">
-            </div>
-        </div>
-    </section>
-
-    <!-- Dobrosušenka Section -->
-    <section class="support_cookie_section">
-        <!-- Decorative graphics -->
-        <div class="cookie_decor_wrapper">
-            <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="cookie_decor_line">
-            <img src="../images/grafika/sisoid_green.png" alt="" class="cookie_decor_blob">
-        </div>
-        
-        <div class="cookie_wrapper">
-            <div class="cookie_image_col">
-                <img src="../images/ostatni/susenky.png" alt="Dobrosušenka" id="cookie_main_image">
-            </div>
-            <div class="cookie_text_col">
-                <h2 id="cookie_section_title">Dobrosušenka</h2>
-                <p class="cookie_subheading">...aneb sušenka, která chutná i pomáhá!</p>
-                <p>Koupí této sušenky přispíváte na aktivní babičky a dědečky, kteří rozdávají dobro.</p>
-                <p>Vyzvednout si svou sušenku můžete osobně v našem <a href="dobroklub.html" id="cookie_dobroklub_link" class="cookie_link">Dobroklubu</a>.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Babiččiny dobroty Section -->
-    <section class="support_sweets_section">
-        <div class="sweets_wrapper">
-            <div class="sweets_text_col">
-                <h2 id="sweets_section_title">Babiččiny dobroty</h2>
-                <p class="sweets_intro">Láska prochází žaludkem a nejlepší buchty, koláče a cukroví pečou babičky, to je známá věc!</p>
-                <p>Chcete oživit váš event? Dopřát svým obchodním partnerům nevšední dárek? Můžete zkusit domácí sladké i slané dobroty pečené s láskou od našich dobrovolnic. Neváhejte nás <a href="../stranky/kontakt.html" id="sweets_contact_link" class="sweets_link">kontaktovat</a>.</p>
-            </div>
-            <div class="sweets_images_col">
-                <img src="../images/ostatni/susenky_2.png" alt="Babiččiny dobroty - buchty" id="sweets_image_top">
-                <img src="../images/ostatni/susenky_3.png" alt="Babiččiny dobroty - cukroví" id="sweets_image_bottom">
-            </div>
         </div>
     </section>
 

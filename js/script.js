@@ -965,6 +965,20 @@ document.addEventListener('DOMContentLoaded', () => {
             titleBox.appendChild(badge);
         }
     });
+
+    // Accordion behavior for support extra options (Podpoř dobro)
+    const supportDetails = document.querySelectorAll('.support_extra_card details');
+    if (supportDetails.length > 0) {
+        supportDetails.forEach(targetDetail => {
+            targetDetail.addEventListener('toggle', () => {
+                if (targetDetail.open) {
+                    supportDetails.forEach(detail => {
+                        if (detail !== targetDetail && detail.open) {
+                            detail.open = false;
+                        }
+                    });
+                }
+            });
+        });
+    }
 });
-
-

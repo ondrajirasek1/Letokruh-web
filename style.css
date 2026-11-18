@@ -5470,22 +5470,22 @@ body.fonts-enlarged h6 {
 }
 
 .support_right_col {
-    width: 440px;
+    width: 400px;
     flex-shrink: 0;
     min-width: 0;
     display: flex;
     flex-direction: column;
     position: sticky;
-    top: 110px;
+    top: 125px;
     align-self: flex-start;
     z-index: 5;
 }
 
 .donation_widget_card {
     background: #ffffff;
-    padding: 30px 25px;
-    border-radius: 20px;
-    box-shadow: 0 12px 35px rgba(67, 56, 45, 0.08);
+    padding: 16px 18px 14px 18px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(67, 56, 45, 0.05);
     border: 1px solid #ebdace;
     width: 100%;
     box-sizing: border-box;
@@ -5493,34 +5493,34 @@ body.fonts-enlarged h6 {
 
 .donation_widget_title {
     font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #43382d;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
     text-align: center;
 }
 
 /* Frequency Tabs */
 .donation_freq_tabs {
     display: flex;
-    gap: 8px;
+    gap: 6px;
     background: #fcf4ef;
-    padding: 5px;
-    border-radius: 12px;
+    padding: 3px;
+    border-radius: 8px;
     border: 1px solid #ebdace;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
 }
 
 .freq_tab {
     flex: 1;
-    padding: 12px 10px;
+    padding: 7px 8px;
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: 6px;
     background: transparent;
     color: #43382d;
     font-family: inherit;
-    font-size: 1.05rem;
+    font-size: 0.9rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.25s ease;
@@ -5552,8 +5552,8 @@ body.fonts-enlarged h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
-    font-size: 1rem;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
 }
 
 .amount_label {
@@ -5566,7 +5566,7 @@ body.fonts-enlarged h6 {
     border: none;
     color: #cb2f1d;
     font-family: inherit;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     font-weight: 700;
     text-decoration: underline;
     cursor: pointer;
@@ -5577,18 +5577,18 @@ body.fonts-enlarged h6 {
 .donation_amounts_grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 20px;
+    gap: 7px;
+    margin-bottom: 9px;
 }
 
 .amount_btn {
-    padding: 14px 10px;
+    padding: 8px 6px;
     background: #ffffff;
     border: 1.5px solid #dcd0c5;
-    border-radius: 12px;
+    border-radius: 8px;
     color: #43382d;
     font-family: inherit;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.25s ease;
@@ -5622,7 +5622,7 @@ body.fonts-enlarged h6 {
 
 /* Custom Amount Input Box */
 .custom_amount_wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 9px;
 }
 
 .custom_amount_wrapper.is_hidden {
@@ -5631,11 +5631,11 @@ body.fonts-enlarged h6 {
 
 .custom_amount_wrapper input {
     width: 100%;
-    padding: 12px 15px;
+    padding: 9px 12px;
     border: 2px solid #cb2f1d;
-    border-radius: 12px;
+    border-radius: 8px;
     font-family: inherit;
-    font-size: 1.1rem;
+    font-size: 0.98rem;
     font-weight: 700;
     color: #43382d;
     outline: none;
@@ -5646,17 +5646,17 @@ body.fonts-enlarged h6 {
 .btn_donate_main {
     display: block;
     width: 100%;
-    padding: 18px 20px;
+    padding: 12px 16px;
     background: #cb2f1d;
     color: #ffffff !important;
     text-decoration: none !important;
     font-family: inherit;
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     font-weight: 700;
     text-align: center;
-    border-radius: 14px;
+    border-radius: 9px;
     border: none;
-    box-shadow: 0 8px 20px rgba(203, 47, 29, 0.3);
+    box-shadow: 0 5px 14px rgba(203, 47, 29, 0.25);
     transition: all 0.25s ease;
     cursor: pointer;
     box-sizing: border-box;
@@ -5664,13 +5664,13 @@ body.fonts-enlarged h6 {
 
 .btn_donate_main:hover {
     background: #b22616;
-    box-shadow: 0 12px 25px rgba(203, 47, 29, 0.4);
+    box-shadow: 0 7px 18px rgba(203, 47, 29, 0.35);
 }
 
 /* Security / Account Note */
 .donation_security_note {
-    margin-top: 15px;
-    font-size: 0.88rem;
+    margin-top: 8px;
+    font-size: 0.8rem;
     color: #776d63;
     text-align: center;
 }
@@ -5883,6 +5883,119 @@ body.fonts-enlarged h6 {
         padding: 15px 12px !important;
         font-size: 1.1rem !important;
     }
+}
+
+
+/* Support Extra Options (Rozbalovací možnosti pod widgetem) */
+.support_extra_card {
+    background: #ffffff;
+    border: 1px solid #ebdace;
+    border-radius: 12px;
+    padding: 10px 14px 9px 14px;
+    margin-top: 8px;
+    box-shadow: 0 4px 14px rgba(67, 56, 45, 0.04);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.support_extra_title {
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #43382d;
+    margin-top: 0;
+    margin-bottom: 9px;
+    text-align: center;
+    line-height: 1.25;
+}
+
+.support_dropdown_item {
+    background: #fcf4ef;
+    border: 1px solid #ebdace;
+    border-radius: 7px;
+    padding: 7px 10px;
+    margin-bottom: 5px;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.support_dropdown_item:last-child {
+    margin-bottom: 0;
+}
+
+.support_dropdown_item[open] {
+    background: #ffffff;
+    border-color: #cb2f1d;
+    box-shadow: 0 3px 10px rgba(203, 47, 29, 0.08);
+}
+
+.support_dropdown_header {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.86rem;
+    color: #43382d;
+}
+
+.support_dropdown_header::-webkit-details-marker,
+.support_dropdown_header::marker {
+    display: none;
+}
+
+.support_dropdown_label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.support_dropdown_chevron {
+    font-size: 0.78rem;
+    color: #8c7e73;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.support_dropdown_item[open] .support_dropdown_chevron {
+    transform: rotate(180deg);
+    color: #cb2f1d;
+}
+
+.support_dropdown_body {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid #ebdace;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #55483d;
+}
+
+.support_dropdown_body p {
+    margin: 0 0 6px 0;
+}
+
+.support_dropdown_btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    background: #cb2f1d;
+    color: #ffffff !important;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.82rem;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.support_dropdown_btn:hover {
+    background: #a82313;
+    transform: translateY(-1px);
 }
 
 /* Support Options Grid Section */
