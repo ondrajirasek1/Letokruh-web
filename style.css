@@ -1344,18 +1344,20 @@ a.story_name:hover {
 }
 
 /* Font Resizer Toggle */
-body.fonts-enlarged {
-    font-size: 1.3rem;
-    /* Increase from default 1.125rem */
+html {
+    transition: font-size 0.2s ease;
 }
 
-body.fonts-enlarged h1,
-body.fonts-enlarged h2,
-body.fonts-enlarged h3,
-body.fonts-enlarged h4,
-body.fonts-enlarged h5,
-body.fonts-enlarged h6 {
-    /* Headings defined with 'rem' will stay at root size. */
+html.fonts-enlarged {
+    font-size: 118%;
+}
+
+body.fonts-enlarged {
+    font-size: 1.3rem;
+}
+
+body.fonts-enlarged .navbarItem {
+    padding: 36px 0;
 }
 
 /* About Section */

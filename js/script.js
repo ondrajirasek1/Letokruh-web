@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Check localStorage
     if (localStorage.getItem('fontsEnlarged') === 'true') {
+        document.documentElement.classList.add('fonts-enlarged');
         document.body.classList.add('fonts-enlarged');
         updateResizerText(true);
     }
@@ -10,9 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     fontResizers.forEach(resizer => {
         resizer.addEventListener('click', (e) => {
             e.preventDefault();
-            document.body.classList.toggle('fonts-enlarged');
+            const isEnlarged = !document.documentElement.classList.contains('fonts-enlarged');
+            document.documentElement.classList.toggle('fonts-enlarged', isEnlarged);
+            document.body.classList.toggle('fonts-enlarged', isEnlarged);
 
-            const isEnlarged = document.body.classList.contains('fonts-enlarged');
             localStorage.setItem('fontsEnlarged', isEnlarged);
             updateResizerText(isEnlarged);
         });
