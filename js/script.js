@@ -564,21 +564,29 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Hide grid and custom offer banner, show detail
-            activitiesGrid.style.display = 'none';
+            activitiesGrid.style.setProperty('display', 'none', 'important');
+            activitiesGrid.classList.add('is_hidden');
             if (customOffer) customOffer.style.display = 'none';
             detailView.style.display = 'block';
 
-            // Scroll to top of section
-            activitiesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Scroll cleanly to top of section / detail (accounting for navbar)
+            const navbar = document.querySelector('.navbar_wrapper');
+            const navOffset = (navbar ? navbar.offsetHeight : 100) + 15;
+            const targetPos = activitiesSection.getBoundingClientRect().top + window.pageYOffset - navOffset;
+            window.scrollTo({ top: Math.max(0, targetPos), behavior: 'smooth' });
         };
 
         const hideDetail = () => {
             detailView.style.display = 'none';
-            activitiesGrid.style.display = '';
+            activitiesGrid.style.removeProperty('display');
+            activitiesGrid.classList.remove('is_hidden');
             if (customOffer) customOffer.style.display = 'block';
 
-            // Scroll back to top of section
-            activitiesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Scroll back to top of section (accounting for navbar)
+            const navbar = document.querySelector('.navbar_wrapper');
+            const navOffset = (navbar ? navbar.offsetHeight : 100) + 15;
+            const targetPos = activitiesSection.getBoundingClientRect().top + window.pageYOffset - navOffset;
+            window.scrollTo({ top: Math.max(0, targetPos), behavior: 'smooth' });
         };
 
         // Delegate click on activity cards

@@ -7369,12 +7369,21 @@ body.has-sticky-support-bar {
 
 /* Nejčastější dobrovolnické aktivity - Grid & stejná velikost karet */
 #activities_grid {
-    display: flex !important;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     width: 100%;
     box-sizing: border-box;
+}
+
+#activities_grid.is_hidden {
+    display: none !important;
+}
+
+.activities_section,
+.aktuality_detail_view {
+    scroll-margin-top: 110px;
 }
 
 #activities_grid .aktuality_card {
