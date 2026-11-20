@@ -32,6 +32,74 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Mobilní navigační menu (Hamburger toggle)
+    const navWrapper = document.querySelector('.navbar_wrapper');
+    const navDesktop = document.querySelector('.navbar_desktop');
+    if (navWrapper && navDesktop) {
+        let toggleBtn = navWrapper.querySelector('.mobile_nav_toggle');
+        if (!toggleBtn) {
+            toggleBtn = document.createElement('button');
+            toggleBtn.type = 'button';
+            toggleBtn.className = 'mobile_nav_toggle';
+            toggleBtn.setAttribute('aria-label', 'Přepnout navigační menu');
+            toggleBtn.setAttribute('aria-expanded', 'false');
+            toggleBtn.innerHTML = '<i class="fa-solid fa-bars nav_toggle_icon"></i><span class="nav_toggle_text">Menu</span>';
+            navWrapper.insertBefore(toggleBtn, navDesktop);
+        }
+
+        toggleBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isOpen = navWrapper.classList.toggle('is-nav-open');
+            toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            const icon = toggleBtn.querySelector('.nav_toggle_icon');
+            const text = toggleBtn.querySelector('.nav_toggle_text');
+            if (icon) {
+                icon.className = isOpen ? 'fa-solid fa-xmark nav_toggle_icon' : 'fa-solid fa-bars nav_toggle_icon';
+            }
+            if (text) {
+                text.textContent = isOpen ? 'Zavřít' : 'Menu';
+            }
+        });
+
+        // Zavření při kliku mimo navbar
+        document.addEventListener('click', (e) => {
+            if (navWrapper.classList.contains('is-nav-open') && !navWrapper.contains(e.target)) {
+                navWrapper.classList.remove('is-nav-open');
+                toggleBtn.setAttribute('aria-expanded', 'false');
+                const icon = toggleBtn.querySelector('.nav_toggle_icon');
+                const text = toggleBtn.querySelector('.nav_toggle_text');
+                if (icon) icon.className = 'fa-solid fa-bars nav_toggle_icon';
+                if (text) text.textContent = 'Menu';
+            }
+        });
+
+        // Zavření při kliknutí na odkaz v mobilním menu
+        navDesktop.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 992 && navWrapper.classList.contains('is-nav-open')) {
+                    navWrapper.classList.remove('is-nav-open');
+                    toggleBtn.setAttribute('aria-expanded', 'false');
+                    const icon = toggleBtn.querySelector('.nav_toggle_icon');
+                    const text = toggleBtn.querySelector('.nav_toggle_text');
+                    if (icon) icon.className = 'fa-solid fa-bars nav_toggle_icon';
+                    if (text) text.textContent = 'Menu';
+                }
+            });
+        });
+
+        // Automatické zavření při zvětšení okna nad 992px
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 992 && navWrapper.classList.contains('is-nav-open')) {
+                navWrapper.classList.remove('is-nav-open');
+                toggleBtn.setAttribute('aria-expanded', 'false');
+                const icon = toggleBtn.querySelector('.nav_toggle_icon');
+                const text = toggleBtn.querySelector('.nav_toggle_text');
+                if (icon) icon.className = 'fa-solid fa-bars nav_toggle_icon';
+                if (text) text.textContent = 'Menu';
+            }
+        });
+    }
+
     // Interactive Donation Widget Logic (Podpoř dobro)
     const amountBtns = document.querySelectorAll('.donation_amounts_grid .amount_btn');
     const btnDonateSubmit = document.getElementById('btn_donate_submit');
