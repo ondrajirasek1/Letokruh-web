@@ -118,11 +118,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateSubmitBtn() {
+        const formatted = formatAmountString(selectedAmount);
         if (btnDonateSubmit) {
-            btnDonateSubmit.textContent = `Darovat ${formatAmountString(selectedAmount)} Kč`;
+            btnDonateSubmit.textContent = `Darovat ${formatted} Kč`;
         }
         if (drawerQrImg && [100, 500, 1000].includes(Number(selectedAmount))) {
             drawerQrImg.src = `../images/ostatni/qr_platba_${selectedAmount}.png`;
+        }
+        const mobileStickyBtnText = document.getElementById('mobile_sticky_btn_text');
+        if (mobileStickyBtnText) {
+            mobileStickyBtnText.textContent = `Darovat ${formatted} Kč`;
+        }
+        const mobileStickyAmountText = document.getElementById('mobile_sticky_amount_text');
+        if (mobileStickyAmountText) {
+            mobileStickyAmountText.innerHTML = `${formatted} Kč <i class="fa-solid fa-pen-to-square"></i>`;
         }
     }
 
@@ -161,6 +170,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     check.className = 'fa-solid fa-circle-check icon_check';
                     tab.prepend(check);
                 }
+                const mobileStickyFreqText = document.getElementById('mobile_sticky_freq_text');
+                if (mobileStickyFreqText) {
+                    const freqType = tab.getAttribute('data-freq');
+                    mobileStickyFreqText.textContent = (freqType === 'monthly') ? 'Měsíčně' : 'Jednorázově';
+                }
             });
         });
     }
@@ -190,6 +204,33 @@ document.addEventListener('DOMContentLoaded', () => {
         showQrDetails.addEventListener('click', (e) => {
             e.preventDefault();
             accountDrawer.classList.toggle('is_hidden');
+        });
+    }
+
+    // Mobile Sticky Donation Bar: Scroll down to donation table
+    const mobileStickyBar = document.getElementById('mobile_sticky_donation_bar');
+    const mobileStickyScrollBtn = document.getElementById('mobile_sticky_scroll_btn');
+    const donationWidgetCard = document.querySelector('.donation_widget_card');
+
+    function scrollToDonationCard() {
+        if (donationWidgetCard) {
+            donationWidgetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            donationWidgetCard.classList.add('widget_highlight_pulse');
+            setTimeout(() => donationWidgetCard.classList.remove('widget_highlight_pulse'), 1500);
+        }
+    }
+
+    if (mobileStickyScrollBtn) {
+        mobileStickyScrollBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            scrollToDonationCard();
+        });
+    }
+
+    if (mobileStickyBar) {
+        mobileStickyBar.addEventListener('click', (e) => {
+            scrollToDonationCard();
         });
     }
 

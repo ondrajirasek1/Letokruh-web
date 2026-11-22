@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podpoř dobro | Letokruh</title>
-    <link rel="stylesheet" href="../style.css?v=62">
+    <link rel="stylesheet" href="../style.css?v=63">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="page_podpor_dobro">
 
     <header class="top-header">
         <div class="top-header-left">
@@ -38,6 +38,10 @@
                 <a href="../index.html#partners" class="nav_dropdown_item">Partneři</a>
             </div>
         </div>
+        <button class="mobile_nav_toggle" aria-label="Menu" aria-expanded="false">
+            <i class="fa-solid fa-bars nav_toggle_icon"></i>
+            <span class="nav_toggle_text">Menu</span>
+        </button>
         <div class="navbar_desktop">
             <div class="nav_dropdown">
                 <a href="../stranky/onas.html" class="navbarItem">O nás <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>
@@ -342,6 +346,20 @@
         </div>
     </section>
 
+        <!-- Mobile Sticky Donation Bar (Always visible while scrolling on mobile) -->
+    <div class="mobile_sticky_donation_bar" id="mobile_sticky_donation_bar">
+        <div class="mobile_sticky_bar_wrapper">
+            <div class="mobile_sticky_info_box">
+                <span class="mobile_sticky_title">Pomáhejte s námi</span>
+                <span class="mobile_sticky_subtitle">Podpora aktivního stáří</span>
+            </div>
+            <button type="button" class="mobile_sticky_donate_action" id="mobile_sticky_scroll_btn">
+                <i class="fa-solid fa-heart"></i>
+                <span>Podpoř dobro</span>
+            </button>
+        </div>
+    </div>
+
     <!-- Footer / Contact -->
     <footer id="contact" class="footer_section">
         <div class="footer_wrapper">
@@ -452,7 +470,7 @@
         </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js?v=63"></script>
     <script>
         document.querySelectorAll('.qr_tab').forEach(tab => {
             tab.addEventListener('click', () => {
