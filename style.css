@@ -3254,6 +3254,24 @@ body.fonts-enlarged .navbarItem {
         margin-bottom: 25px !important;
     }
 
+    /* Kontakt Page Tablet */
+    .kontakt_header_section,
+    .kontakt_sidlo_section {
+        padding: 45px 25px !important;
+    }
+
+    .kontakt_header_wrapper h1,
+    .kontakt_header_wrapper h2,
+    .kontakt_sidlo_wrapper h2,
+    .kontakt_pobocky_block h2 {
+        font-size: 2.2rem !important;
+        margin-bottom: 18px !important;
+    }
+
+    .kontakt_sidlo_decor_wrap {
+        display: none !important;
+    }
+
     /* Media Page Tablet */
     .media_hero {
         padding: 45px 25px 35px !important;
@@ -3941,6 +3959,14 @@ body.fonts-enlarged .navbarItem {
     .blog_post_wrapper h1,
     .aktuality_detail_title {
         font-size: 1.5rem !important;
+    }
+
+    /* Kontakt Page Small */
+    .kontakt_header_wrapper h1,
+    .kontakt_header_wrapper h2,
+    .kontakt_sidlo_wrapper h2,
+    .kontakt_pobocky_block h2 {
+        font-size: 1.65rem !important;
     }
 
     /* Media Page Small */
@@ -4719,6 +4745,153 @@ body.fonts-enlarged .navbarItem {
         font-size: 0.95rem !important;
         line-height: 1.55 !important;
         margin-bottom: 14px !important;
+    }
+
+    /* Kontakt Page Mobile (Unified with Homepage & O nás) */
+    .kontakt_header_section {
+        padding: 30px 16px 25px 16px !important;
+    }
+
+    .kontakt_header_wrapper {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 14px !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .kontakt_header_wrapper h1,
+    .kontakt_header_wrapper h2 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        white-space: normal !important;
+        font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+    }
+
+    .kontakt_header_links {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+        width: 100% !important;
+    }
+
+    .kontakt_header_link {
+        font-size: 1.05rem !important;
+        justify-content: center !important;
+    }
+
+    .kontakt_social_wrapper {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 12px 18px !important;
+        padding-top: 20px !important;
+        margin-top: 20px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .kontakt_social_link {
+        font-size: 0.95rem !important;
+    }
+
+    .kontakt_sidlo_section {
+        padding: 30px 16px 35px 16px !important;
+    }
+
+    .kontakt_sidlo_wrapper {
+        padding-top: 22px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .kontakt_sidlo_wrapper h2 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        text-align: center !important;
+        margin-bottom: 18px !important;
+        font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+    }
+
+    .kontakt_sidlo_grid {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 18px !important;
+        width: 100% !important;
+        margin-bottom: 25px !important;
+    }
+
+    .kontakt_sidlo_info {
+        width: 100% !important;
+        text-align: center !important;
+        flex: none !important;
+    }
+
+    .kontakt_sidlo_info h3 {
+        font-size: 1.25rem !important;
+        margin-bottom: 12px !important;
+        text-align: center !important;
+    }
+
+    .kontakt_sidlo_details {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 14px !important;
+        width: 100% !important;
+    }
+
+    .kontakt_detail_col {
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .kontakt_detail_col p {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .kontakt_map_link {
+        font-size: 0.95rem !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+    }
+
+    .kontakt_sidlo_decor_wrap {
+        display: none !important;
+    }
+
+    .kontakt_pobocky_block {
+        margin-top: 30px !important;
+        padding-top: 25px !important;
+        width: 100% !important;
+    }
+
+    .kontakt_pobocky_block h2 {
+        font-size: 1.85rem !important;
+        text-align: center !important;
+        margin-bottom: 16px !important;
+        font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+    }
+
+    .kontakt_pobocky_grid {
+        flex-direction: column !important;
+        gap: 18px !important;
+        margin-top: 16px !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    .kontakt_pobocky_grid .branch_card_new {
+        width: 100% !important;
+        max-width: 440px !important;
+        min-width: 0 !important;
     }
 
     /* Media Page Mobile (Unified with Homepage & O nás) */
