@@ -3239,6 +3239,47 @@ body.fonts-enlarged .navbarItem {
         padding-left: 45px !important;
     }
 
+    /* Blog Post Tablet */
+    .blog_post_wrapper {
+        padding: 0 25px !important;
+    }
+
+    .blog_post_wrapper h1 {
+        font-size: 2.1rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 22px !important;
+    }
+
+    .blog_post_image {
+        margin-bottom: 25px !important;
+    }
+
+    /* Dobroklub Page Tablet */
+    .dobroklub_hero .hero_images {
+        height: 380px !important;
+    }
+
+    .dk_benefits_wrapper h2,
+    .dk_membership_wrapper h2,
+    .dk_faq_wrapper h2 {
+        font-size: 2.2rem !important;
+        margin-bottom: 25px !important;
+    }
+
+    .dk_benefits_section,
+    .dk_membership_section,
+    .dk_faq_section {
+        padding: 40px 25px !important;
+    }
+
+    .dk_membership_grid {
+        gap: 25px !important;
+    }
+
+    .dobroklub_blog_section {
+        padding: 45px 25px !important;
+    }
+
     /* Program Page Tablet */
     .events_section_title {
         font-size: 2.2rem !important;
@@ -3835,6 +3876,19 @@ body.fonts-enlarged .navbarItem {
 
     .hero_content h1 {
         font-size: 1.5rem !important;
+    }
+
+    /* Blog & Aktuality Detail Small */
+    .blog_post_wrapper h1,
+    .aktuality_detail_title {
+        font-size: 1.5rem !important;
+    }
+
+    /* Dobroklub Small */
+    .dk_benefits_wrapper h2,
+    .dk_membership_wrapper h2,
+    .dk_faq_wrapper h2 {
+        font-size: 1.65rem !important;
     }
 
     /* Program Small */
@@ -4476,6 +4530,274 @@ body.fonts-enlarged .navbarItem {
 
     .story-quote-large::before {
         display: none !important;
+    }
+
+    /* Blog & Aktuality Detail Mobile (Unified Headings & Layout) */
+    .section_container,
+    .blog_post_section {
+        padding: 25px 0 40px 0 !important;
+    }
+
+    .blog_post_wrapper {
+        padding: 0 16px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .blog_post_date {
+        font-size: 0.88rem !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+    }
+
+    .blog_post_wrapper h1 {
+        font-size: 1.65rem !important;
+        line-height: 1.3 !important;
+        margin-top: 0 !important;
+        margin-bottom: 18px !important;
+        text-align: center !important;
+        font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+    }
+
+    .blog_post_image {
+        margin-bottom: 20px !important;
+        width: 100% !important;
+    }
+
+    .blog_post_image img {
+        border-radius: 12px !important;
+    }
+
+    .blog_post_content {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+    }
+
+    .blog_post_content p {
+        margin-bottom: 14px !important;
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+    }
+
+    .blog_post_content h2 {
+        font-size: 1.35rem !important;
+        line-height: 1.35 !important;
+        margin: 22px 0 10px 0 !important;
+        color: #43382d !important;
+    }
+
+    .blog_post_content h3 {
+        font-size: 1.2rem !important;
+        line-height: 1.35 !important;
+        margin: 18px 0 8px 0 !important;
+        color: #43382d !important;
+    }
+
+    .blog_post_content h4 {
+        font-size: 1.05rem !important;
+        line-height: 1.35 !important;
+        margin: 14px 0 6px 0 !important;
+        color: #43382d !important;
+    }
+
+    /* Aktuality Grid & Card Descriptions Mobile */
+    .aktuality_card_title {
+        font-size: 1.15rem !important;
+        line-height: 1.35 !important;
+    }
+
+    .aktuality_card_description {
+        font-size: 0.92rem !important;
+        line-height: 1.5 !important;
+    }
+
+    .aktuality_card_description p {
+        margin-bottom: 10px !important;
+    }
+
+    /* Aktuality Detail View Mobile */
+    .aktuality_detail_title {
+        font-size: 1.65rem !important;
+        line-height: 1.3 !important;
+        text-align: center !important;
+        margin-bottom: 12px !important;
+    }
+
+    .aktuality_detail_body {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+    }
+
+    .aktuality_detail_body p {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 14px !important;
+    }
+
+    /* Dobroklub Page Mobile (Unified with Homepage & O nás) */
+    .dobroklub_hero .hero_images {
+        height: 250px !important;
+        max-width: 320px !important;
+        margin: 0 auto 20px auto !important;
+        justify-content: center !important;
+    }
+
+    .dobroklub_hero .hero_images_left {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .dobroklub_hero .hero_decor_red {
+        display: none !important;
+    }
+
+    .dobroklub_hero .hero_decor_yellow {
+        display: none !important;
+    }
+
+    .dobroklub_hero .hero_content {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .dobroklub_hero .hero_content h1 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 15px !important;
+        text-align: center !important;
+    }
+
+    .dobroklub_hero .hero_content p.subtitle {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin: 0 auto 14px auto !important;
+        text-align: center !important;
+    }
+
+    .dk_benefits_section,
+    .dk_membership_section,
+    .dk_faq_section,
+    .dobroklub_blog_section {
+        padding: 35px 16px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .dk_benefits_wrapper h2,
+    .dk_membership_wrapper h2,
+    .dk_faq_wrapper h2 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 25px !important;
+        text-align: center !important;
+        font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+    }
+
+    .dk_benefits_grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+        width: 100% !important;
+    }
+
+    .dk_benefit_card {
+        padding: 22px 18px !important;
+        border-radius: 14px !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .dk_benefit_icon {
+        width: 55px !important;
+        height: 55px !important;
+        font-size: 1.35rem !important;
+        margin-bottom: 14px !important;
+    }
+
+    .dk_benefit_card h3 {
+        font-size: 1.2rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 10px !important;
+        text-align: center !important;
+    }
+
+    .dk_benefit_card p {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        text-align: center !important;
+        margin: 0 !important;
+    }
+
+    .dk_membership_grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    .dk_membership_card {
+        padding: 26px 18px !important;
+        border-radius: 14px !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
+    }
+
+    .dk_membership_card_icon {
+        width: 55px !important;
+        height: 55px !important;
+        font-size: 1.35rem !important;
+        margin-bottom: 15px !important;
+    }
+
+    .dk_membership_card h3 {
+        font-size: 1.35rem !important;
+        line-height: 1.3 !important;
+        margin-bottom: 12px !important;
+        text-align: center !important;
+    }
+
+    .dk_membership_card p {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 22px !important;
+        text-align: center !important;
+    }
+
+    .dk_membership_btn,
+    .dk_membership_btn_outline {
+        width: 100% !important;
+        max-width: 260px !important;
+        min-height: 44px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 0.95rem !important;
+        margin: 0 auto !important;
+        border-radius: 30px !important;
+        box-sizing: border-box !important;
+    }
+
+    .dk_faq_item {
+        border-radius: 12px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .dk_faq_question {
+        padding: 16px 16px !important;
+        font-size: 0.95rem !important;
+        line-height: 1.4 !important;
+        text-align: left !important;
+        gap: 10px !important;
+    }
+
+    .dk_faq_answer p {
+        font-size: 0.92rem !important;
+        line-height: 1.55 !important;
+        padding: 0 16px 18px 16px !important;
+    }
+
+    #dobroklub_blog_grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+        padding: 0 !important;
     }
 
     /* Program Page Mobile (Unified with Homepage & O nás) */
@@ -11585,4 +11907,70 @@ body.has-sticky-support-bar {
     position: relative;
     overflow: hidden;
     padding: 50px 50px 30px 50px;
+}
+
+
+/* Dobroklub Page Specific Base Styles */
+.dobroklub_blog_section {
+    padding: 60px 50px 80px 50px;
+    background-color: #fcf4ef;
+}
+
+#dobroklub_blog_grid {
+    padding: 0 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Blog Post Article Base Styles */
+.blog_post_section {
+    background-color: #fcf4ef;
+    padding: 40px 0 60px 0;
+}
+
+.blog_post_wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.blog_post_date {
+    color: #888;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.blog_post_wrapper h1 {
+    font-size: 2.5rem;
+    line-height: 1.25;
+    color: #43382d;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+    font-weight: 700;
+}
+
+.blog_post_image {
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.blog_post_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    display: block;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.blog_post_content {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: #43382d;
+}
+
+.blog_post_content p {
+    margin-bottom: 18px;
 }
