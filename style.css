@@ -3254,6 +3254,16 @@ body.fonts-enlarged .navbarItem {
         margin-bottom: 25px !important;
     }
 
+    /* Aktuální poptávky & Staň se dobrovolníkem Tablet */
+    .poptavky_main_title {
+        font-size: 2.2rem !important;
+        margin-bottom: 14px !important;
+    }
+
+    .volunteer_clean_form {
+        padding: 30px !important;
+    }
+
     /* Kontakt Page Tablet */
     .kontakt_header_section,
     .kontakt_sidlo_section {
@@ -3959,6 +3969,25 @@ body.fonts-enlarged .navbarItem {
     .blog_post_wrapper h1,
     .aktuality_detail_title {
         font-size: 1.5rem !important;
+    }
+
+    /* Aktuální poptávky & Staň se dobrovolníkem Small */
+    .poptavky_main_title,
+    .volunteer_form_clean_container h2,
+    .cta_red_bar h2 {
+        font-size: 1.65rem !important;
+    }
+
+    .volunteer_clean_form {
+        padding: 18px 14px !important;
+    }
+
+    .poptavky_row {
+        padding: 15px 12px !important;
+    }
+
+    .poptavka_title {
+        font-size: 1.1rem !important;
     }
 
     /* Kontakt Page Small */
@@ -4745,6 +4774,186 @@ body.fonts-enlarged .navbarItem {
         font-size: 0.95rem !important;
         line-height: 1.55 !important;
         margin-bottom: 14px !important;
+    }
+
+    /* Aktuální poptávky & Staň se dobrovolníkem Mobile */
+    .poptavky_page_section,
+    .volunteer_form_section {
+        padding: 30px 16px 35px 16px !important;
+    }
+
+    .poptavky_main_title {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 12px !important;
+        text-align: center !important;
+    }
+
+    .poptavky_main_desc {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin: 0 auto 24px auto !important;
+        text-align: center !important;
+    }
+
+    .volunteer_form_clean_container h2 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 8px !important;
+        text-align: center !important;
+    }
+
+    .volunteer_form_clean_container p {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 18px !important;
+        text-align: center !important;
+    }
+
+    .volunteer_clean_form {
+        padding: 22px 18px !important;
+        border-radius: 14px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .volunteer_clean_form .form_group {
+        margin-bottom: 16px !important;
+    }
+
+    .volunteer_clean_form .form_group label {
+        font-size: 0.92rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .volunteer_clean_form .form_input,
+    .volunteer_clean_form .form_textarea {
+        padding: 12px 14px !important;
+        font-size: 0.95rem !important;
+    }
+
+    .radio_group {
+        margin-bottom: 18px !important;
+    }
+
+    .radio_label {
+        font-size: 0.92rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 12px !important;
+        display: flex !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+    }
+
+    .tooltip_text {
+        max-width: 85vw !important;
+        width: 280px !important;
+        font-size: 0.82rem !important;
+        padding: 12px !important;
+    }
+
+    .btn_submit {
+        padding: 14px 24px !important;
+        font-size: 1rem !important;
+    }
+
+    /* Poptávky Table Card Mode Mobile */
+    .poptavky_table_wrapper {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+    }
+
+    .poptavky_table {
+        display: block !important;
+        width: 100% !important;
+        border: none !important;
+    }
+
+    .poptavky_table thead,
+    .poptavky_table th {
+        display: none !important;
+    }
+
+    .poptavky_table tbody {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    .poptavky_row {
+        display: flex !important;
+        flex-direction: column !important;
+        background: #ffffff !important;
+        border: 1px solid #ebdace !important;
+        border-radius: 14px !important;
+        padding: 18px 16px !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04) !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        margin-bottom: 0 !important;
+    }
+
+    .poptavky_table td {
+        display: block !important;
+        padding: 4px 0 !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .poptavka_title {
+        font-size: 1.15rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 6px !important;
+    }
+
+    .poptavka_desc_short,
+    .poptavka_desc_full {
+        font-size: 0.92rem !important;
+        line-height: 1.55 !important;
+    }
+
+    .poptavka_location_box {
+        font-size: 0.9rem !important;
+        margin-top: 6px !important;
+    }
+
+    .poptavka_location_actions {
+        gap: 8px !important;
+        margin-top: 6px !important;
+    }
+
+    .poptavka_frequency_cell {
+        margin-top: 10px !important;
+        padding-top: 10px !important;
+        border-top: 1px dashed #ebdace !important;
+        display: flex !important;
+        justify-content: flex-start !important;
+    }
+
+    .badge_frequency {
+        font-size: 0.82rem !important;
+        padding: 4px 10px !important;
+    }
+
+    /* Red Bar Mobile Spacing */
+    .cta_red_bar {
+        padding: 45px 20px !important;
+    }
+
+    .cta_red_bar h2 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 18px !important;
+        font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+    }
+
+    .btn_donate_outline {
+        padding: 12px 28px !important;
+        font-size: 1rem !important;
     }
 
     /* Kontakt Page Mobile (Unified with Homepage & O nás) */
