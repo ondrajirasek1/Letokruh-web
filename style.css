@@ -3254,6 +3254,38 @@ body.fonts-enlarged .navbarItem {
         margin-bottom: 25px !important;
     }
 
+    /* Media Page Tablet */
+    .media_hero {
+        padding: 45px 25px 35px !important;
+    }
+
+    .media_hero h1 {
+        font-size: 2.2rem !important;
+        margin-bottom: 14px !important;
+    }
+
+    .media_section {
+        padding: 45px 25px !important;
+    }
+
+    .media_section_header h2 {
+        font-size: 2.2rem !important;
+        margin-bottom: 14px !important;
+    }
+
+    .media_contact_grid,
+    .press_releases_grid,
+    .logos_grid,
+    .videos_grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    .media_mentions_grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
     /* Firemní partnerství Tablet */
     .firmy_hero_section,
     .firmy_options_section,
@@ -3909,6 +3941,20 @@ body.fonts-enlarged .navbarItem {
     .blog_post_wrapper h1,
     .aktuality_detail_title {
         font-size: 1.5rem !important;
+    }
+
+    /* Media Page Small */
+    .media_hero h1,
+    .media_section_header h2 {
+        font-size: 1.65rem !important;
+    }
+
+    .media_contact_card,
+    .press_card,
+    .press_kit_feature_box,
+    .logo_card,
+    .media_mention_card {
+        padding: 18px 14px !important;
     }
 
     /* Firemní partnerství Small */
@@ -4673,6 +4719,305 @@ body.fonts-enlarged .navbarItem {
         font-size: 0.95rem !important;
         line-height: 1.55 !important;
         margin-bottom: 14px !important;
+    }
+
+    /* Media Page Mobile (Unified with Homepage & O nás) */
+    .media_hero {
+        padding: 30px 16px 25px 16px !important;
+    }
+
+    .media_hero_wrapper,
+    .media_container {
+        width: 100% !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .media_hero h1 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 12px !important;
+        text-align: center !important;
+        font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+    }
+
+    .media_hero .subtitle {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        text-align: center !important;
+        margin-bottom: 0 !important;
+    }
+
+    .media_section {
+        padding: 30px 16px 35px 16px !important;
+    }
+
+    .media_section_header {
+        margin-bottom: 22px !important;
+        text-align: center !important;
+    }
+
+    .media_section_header h2 {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 10px !important;
+        text-align: center !important;
+        font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+    }
+
+    .media_section_header p {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 0 !important;
+        text-align: center !important;
+    }
+
+    /* Contact Cards Mobile */
+    .media_contact_grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    .media_contact_card {
+        padding: 22px 18px !important;
+        border-radius: 14px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .media_contact_card h3 {
+        font-size: 1.25rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .media_contact_card p {
+        font-size: 0.92rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .media_contact_info li {
+        font-size: 0.9rem !important;
+        line-height: 1.45 !important;
+        word-break: break-word !important;
+        margin-bottom: 8px !important;
+    }
+
+    .media_btn_primary,
+    .media_btn_secondary {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 12px 16px !important;
+        font-size: 0.95rem !important;
+    }
+
+    /* Press Releases Mobile */
+    .press_releases_grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    .press_card {
+        padding: 22px 18px !important;
+        border-radius: 14px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .press_card h3 {
+        font-size: 1.2rem !important;
+        line-height: 1.35 !important;
+        margin: 0 0 10px 0 !important;
+    }
+
+    .press_card p {
+        font-size: 0.92rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* Press Kit Mobile */
+    .press_kit_feature_box {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        padding: 22px 18px !important;
+        border-radius: 14px !important;
+        gap: 18px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        margin-bottom: 24px !important;
+    }
+
+    .press_kit_feature_content h3 {
+        font-size: 1.25rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .press_kit_feature_content p {
+        font-size: 0.92rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .press_kit_bullets {
+        grid-template-columns: 1fr !important;
+        gap: 6px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .press_kit_bullets li {
+        font-size: 0.88rem !important;
+        line-height: 1.4 !important;
+    }
+
+    .press_kit_feature_action {
+        width: 100% !important;
+    }
+
+    .press_kit_feature_action a {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 13px 16px !important;
+        font-size: 0.95rem !important;
+        white-space: normal !important;
+    }
+
+    /* Logos Grid Mobile */
+    .logos_grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    .logo_card {
+        padding: 20px 16px !important;
+        border-radius: 14px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .logo_preview_box {
+        min-height: 110px !important;
+        padding: 18px 12px !important;
+        margin-bottom: 14px !important;
+    }
+
+    .logo_preview_box img {
+        max-height: 65px !important;
+    }
+
+    .logo_card h3 {
+        font-size: 1.2rem !important;
+        margin-bottom: 6px !important;
+    }
+
+    .logo_card p {
+        font-size: 0.9rem !important;
+        line-height: 1.45 !important;
+        margin-bottom: 14px !important;
+    }
+
+    .logo_download_btns {
+        width: 100% !important;
+    }
+
+    .logo_download_btns a,
+    .logo_download_btns span {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 11px 16px !important;
+        font-size: 0.92rem !important;
+    }
+
+    /* Media Mentions Mobile */
+    .media_mentions_grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    .media_mention_card {
+        padding: 22px 18px !important;
+        border-radius: 14px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .media_source_tag {
+        font-size: 0.82rem !important;
+        padding: 4px 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .media_mention_card h3 {
+        font-size: 1.15rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 10px !important;
+    }
+
+    .media_mention_card blockquote {
+        font-size: 0.9rem !important;
+        line-height: 1.5 !important;
+        padding-left: 12px !important;
+        margin: 0 0 14px 0 !important;
+    }
+
+    .media_link_btn {
+        font-size: 0.92rem !important;
+        word-break: break-word !important;
+    }
+
+    /* Videos Mobile */
+    .videos_grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    .video_card {
+        border-radius: 14px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .video_card_body {
+        padding: 16px 14px !important;
+    }
+
+    .video_card_body h3 {
+        font-size: 1.15rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 4px !important;
+    }
+
+    .video_card_body p {
+        font-size: 0.9rem !important;
+        line-height: 1.45 !important;
+    }
+
+    .youtube_compact_btn {
+        width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+        justify-content: center !important;
+        padding: 12px 16px !important;
+        font-size: 0.92rem !important;
+        line-height: 1.35 !important;
     }
 
     /* Firemní partnerství Mobile (Unified with Homepage & O nás) */
@@ -11031,6 +11376,7 @@ body.has-sticky-support-bar {
 .media_section {
     padding: 60px 20px;
     border-bottom: 1px solid #F0ECE6;
+    scroll-margin-top: 100px;
 }
 
 .media_section:nth-child(even) {
