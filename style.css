@@ -2953,6 +2953,11 @@ body.fonts-enlarged .navbarItem {
         margin-bottom: 15px;
     }
 
+    .stories_intro h2 .br-desktop,
+    .stories_intro h2 br:first-of-type {
+        display: none !important;
+    }
+
     .stories_intro p {
         margin: 0 auto 25px auto;
         max-width: 550px;
