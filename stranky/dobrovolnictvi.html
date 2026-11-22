@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dobrovolnictví | Letokruh</title>
-    <link rel="stylesheet" href="../style.css?v=60">
+    <link rel="stylesheet" href="../style.css?v=62">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -40,6 +40,10 @@
                 <a href="../index.html#partners" class="nav_dropdown_item">Partneři</a>
             </div>
         </div>
+        <button class="mobile_nav_toggle" aria-label="Menu" aria-expanded="false">
+            <i class="fa-solid fa-bars nav_toggle_icon"></i>
+            <span class="nav_toggle_text">Menu</span>
+        </button>
         <div class="navbar_desktop">
             <div class="nav_dropdown">
                 <a href="../stranky/onas.html" class="navbarItem">O nás <i
@@ -805,17 +809,13 @@
     </section>
 
     <!-- 5. SEKCE: Přijímací organizace -->
-    <section class="org_intro_section" id="prijimaci-organizace"
-        style="background-color: #ffffff; padding: 70px 50px 30px 50px;">
-        <div class="org_intro_wrapper"
-            style="max-width: 1000px; margin: 0 auto; display: flex; gap: 40px; align-items: center; justify-content: space-between;">
-            <div style="flex: 1;">
-                <h2
-                    style="color: #43382d; font-size: 2.5rem; line-height: 1.2; margin: 0; font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif; font-weight: 700;">
-                    Přijímací<br>organizace</h2>
+    <section class="org_intro_section org_intro_section_white" id="prijimaci-organizace">
+        <div class="org_intro_wrapper">
+            <div class="org_intro_title_col">
+                <h2>Přijímací<br class="br-desktop">organizace</h2>
             </div>
-            <div style="flex: 1;">
-                <p style="color: #43382d; font-size: 1.1rem; line-height: 1.6; margin: 0;">
+            <div class="org_intro_desc_col">
+                <p>
                     Partnery pro Letokruh a dobrovolníky jsou tzv. přijímající organizace, nejčastěji ze sociální
                     oblasti, oblasti školství nebo volnočasových aktivit. Spolu s nimi hledáme vhodné možnosti a
                     příležitosti pro zapojení prověřených, proškolených a motivovaných dobrovolníků tak, aby se
@@ -826,11 +826,9 @@
     </section>
 
     <!-- Grid Section (Styled like Projekty v O nás) -->
-    <section class="projects_section" style="background-color: #ffffff; padding: 40px 50px 80px 50px;">
-        <div class="projects_wrapper" style="max-width: 1100px; margin: 0 auto;">
-            <h2
-                style="color: #43382d; font-size: 2.5rem; margin-bottom: 50px; text-align: center; font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif; font-weight: 700;">
-                S kým pracujeme</h2>
+    <section class="projects_section org_projects_section">
+        <div class="projects_wrapper">
+            <h2>S kým pracujeme</h2>
 
             <div class="projects_clean_list">
                 <!-- Item 1 -->

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Příběh paní Irenky | Letokruh</title>
-    <link rel="stylesheet" href="../style.css?v=60">
+    <link rel="stylesheet" href="../style.css?v=62">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -93,6 +93,77 @@
             font-style: normal;
             line-height: 1;
         }
+
+        @media (max-width: 768px) {
+            .story-detail-section {
+                padding: 30px 16px 50px 16px !important;
+                overflow-x: hidden !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .story-detail-grid {
+                flex-direction: column !important;
+                gap: 25px !important;
+                width: 100% !important;
+            }
+
+            .story-detail-left,
+            .story-detail-right {
+                width: 100% !important;
+                min-width: 0 !important;
+                flex: none !important;
+            }
+
+            .story-detail-section h1,
+            .story-detail-left h1 {
+                font-size: 1.85rem !important;
+                line-height: 1.25 !important;
+                text-align: center !important;
+                margin: 0 auto 16px auto !important;
+                font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+                width: 100% !important;
+            }
+
+            .story-detail-section h2,
+            .story-detail-left h2 {
+                font-size: 1.45rem !important;
+                line-height: 1.3 !important;
+                text-align: center !important;
+                margin: 0 auto 14px auto !important;
+                font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+                width: 100% !important;
+            }
+
+            .story-detail-desc {
+                font-size: 0.95rem !important;
+                line-height: 1.6 !important;
+            }
+
+            .story-detail-right .story-image-wrap,
+            .story-detail-left .story-image-wrap {
+                max-width: 270px !important;
+                margin: 0 auto !important;
+                padding: 0 !important;
+            }
+
+            .story-decor-line,
+            .story-decor-dot {
+                display: none !important;
+            }
+
+            .story-quote-large {
+                font-size: 1.3rem !important;
+                line-height: 1.4 !important;
+                padding-left: 0 !important;
+                margin-top: 25px !important;
+                text-align: center !important;
+            }
+
+            .story-quote-large::before {
+                display: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -124,6 +195,10 @@
                 <a href="../index.html#partners" class="nav_dropdown_item">Partneři</a>
             </div>
         </div>
+        <button class="mobile_nav_toggle" aria-label="Menu" aria-expanded="false">
+            <i class="fa-solid fa-bars nav_toggle_icon"></i>
+            <span class="nav_toggle_text">Menu</span>
+        </button>
         <div class="navbar_desktop">
             <div class="nav_dropdown">
                 <a href="../stranky/onas.html" class="navbarItem">O nás <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>

@@ -5,143 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Příběhy dobrovolníků | Letokruh</title>
-    <link rel="stylesheet" href="../style.css?v=60">
+    <link rel="stylesheet" href="../style.css?v=62">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        .story-block {
-            display: flex;
-            gap: 50px;
-            align-items: flex-start;
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 60px 0;
+        <style>
+        @media (min-width: 769px) {
+            .story-block.text-left {
+                flex-direction: row-reverse;
+            }
+            .story-block.text-left .story-text {
+                padding-right: 30px;
+            }
         }
-
-        .story-text {
-            flex: 1;
-        }
-
-        .story-image-wrap {
-            flex: 1;
-            position: relative;
-            padding: 0 30px 30px 30px;
-        }
-
-        .story-quote-text {
-            margin-top: 0;
-            font-size: 1.9rem;
-            font-weight: 700;
-            font-style: italic;
-            line-height: 1.5;
-            color: #43382d;
-            margin-bottom: 30px;
-            position: relative;
-        }
-
-        .story-quote-text::before {
-            content: "\201E";
-            font-size: 5rem;
-            color: #e87a2e;
-            position: absolute;
-            top: -25px;
-            left: -35px;
-            font-style: normal;
-            line-height: 1;
-        }
-
-        .story-person-name {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #43382d;
-            margin-bottom: 5px;
-        }
-
-        .story-person-role {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 25px;
-        }
-
-        .story-btn {
-            display: inline-block;
-            padding: 12px 32px;
-            font-size: 1.05rem;
-            background: transparent;
-            color: #cb2f1d;
-            border: 2px solid #cb2f1d;
-            text-decoration: none;
-            font-weight: 700;
-            border-radius: 30px;
-            transition: all 0.3s ease;
-        }
-
-        .story-btn:hover {
-            background: rgba(203, 47, 29, 0.08);
-            border-color: #cb2f1d;
-            color: #cb2f1d;
-            cursor: pointer;
-        }
-
-        .story-img-placeholder {
-            width: 100%;
-            aspect-ratio: 4/5;
-            background-color: #e0d0c0;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 0.9rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Decorations for right-side images */
-        .decor-right .story-decor-line {
-            position: absolute;
-            right: -50px;
-            bottom: -30px;
-            width: 400px;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .decor-right .story-decor-dot {
-            position: absolute;
-            right: 40px;
-            bottom: -15px;
-            width: 60px;
-            z-index: 3;
-            pointer-events: none;
-        }
-
-        /* Decorations for left-side images */
-        .decor-left .story-decor-line {
-            position: absolute;
-            left: -50px;
-            top: -40px;
-            width: 400px;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .decor-left .story-decor-dot {
-            position: absolute;
-            left: 40px;
-            top: -15px;
-            width: 80px;
-            z-index: 3;
-            pointer-events: none;
-        }
-
-        .decor-left .story-decor-orange {
-            position: absolute;
-            left: -10px;
-            top: -5px;
-            width: 65px;
-            z-index: 2;
-            pointer-events: none;
+        @media (max-width: 768px) {
+            .stories_overview_section {
+                padding: 25px 16px 50px 16px !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                overflow-x: hidden !important;
+            }
+            .story-block {
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 22px !important;
+                align-items: center !important;
+                padding: 35px 0 !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                border-bottom: 1px solid #ebdace !important;
+            }
+            .story-block:last-of-type {
+                border-bottom: none !important;
+            }
+            .story-image-wrap {
+                order: -1 !important;
+                width: 100% !important;
+                max-width: 270px !important;
+                padding: 0 !important;
+                margin: 0 auto !important;
+                position: relative !important;
+                box-sizing: border-box !important;
+            }
+            .story-img-placeholder {
+                width: 100% !important;
+                aspect-ratio: 4 / 5 !important;
+                border-radius: 16px !important;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08) !important;
+                display: block !important;
+                object-fit: cover !important;
+                object-position: center 20% !important;
+            }
+            .story-decor-line,
+            .story-decor-dot,
+            .story-decor-orange,
+            .decor-right .story-decor-line,
+            .decor-right .story-decor-dot,
+            .decor-left .story-decor-line,
+            .decor-left .story-decor-dot,
+            .decor-left .story-decor-orange {
+                display: none !important;
+            }
+            .story-text {
+                order: 1 !important;
+                width: 100% !important;
+                padding: 0 !important;
+                box-sizing: border-box !important;
+                text-align: center !important;
+            }
+            .story-quote-text {
+                font-size: 1.25rem !important;
+                line-height: 1.5 !important;
+                font-weight: 700 !important;
+                font-style: italic !important;
+                margin-bottom: 18px !important;
+                text-align: center !important;
+                position: relative !important;
+                padding: 0 10px !important;
+            }
+            .story-quote-text::before {
+                display: none !important;
+            }
+            .story-person-name {
+                font-size: 1.3rem !important;
+                font-weight: 700 !important;
+                color: #43382d !important;
+                margin-bottom: 4px !important;
+                text-align: center !important;
+            }
+            .story-person-role {
+                font-size: 0.95rem !important;
+                color: #666 !important;
+                margin-bottom: 18px !important;
+                text-align: center !important;
+            }
+            .story-btn {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                padding: 10px 28px !important;
+                min-height: 44px !important;
+                box-sizing: border-box !important;
+                font-size: 0.95rem !important;
+                font-weight: 700 !important;
+                border-radius: 30px !important;
+                border: 2px solid #cb2f1d !important;
+                color: #cb2f1d !important;
+                margin: 0 auto !important;
+                text-decoration: none !important;
+                transition: all 0.2s ease !important;
+            }
+            .story-btn:hover,
+            .story-btn:active {
+                background-color: #cb2f1d !important;
+                color: #ffffff !important;
+            }
         }
     </style>
 </head>
@@ -174,6 +151,10 @@
                 <a href="../index.html#partners" class="nav_dropdown_item">Partneři</a>
             </div>
         </div>
+        <button class="mobile_nav_toggle" aria-label="Menu" aria-expanded="false">
+            <i class="fa-solid fa-bars nav_toggle_icon"></i>
+            <span class="nav_toggle_text">Menu</span>
+        </button>
         <div class="navbar_desktop">
             <div class="nav_dropdown">
                 <a href="../stranky/onas.html" class="navbarItem">O nás <i class="fa-solid fa-chevron-down nav_dropdown_icon"></i></a>
@@ -234,22 +215,22 @@
     </div>
 
     <!-- Stories -->
-    <section style="padding: 40px 50px 80px 50px;">
+    <section class="stories_overview_section">
 
-        <!-- Story 1: Janka F. - text LEFT, image RIGHT -->
-        <div class="story-block">
-            <div class="story-text" style="padding-left: 30px;">
+        <!-- Story 1: Janka F. -->
+        <div class="story-block text-left">
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/janka_f.webp" alt="Janka F." class="story-img-placeholder">
+            </div>
+            <div class="story-text">
                 <p class="story-quote-text">
                     Penzista se nesmí nudit. Měl by si najít činnost, která ho zaměstná, obohatí sebe i své okolí.
                 </p>
                 <p class="story-person-name">Janka F., 84 let</p>
                 <p class="story-person-role">Seniorský dobrovolník</p>
                 <a href="pribeh.html" class="story-btn">Přečíst příběh</a>
-            </div>
-            <div class="story-image-wrap decor-right">
-                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
-                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
-                <img src="../images/pribehy/janka_f.webp" alt="Janka F." class="story-img-placeholder">
             </div>
         </div>
 
@@ -274,9 +255,14 @@
             </div>
         </div>
 
-        <!-- Story 3: Ivan Š. - text LEFT, image RIGHT -->
-        <div class="story-block">
-            <div class="story-text" style="padding-left: 30px;">
+        <!-- Story 3: Ivan Š. -->
+        <div class="story-block text-left">
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/ivan_s.webp" alt="Ivan Š." class="story-img-placeholder">
+            </div>
+            <div class="story-text">
                 <p class="story-quote-text">
                     V rámci základní životní filosofie je důležité dělat občas i nějaké věci zadarmo. Většina problémů
                     jsou maličkosti. Pomoci někomu mi přináší pozitivní náladu.
@@ -284,11 +270,6 @@
                 <p class="story-person-name">Ivan Š., 64 let</p>
                 <p class="story-person-role">Seniorský dobrovolník</p>
                 <a href="pribeh-ivan.html" class="story-btn">Přečíst příběh</a>
-            </div>
-            <div class="story-image-wrap decor-right">
-                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
-                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
-                <img src="../images/pribehy/ivan_s.webp" alt="Ivan Š." class="story-img-placeholder">
             </div>
         </div>
 
@@ -310,9 +291,14 @@
             </div>
         </div>
 
-        <!-- Story 5: Marta E. - text LEFT, image RIGHT -->
-        <div class="story-block">
-            <div class="story-text" style="padding-left: 30px;">
+        <!-- Story 5: Marta E. -->
+        <div class="story-block text-left">
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/marta.jpg" alt="Marta E." class="story-img-placeholder">
+            </div>
+            <div class="story-text">
                 <p class="story-quote-text">
                     Moc ráda chodím do Letokruhu, všechny jeho programy mě baví - procházky Prahou, lekce na děravou
                     paměť, zajímavé přednášky, divadla - a hlavně také jen prosté povídání a setkávání se s lidmi..
@@ -320,11 +306,6 @@
                 <p class="story-person-name">Marta E., 82 let</p>
                 <p class="story-person-role">Seniorský dobrovolník</p>
                 <a href="pribeh-marta.html" class="story-btn">Přečíst příběh</a>
-            </div>
-            <div class="story-image-wrap decor-right">
-                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
-                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
-                <img src="../images/pribehy/marta.jpg" alt="Marta E." class="story-img-placeholder">
             </div>
         </div>
 
@@ -346,20 +327,20 @@
             </div>
         </div>
 
-        <!-- Story 7: Jirka G. - text LEFT, image RIGHT -->
-        <div class="story-block">
-            <div class="story-text" style="padding-left: 30px;">
+        <!-- Story 7: Jirka G. -->
+        <div class="story-block text-left">
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/jirka_g.jpg" alt="Jirka G." class="story-img-placeholder">
+            </div>
+            <div class="story-text">
                 <p class="story-quote-text">
                     Chci být prospěšný ostatním, pokud to jde, ale hlavně sobě. Snažím se žít tak, abych nezakrněl.
                 </p>
                 <p class="story-person-name">Jirka G., 88 let</p>
                 <p class="story-person-role">Seniorský dobrovolník</p>
                 <a href="pribeh-jirka.html" class="story-btn">Přečíst příběh</a>
-            </div>
-            <div class="story-image-wrap decor-right">
-                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
-                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
-                <img src="../images/pribehy/jirka_g.jpg" alt="Jirka G." class="story-img-placeholder">
             </div>
         </div>
 
@@ -381,20 +362,20 @@
             </div>
         </div>
 
-        <!-- Story 9: Jirka K. - text LEFT, image RIGHT -->
-        <div class="story-block">
-            <div class="story-text" style="padding-left: 30px;">
+        <!-- Story 9: Jirka K. -->
+        <div class="story-block text-left">
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/jirka_k.jpg" alt="Jirka K." class="story-img-placeholder">
+            </div>
+            <div class="story-text">
                 <p class="story-quote-text">
                     Když vidím v očích dětí nadšení, nemohu o čtení ošidit ani je, ani sebe!
                 </p>
                 <p class="story-person-name">Jirka K., 69 let</p>
                 <p class="story-person-role">Seniorský dobrovolník</p>
                 <a href="pribeh-jirka-k.html" class="story-btn">Přečíst příběh</a>
-            </div>
-            <div class="story-image-wrap decor-right">
-                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
-                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
-                <img src="../images/pribehy/jirka_k.jpg" alt="Jirka K." class="story-img-placeholder">
             </div>
         </div>
 
@@ -416,9 +397,14 @@
             </div>
         </div>
 
-        <!-- Story 11: Jiřina - text LEFT, image RIGHT -->
-        <div class="story-block">
-            <div class="story-text" style="padding-left: 30px;">
+        <!-- Story 11: Jiřina -->
+        <div class="story-block text-left">
+            <div class="story-image-wrap decor-right">
+                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
+                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
+                <img src="../images/pribehy/jirina.webp" alt="Jiřina" class="story-img-placeholder">
+            </div>
+            <div class="story-text">
                 <p class="story-quote-text">
                     Vedení cvičení v domově seniorů a klubu důchodců mi přináší radost a pocit užitečnosti. Příprava na
                     cvičení mne nutí přemýšlet, abych cvičení měnila a udělala ho zábavným. Samotné cvičení je pak
@@ -427,11 +413,6 @@
                 <p class="story-person-name">Jiřina, 77 let</p>
                 <p class="story-person-role">Seniorský dobrovolník</p>
                 <a href="pribeh-jirina.html" class="story-btn">Přečíst příběh</a>
-            </div>
-            <div class="story-image-wrap decor-right">
-                <img src="../images/grafika/sisoid_line_yellow.png" alt="" class="story-decor-line">
-                <img src="../images/grafika/sisoid_green.png" alt="" class="story-decor-dot">
-                <img src="../images/pribehy/jirina.webp" alt="Jiřina" class="story-img-placeholder">
             </div>
         </div>
 
