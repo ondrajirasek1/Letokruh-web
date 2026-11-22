@@ -3254,6 +3254,33 @@ body.fonts-enlarged .navbarItem {
         margin-bottom: 25px !important;
     }
 
+    /* Firemní partnerství Tablet */
+    .firmy_hero_section,
+    .firmy_options_section,
+    .firmy_why_section,
+    .firmy_contact_section {
+        padding: 45px 25px !important;
+    }
+
+    .firmy_hero_title {
+        font-size: 2.2rem !important;
+        margin-bottom: 18px !important;
+    }
+
+    .firmy_section_title {
+        font-size: 2.2rem !important;
+        margin-bottom: 25px !important;
+    }
+
+    .firmy_options_grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    .firmy_option_card {
+        padding: 25px !important;
+    }
+
     /* Dobroklub Page Tablet */
     .dobroklub_hero .hero_images {
         height: 380px !important;
@@ -3882,6 +3909,20 @@ body.fonts-enlarged .navbarItem {
     .blog_post_wrapper h1,
     .aktuality_detail_title {
         font-size: 1.5rem !important;
+    }
+
+    /* Firemní partnerství Small */
+    .firmy_hero_title,
+    .firmy_section_title {
+        font-size: 1.65rem !important;
+    }
+
+    .firmy_option_card {
+        padding: 18px 14px !important;
+    }
+
+    .firmy_card_title {
+        font-size: 1.15rem !important;
     }
 
     /* Dobroklub Small */
@@ -4632,6 +4673,135 @@ body.fonts-enlarged .navbarItem {
         font-size: 0.95rem !important;
         line-height: 1.55 !important;
         margin-bottom: 14px !important;
+    }
+
+    /* Firemní partnerství Mobile (Unified with Homepage & O nás) */
+    .firmy_hero_section,
+    .firmy_options_section,
+    .firmy_why_section,
+    .firmy_contact_section {
+        padding: 30px 16px 35px 16px !important;
+    }
+
+    .firmy_hero_wrapper,
+    .firmy_options_wrapper,
+    .firmy_why_wrapper,
+    .firmy_contact_wrapper {
+        width: 100% !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .firmy_hero_title {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 14px !important;
+        text-align: center !important;
+    }
+
+    .firmy_hero_subtitle {
+        font-size: 1.05rem !important;
+        line-height: 1.4 !important;
+        margin-bottom: 14px !important;
+        text-align: center !important;
+    }
+
+    .firmy_hero_text {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 12px !important;
+        text-align: center !important;
+    }
+
+    .firmy_section_title {
+        font-size: 1.85rem !important;
+        line-height: 1.25 !important;
+        margin-bottom: 18px !important;
+        text-align: center !important;
+    }
+
+    .firmy_options_grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    .firmy_option_card {
+        padding: 22px 18px !important;
+        border-radius: 14px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .firmy_card_title {
+        font-size: 1.25rem !important;
+        line-height: 1.35 !important;
+        margin-bottom: 10px !important;
+        text-align: left !important;
+    }
+
+    .firmy_card_text {
+        font-size: 0.92rem !important;
+        line-height: 1.55 !important;
+        text-align: left !important;
+    }
+
+    .firmy_why_text {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 14px !important;
+        text-align: center !important;
+    }
+
+    .firmy_why_highlight {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        text-align: center !important;
+    }
+
+    .firmy_contact_desc {
+        font-size: 0.95rem !important;
+        line-height: 1.55 !important;
+        margin-bottom: 22px !important;
+        text-align: center !important;
+    }
+
+    .firmy_contact_card {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 22px 18px !important;
+        gap: 15px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .firmy_contact_img {
+        width: 110px !important;
+        height: 110px !important;
+        margin: 0 auto !important;
+    }
+
+    .firmy_contact_info {
+        align-items: center !important;
+        text-align: center !important;
+        width: 100% !important;
+    }
+
+    .firmy_contact_name {
+        font-size: 1.25rem !important;
+        margin-bottom: 4px !important;
+    }
+
+    .firmy_contact_role {
+        font-size: 0.92rem !important;
+        margin-bottom: 12px !important;
+    }
+
+    .firmy_contact_link {
+        font-size: 0.92rem !important;
+        margin-bottom: 6px !important;
+        word-break: break-word !important;
     }
 
     /* Dobroklub Page Mobile (Unified with Homepage & O nás) */
@@ -11973,4 +12143,216 @@ body.has-sticky-support-bar {
 
 .blog_post_content p {
     margin-bottom: 18px;
+}
+
+
+/* ==========================================================================
+   Firemní partnerství (Pro firmy) Page Base Styles
+   ========================================================================== */
+.firmy_hero_section {
+    padding: 60px 20px;
+    background: #fcf4ef;
+    text-align: center;
+}
+
+.firmy_hero_wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.firmy_hero_title {
+    font-size: 3rem;
+    color: #43382d;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+}
+
+.firmy_hero_subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #cb2f1d;
+    margin-bottom: 20px;
+}
+
+.firmy_hero_text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #43382d;
+    margin-bottom: 15px;
+}
+
+.firmy_hero_text:last-child {
+    margin-bottom: 0;
+}
+
+.firmy_options_section {
+    padding: 60px 20px;
+    background: #ffffff;
+    scroll-margin-top: 100px;
+}
+
+.firmy_options_wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.firmy_section_title {
+    font-size: 2.5rem;
+    color: #43382d;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+}
+
+.firmy_options_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.firmy_option_card {
+    background: #fcf4ef;
+    border: 1px solid #ebdace;
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.firmy_card_title {
+    font-size: 1.5rem;
+    color: #cb2f1d;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+}
+
+.firmy_card_text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #43382d;
+    margin: 0;
+}
+
+.firmy_why_section {
+    padding: 60px 20px;
+    background: #fcf4ef;
+}
+
+.firmy_why_wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.firmy_why_wrapper .firmy_section_title {
+    margin-bottom: 25px;
+}
+
+.firmy_why_text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #43382d;
+    margin-bottom: 20px;
+}
+
+.firmy_why_highlight {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #cb2f1d;
+    margin: 0;
+}
+
+.firmy_contact_section {
+    padding: 60px 20px;
+    background: #ffffff;
+    scroll-margin-top: 100px;
+}
+
+.firmy_contact_wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.firmy_contact_wrapper .firmy_section_title {
+    margin-bottom: 15px;
+}
+
+.firmy_contact_desc {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #43382d;
+    margin-bottom: 35px;
+}
+
+.firmy_contact_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #fcf4ef;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #ebdace;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    box-sizing: border-box;
+}
+
+.firmy_contact_img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.firmy_contact_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.firmy_contact_name {
+    font-size: 1.4rem;
+    color: #43382d;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
+}
+
+.firmy_contact_role {
+    font-size: 1rem;
+    color: #cb2f1d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.firmy_contact_link {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #43382d;
+}
+
+.firmy_contact_link:last-child {
+    margin-bottom: 0;
+}
+
+.firmy_contact_link a {
+    color: #43382d;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.firmy_contact_link a:hover {
+    color: #cb2f1d;
+    text-decoration: underline;
 }
