@@ -3468,8 +3468,73 @@ body.fonts-enlarged .navbarItem {
     }
 
     .events_filter_advanced {
-        padding: 16px 20px !important;
-        gap: 12px !important;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px 18px !important;
+        padding: 20px !important;
+        border-radius: 14px !important;
+        align-items: end !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+        margin-bottom: 25px !important;
+    }
+
+    .filter_group {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 6px !important;
+        width: 100% !important;
+    }
+
+    .filter_group label {
+        font-size: 0.92rem !important;
+        font-weight: 700 !important;
+        color: #43382d !important;
+        margin-bottom: 2px !important;
+        white-space: nowrap !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+    }
+
+    .filter_group .filter_btn_select {
+        width: 100% !important;
+        min-height: 44px !important;
+        font-size: 0.95rem !important;
+        padding: 9px 14px !important;
+        box-sizing: border-box !important;
+        border-radius: 8px !important;
+    }
+
+    /* Datum group in 2-column grid: side-by-side month and year selects */
+    .filter_group:has(#event_month_filter) {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+
+    .filter_group:has(#event_month_filter) label {
+        width: 100% !important;
+        flex: 1 0 100% !important;
+    }
+
+    .filter_group #event_month_filter,
+    .filter_group #event_year_filter {
+        flex: 1 1 calc(50% - 5px) !important;
+        width: calc(50% - 5px) !important;
+        min-width: 0 !important;
+    }
+
+    .btn_clear_filters {
+        grid-column: span 2 !important;
+        width: 100% !important;
+        min-height: 44px !important;
+        display: inline-flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 4px !important;
+        font-size: 0.95rem !important;
+        border-radius: 8px !important;
     }
 
     /* Dobrovolnictví Page Tablet */
@@ -5893,7 +5958,7 @@ body.fonts-enlarged .navbarItem {
     .program_events_section,
     .events_section,
     .archive_section {
-        padding: 35px 16px !important;
+        padding: 30px 12px !important;
         width: 100% !important;
         box-sizing: border-box !important;
     }
@@ -5906,43 +5971,82 @@ body.fonts-enlarged .navbarItem {
         font-family: 'Dederon-Sans', 'Dederon Sans', 'Roboto', sans-serif !important;
     }
 
-    /* Program Filters Mobile */
+    /* Program Filters Mobile (2-Column Grid stretched to sides) */
     .events_filter_advanced {
-        padding: 16px 14px !important;
-        gap: 12px !important;
-        border-radius: 14px !important;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 12px 10px !important;
+        padding: 14px 12px !important;
+        border-radius: 12px !important;
         width: 100% !important;
         box-sizing: border-box !important;
         margin-bottom: 25px !important;
+        align-items: end !important;
     }
 
     .filter_group {
         display: flex !important;
-        flex-wrap: wrap !important;
-        gap: 6px !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 4px !important;
         width: 100% !important;
+        min-width: 0 !important;
     }
 
     .filter_group label {
         width: 100% !important;
-        font-size: 0.9rem !important;
+        font-size: 0.85rem !important;
         font-weight: 700 !important;
         color: #43382d !important;
         margin-bottom: 2px !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 5px !important;
+        white-space: nowrap !important;
     }
 
     .filter_group .filter_btn_select {
-        flex: 1 1 120px !important;
-        min-width: 0 !important;
         width: 100% !important;
+        min-width: 0 !important;
         min-height: 42px !important;
-        font-size: 0.92rem !important;
-        padding: 8px 12px !important;
+        font-size: 0.88rem !important;
+        padding: 8px 8px !important;
         box-sizing: border-box !important;
         border-radius: 8px !important;
     }
 
+    /* Datum group: Month & Year side-by-side within their column */
+    .filter_group.filter_group_datum,
+    .filter_group:has(#event_month_filter) {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 4px !important;
+    }
+
+    .filter_group.filter_group_datum label,
+    .filter_group:has(#event_month_filter) label {
+        width: 100% !important;
+        flex: 1 0 100% !important;
+    }
+
+    .filter_group #event_month_filter {
+        flex: 1.15 1 0 !important;
+        width: calc(56% - 2px) !important;
+        min-width: 0 !important;
+        padding: 8px 4px 8px 6px !important;
+        font-size: 0.84rem !important;
+    }
+
+    .filter_group #event_year_filter {
+        flex: 0.85 1 0 !important;
+        width: calc(44% - 2px) !important;
+        min-width: 0 !important;
+        padding: 8px 4px 8px 6px !important;
+        font-size: 0.84rem !important;
+    }
+
     .btn_clear_filters {
+        grid-column: span 2 !important;
         width: 100% !important;
         min-height: 42px !important;
         display: inline-flex !important;
@@ -8312,8 +8416,8 @@ body.fonts-enlarged .navbarItem {
     }
 }
 
-@media (max-width: 1200px) {
-    .program_hero_section, .events_section, .archive_section {
+@media (max-width: 1200px) and (min-width: 993px) {
+    .program_hero_section, .events_section, .archive_section, .program_events_section {
         padding: 40px 50px;
     }
 }
@@ -11313,6 +11417,11 @@ body.has-sticky-support-bar {
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-shrink: 0;
+}
+
+#event_time_filter {
+    min-width: 170px;
 }
 
 .filter_group label {

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program | Letokruh</title>
-    <link rel="stylesheet" href="../style.css?v=63">
+    <link rel="stylesheet" href="../style.css?v=66">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -141,7 +141,7 @@
                     </select>
                 </div>
 
-                <div class="filter_group">
+                <div class="filter_group filter_group_datum">
                     <label for="event_month_filter"><i class="fa-solid fa-calendar-days" style="color: #cb2f1d;"></i> Datum:</label>
                     <select id="event_month_filter" class="filter_btn_select">
                         <option value="">Měsíc</option>
@@ -165,10 +165,6 @@
                         <option value="2027">2027</option>
                     </select>
                 </div>
-
-                <button id="clear_all_program_filters" class="btn_clear_filters" style="display: none;">
-                    <i class="fa-solid fa-xmark"></i> Zrušit filtry
-                </button>
             </div>
             
             <div class="events_list" id="current_events_grid">
